@@ -229,6 +229,41 @@ html, body, #app {
 /* Marqueur placeholder (position a ajuster) */
 .marker-placeholder { filter: grayscale(1) opacity(.65); }
 
+/* Labels cartographiques mers/oceans (divIcon, ancres = Point du geojson).
+   Le span interne porte translate(-50%,-50%) + rotation + fontScale (inline). */
+.sea-label {
+  background: none;
+  border: none;
+  pointer-events: none;
+  transition: opacity .25s;
+}
+.sea-label span {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: .45em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #33475a;
+  text-shadow: 0 0 3px rgba(233, 220, 195, .8), 0 0 6px rgba(233, 220, 195, .6);
+  opacity: .85;
+}
+.sea-label--ocean span { font-size: 1.15em; }
+.sea-label--strait span { letter-spacing: .25em; font-size: .8em; }
+/* Masques au zoom minimal (carte trop petite pour la typo etalee) */
+.map-canvas[data-zoom="-4"] .sea-label { opacity: 0; }
+
+/* Tooltip routes / frontieres (theme parchemin) */
+.route-tooltip {
+  font-family: "EB Garamond", Garamond, serif;
+  background: var(--parch);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+}
+.route-tooltip::before { display: none; }
+
 /* Zone regionale */
 .region-zone {
   cursor: pointer;

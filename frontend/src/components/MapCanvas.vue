@@ -28,6 +28,10 @@ let parchment = null
 onMounted(() => {
   const map = create(el.value, props)
   const bounds = [[0, 0], [props.height, props.width]]
+  // Niveau de zoom expose au CSS (masquage des labels mers au zoom minimal)
+  const syncZoom = () => { el.value.dataset.zoom = map.getZoom() }
+  map.on('zoomend', syncZoom)
+  syncZoom()
   L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
   if (props.parchmentUrl) {
     parchment = L.imageOverlay(assetUrl(props.parchmentUrl), bounds, {

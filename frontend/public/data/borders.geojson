@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864), anneau ferme (premier point = dernier). Contours estimes — affiner via #/?pick=1. Couleur derivee de empire/faction (leafletRenderers).",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[3320, 1440], [4080, 1440], [4080, 2160], [3320, 2160], [3320, 1440]]]
+      },
+      "properties": { "name": "Empire Malazain — Quon Tali", "empire": "Empire Malazain", "faction": "Empire Malazain", "period": "vers 1160 BS", "placeholder": true }
+    }
+  ]
+}

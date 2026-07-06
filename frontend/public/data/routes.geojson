@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864). Trace estime — affiner via #/?pick=1. route_type: campaign|trade (tirets, voir leafletRenderers).",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[3760, 760], [3640, 800], [3560, 880], [3600, 960], [3645, 1035]]
+      },
+      "properties": { "name": "Chain of Dogs", "route_type": "campaign", "continent": "Seven Cities", "book": "Deadhouse Gates", "note": "Marche de Coltaine, de Hissar a Aren", "placeholder": true }
+    }
+  ]
+}

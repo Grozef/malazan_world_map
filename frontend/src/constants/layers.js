@@ -15,6 +15,11 @@ export const PARCHMENT = 'decor/land-parchment.webp'
 // defaultOn : visible au chargement (les autres sont fetchees au premier toggle)
 export const LAYERS = [
   { id: 'cities', label: 'Villes', file: 'data/cities.geojson', kind: 'point', filterable: true, defaultOn: true },
+  { id: 'poi', label: 'Lieux notables', file: 'data/poi.geojson', kind: 'point', filterable: true, defaultOn: false },
+  { id: 'battles', label: 'Batailles', file: 'data/battles.geojson', kind: 'point', filterable: true, defaultOn: false },
+  { id: 'seas', label: 'Mers & oceans', file: 'data/seas.geojson', kind: 'label', filterable: false, defaultOn: true },
+  { id: 'routes', label: 'Routes & campagnes', file: 'data/routes.geojson', kind: 'line', filterable: true, defaultOn: false },
+  { id: 'borders', label: 'Frontieres', file: 'data/borders.geojson', kind: 'polygon', filterable: true, defaultOn: false },
 ]
 
 // Whitelist des champs de properties exposes en facettes — sans elle,

@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864). Positions estimees — affiner via #/?pick=1. order = ordre chronologique dans le livre.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4770, 1015] },
+      "properties": { "name": "Siege de Pale", "type": "siege", "continent": "Genabackis", "book": "Gardens of the Moon", "outcome": "victoire malazaine", "order": 1, "placeholder": true }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4900, 1290] },
+      "properties": { "name": "Siege de Capustan", "type": "siege", "continent": "Genabackis", "book": "Memories of Ice", "outcome": "reprise par les Malazains", "order": 2, "placeholder": true }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4942, 1490] },
+      "properties": { "name": "Chute de Coral", "type": "siege", "continent": "Genabackis", "book": "Memories of Ice", "outcome": "victoire malazaine", "order": 3, "placeholder": true }
+    }
+  ]
+}
