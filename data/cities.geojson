@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864). Positions estimees a l'oeil depuis la carte source — affiner via index.html?pick=1. placeholder:true = a confirmer.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4803, 1189] },
+      "properties": { "name": "Darujhistan", "continent": "Genabackis", "status": "cite-etat", "book": "Gardens of the Moon", "note": "Cite des Bleus Lumieres" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4942, 1484] },
+      "properties": { "name": "Coral", "continent": "Genabackis", "status": "cite", "book": "Memories of Ice", "placeholder": true }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [3641, 1040] },
+      "properties": { "name": "Aren", "continent": "Seven Cities", "status": "capitale provinciale", "book": "Deadhouse Gates" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [3849, 1751] },
+      "properties": { "name": "Unta", "continent": "Quon Tali", "status": "capitale imperiale", "book": "Gardens of the Moon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [3988, 2070] },
+      "properties": { "name": "Malaz City", "continent": "Malaz Island", "status": "capitale historique", "book": "Gardens of the Moon" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [815, 2393] },
+      "properties": { "name": "Letheras", "continent": "Lether", "status": "capitale imperiale", "book": "Midnight Tides" }
+    }
+  ]
+}
