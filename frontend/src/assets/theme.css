@@ -118,6 +118,29 @@ html, body, #app {
   .map-chrome .corner  { width: 52px; height: 52px; }
 }
 
+/* Panneau de couches (remplace L.control.layers bottomleft) */
+.layers-panel {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1001; /* au-dessus du chrome decoratif */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  background: var(--parch);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  font-size: .95rem;
+}
+.layers-panel label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
 /* Popups style parchemin */
 .leaflet-popup-content-wrapper {
   background: var(--parch);

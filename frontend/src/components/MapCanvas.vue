@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
+import { onMounted, onBeforeUnmount, watch, useTemplateRef } from 'vue'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useLeafletMap } from '../composables/useLeafletMap.js'
@@ -17,25 +17,38 @@ const props = defineProps({
   // Surcouche parchemin terre (mix-blend-mode:multiply via .parchment-land),
   // alpha = masque des terres, ocean transparent. Null = pas de surcouche.
   parchmentUrl: { type: String, default: null },
+  parchmentVisible: { type: Boolean, default: true },
 })
 const emit = defineEmits(['ready'])
 
 const el = useTemplateRef('el')
-const { create, destroy } = useLeafletMap()
+const { create, destroy, getMap } = useLeafletMap()
+let parchment = null
 
 onMounted(() => {
   const map = create(el.value, props)
   const bounds = [[0, 0], [props.height, props.width]]
   L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
   if (props.parchmentUrl) {
-    L.imageOverlay(assetUrl(props.parchmentUrl), bounds, {
+    parchment = L.imageOverlay(assetUrl(props.parchmentUrl), bounds, {
       className: 'parchment-land', interactive: false, opacity: 0.92,
-    }).addTo(map)
+    })
+    if (props.parchmentVisible) parchment.addTo(map)
   }
   emit('ready', map)
 })
 
-onBeforeUnmount(destroy)
+watch(() => props.parchmentVisible, (on) => {
+  const map = getMap()
+  if (!parchment || !map) return
+  if (on) parchment.addTo(map)
+  else parchment.remove()
+})
+
+onBeforeUnmount(() => {
+  parchment = null
+  destroy()
+})
 </script>
 
 <template>
