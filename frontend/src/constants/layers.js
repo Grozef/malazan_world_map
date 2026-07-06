@@ -10,6 +10,10 @@ export const WORLD = {
 
 export const PARCHMENT = 'decor/land-parchment.webp'
 
+// Ombrage relief genere hors ligne (tools/relief.mjs, iteration A dome).
+// Ombres seules (RGBA noir), rendu en imageOverlay opacity 0.35 sous le parchemin.
+export const RELIEF = 'decor/relief-shade.webp'
+
 // kind : point | label | line | polygon (voir utils/leafletRenderers.js)
 // filterable : la couche alimente les facettes de FiltersPanel
 // defaultOn : visible au chargement (les autres sont fetchees au premier toggle)

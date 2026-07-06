@@ -18,12 +18,17 @@ const props = defineProps({
   // alpha = masque des terres, ocean transparent. Null = pas de surcouche.
   parchmentUrl: { type: String, default: null },
   parchmentVisible: { type: Boolean, default: true },
+  // Ombrage relief (RGBA ombres seules) — ajoute SOUS le parchemin pour que
+  // le multiply du parchemin teinte aussi les ombres. Null = pas de relief.
+  reliefUrl: { type: String, default: null },
+  reliefVisible: { type: Boolean, default: true },
 })
 const emit = defineEmits(['ready'])
 
 const el = useTemplateRef('el')
 const { create, destroy, getMap } = useLeafletMap()
 let parchment = null
+let relief = null
 
 onMounted(() => {
   const map = create(el.value, props)
@@ -33,9 +38,15 @@ onMounted(() => {
   map.on('zoomend', syncZoom)
   syncZoom()
   L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
+  if (props.reliefUrl) {
+    relief = L.imageOverlay(assetUrl(props.reliefUrl), bounds, {
+      interactive: false, opacity: 0.35, zIndex: 1,
+    })
+    if (props.reliefVisible) relief.addTo(map)
+  }
   if (props.parchmentUrl) {
     parchment = L.imageOverlay(assetUrl(props.parchmentUrl), bounds, {
-      className: 'parchment-land', interactive: false, opacity: 0.92,
+      className: 'parchment-land', interactive: false, opacity: 0.92, zIndex: 2,
     })
     if (props.parchmentVisible) parchment.addTo(map)
   }
@@ -49,8 +60,16 @@ watch(() => props.parchmentVisible, (on) => {
   else parchment.remove()
 })
 
+watch(() => props.reliefVisible, (on) => {
+  const map = getMap()
+  if (!relief || !map) return
+  if (on) relief.addTo(map)
+  else relief.remove()
+})
+
 onBeforeUnmount(() => {
   parchment = null
+  relief = null
   destroy()
 })
 </script>

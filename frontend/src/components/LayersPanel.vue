@@ -24,5 +24,9 @@ const store = useMapStore()
       <input type="checkbox" v-model="store.parchmentVisible">
       Parchemin (terres)
     </label>
+    <label>
+      <input type="checkbox" v-model="store.reliefVisible">
+      Relief (ombrage)
+    </label>
   </div>
 </template>

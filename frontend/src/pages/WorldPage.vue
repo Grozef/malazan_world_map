@@ -7,7 +7,7 @@ import MapCanvas from '../components/MapCanvas.vue'
 import LayersPanel from '../components/LayersPanel.vue'
 import FiltersPanel from '../components/FiltersPanel.vue'
 import SearchBar from '../components/SearchBar.vue'
-import { WORLD, PARCHMENT, LAYERS } from '../constants/layers.js'
+import { WORLD, PARCHMENT, RELIEF, LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 import { renderers } from '../utils/leafletRenderers.js'
 import { usePicker } from '../composables/usePicker.js'
@@ -113,6 +113,8 @@ watch(() => store.filterText, (q) => {
       :height="WORLD.H"
       :parchment-url="PARCHMENT"
       :parchment-visible="store.parchmentVisible"
+      :relief-url="RELIEF"
+      :relief-visible="store.reliefVisible"
       @ready="onMapReady"
     />
     <LayersPanel />
