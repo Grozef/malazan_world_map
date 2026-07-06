@@ -1,0 +1,170 @@
+/* Theme parchemin — portage de l'ancien assets/app.css (vanilla). */
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500 700; /* police variable, couvre 500 et 700 */
+  font-display: swap;
+  src: url('./fonts/cinzel-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/ebgaramond-latin.woff2') format('woff2');
+}
+
+:root {
+  --parch: #e9dcc3;
+  --parch-dark: #cbb994;
+  --ink: #2b2016;
+  --accent: #7a3b1d;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #app {
+  margin: 0;
+  height: 100%;
+  font-family: "EB Garamond", Garamond, serif;
+  color: var(--ink);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: linear-gradient(180deg, #3a2c1a, #241a10);
+  color: var(--parch);
+  border-bottom: 2px solid var(--accent);
+}
+
+.topbar h1 {
+  font-family: "Cinzel", serif;
+  font-size: 1.25rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.topbar .search {
+  margin-left: auto;
+  padding: 6px 10px;
+  border: 1px solid var(--parch-dark);
+  border-radius: 4px;
+  background: var(--parch);
+  color: var(--ink);
+  font-family: inherit;
+  min-width: 220px;
+}
+
+.pickhint {
+  font-size: .85rem;
+  color: #f0c98a;
+}
+
+/* Zone carte : tout ce qui est sous la topbar (canvas + chrome + panneaux) */
+.map-area {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-canvas {
+  position: absolute;
+  inset: 0;
+  background: #1b1712;
+}
+
+/* Calque parchemin terre : teinte multiplicative, preserve les details sous-jacents */
+.parchment-land { mix-blend-mode: multiply; }
+
+/* --- Habillage carte : cadre decoratif + rose des vents (UI chrome, ne bouge pas) --- */
+.map-chrome {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;      /* laisse passer clics/drag vers la carte */
+  z-index: 1000;             /* au-dessus des panes Leaflet (max 700) */
+}
+.map-chrome .frame {
+  position: absolute;
+  inset: 0;
+  box-shadow:
+    inset 0 0 0 3px var(--accent),
+    inset 0 0 0 7px rgba(122, 90, 52, 0.55),
+    inset 0 0 22px rgba(40, 26, 12, 0.35);
+}
+.map-chrome .corner {
+  position: absolute;
+  width: 74px; height: 74px;
+  opacity: 0.9;
+}
+.map-chrome .corner.tl { top: 0;    left: 0;  }
+.map-chrome .corner.tr { top: 0;    right: 0; transform: rotate(90deg);  }
+.map-chrome .corner.br { bottom: 0; right: 0; transform: rotate(180deg); }
+.map-chrome .corner.bl { bottom: 0; left: 0;  transform: rotate(270deg); }
+.map-chrome .compass {
+  position: absolute;
+  bottom: 16px; right: 16px;
+  width: 118px; height: 118px;
+  opacity: 0.88;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+}
+@media (max-width: 640px) {
+  .map-chrome .compass { width: 82px; height: 82px; }
+  .map-chrome .corner  { width: 52px; height: 52px; }
+}
+
+/* Popups style parchemin */
+.leaflet-popup-content-wrapper {
+  background: var(--parch);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+}
+.leaflet-popup-tip { background: var(--parch); }
+
+.city-popup h3 {
+  font-family: "Cinzel", serif;
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+.city-popup .meta { font-size: .85rem; opacity: .8; }
+.city-popup .placeholder-flag {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: .75rem;
+  color: var(--accent);
+}
+
+/* Marqueur placeholder (position a ajuster) */
+.marker-placeholder { filter: grayscale(1) opacity(.65); }
+
+/* Zone regionale */
+.region-zone {
+  cursor: pointer;
+}
+.region-label {
+  font-family: "Cinzel", serif;
+  color: var(--parch);
+  text-shadow: 0 0 4px #000, 0 0 4px #000;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Bouton retour (RegionPage) */
+.backbtn {
+  font-family: "Cinzel", serif;
+  color: var(--parch);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--parch-dark);
+  border-radius: 4px;
+  background: rgba(0,0,0,.3);
+}
+.backbtn:hover { background: rgba(0,0,0,.55); }
