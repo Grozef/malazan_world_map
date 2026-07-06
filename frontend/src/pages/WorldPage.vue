@@ -5,6 +5,8 @@ import L from 'leaflet'
 import MainLayout from '../layouts/MainLayout.vue'
 import MapCanvas from '../components/MapCanvas.vue'
 import LayersPanel from '../components/LayersPanel.vue'
+import FiltersPanel from '../components/FiltersPanel.vue'
+import SearchBar from '../components/SearchBar.vue'
 import { WORLD, PARCHMENT, LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 import { renderers } from '../utils/leafletRenderers.js'
@@ -81,6 +83,19 @@ watch(() => store.regionsVisible, (on) => {
   if (on) regionsGroup.addTo(map)
   else regionsGroup.remove()
 })
+// Match exact sur un nom de ville -> recentre et ouvre le popup (declare apres
+// les watchers de couches : les marqueurs sont deja reconstruits quand il tourne).
+watch(() => store.filterText, (q) => {
+  if (!map) return
+  const query = q.trim().toLowerCase()
+  if (!query) return
+  const marker = groups.get('cities')?.getLayers()
+    .find(l => (l.options.title || '').toLowerCase() === query)
+  if (marker) {
+    map.setView(marker.getLatLng(), 0)
+    marker.openPopup()
+  }
+})
 </script>
 
 <template>
@@ -90,6 +105,7 @@ watch(() => store.regionsVisible, (on) => {
       <span v-if="pickerActive" class="pickhint">
         Mode pointeur : clique pour copier les coordonnees pixel
       </span>
+      <SearchBar />
     </template>
     <MapCanvas
       :image-url="WORLD.image"
@@ -100,5 +116,6 @@ watch(() => store.regionsVisible, (on) => {
       @ready="onMapReady"
     />
     <LayersPanel />
+    <FiltersPanel />
   </MainLayout>
 </template>

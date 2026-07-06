@@ -141,6 +141,69 @@ html, body, #app {
   cursor: pointer;
 }
 
+/* Panneau de filtres (facettes derivees des properties) */
+.filters-panel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+  width: 230px;
+  max-height: 60%;
+  overflow-y: auto;
+  padding: 8px 12px;
+  background: var(--parch);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  font-size: .95rem;
+}
+.filters-panel .filters-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: "Cinzel", serif;
+  font-size: .85rem;
+}
+.filters-panel .clearbtn {
+  font-family: inherit;
+  font-size: .8rem;
+  padding: 2px 8px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.filters-panel .clearbtn:hover { background: var(--accent); color: var(--parch); }
+.filters-panel details { margin-top: 6px; }
+.filters-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.filters-panel .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px 0 2px;
+}
+.filters-panel .chip {
+  font-family: inherit;
+  font-size: .8rem;
+  padding: 2px 8px;
+  border: 1px solid var(--parch-dark);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.filters-panel .chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--parch);
+}
+
 /* Popups style parchemin */
 .leaflet-popup-content-wrapper {
   background: var(--parch);
