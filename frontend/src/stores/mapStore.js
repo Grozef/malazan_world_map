@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { LAYERS, FILTER_FIELDS } from '../constants/layers.js'
-import { fetchLayer } from '../api/dataSource.js'
+import { fetchLayer, fetchRegions } from '../api/dataSource.js'
 
 // Etat des couches de donnees + filtres (transposition du pattern lab_maps).
 // Ne contient QUE des donnees (FeatureCollections, booleens) — jamais d'objet Leaflet.
@@ -9,6 +9,8 @@ export const useMapStore = defineStore('map', {
     layersData: {},    // { [layerId]: FeatureCollection | null }
     layersVisible: Object.fromEntries(LAYERS.map(l => [l.id, l.defaultOn])),
     layersLoading: {},
+    regionsData: null,     // FeatureCollection des zones drill-down (hors LAYERS)
+    regionsVisible: true,
     parchmentVisible: true,
     filterText: '',
     activePropertyFilters: {}, // { champ: [valeurs] }
@@ -90,6 +92,15 @@ export const useMapStore = defineStore('map', {
         console.warn(`couche ${id} non chargee :`, err)
       } finally {
         this.layersLoading[id] = false
+      }
+    },
+
+    async loadRegions() {
+      if (this.regionsData) return
+      try {
+        this.regionsData = await fetchRegions()
+      } catch (err) {
+        console.warn('regions.geojson non charge :', err)
       }
     },
 

@@ -17,6 +17,10 @@ const store = useMapStore()
       {{ layer.label }}
     </label>
     <label>
+      <input type="checkbox" v-model="store.regionsVisible">
+      Zones regionales
+    </label>
+    <label>
       <input type="checkbox" v-model="store.parchmentVisible">
       Parchemin (terres)
     </label>
