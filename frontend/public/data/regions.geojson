@@ -1,31 +1,31 @@
 {
   "type": "FeatureCollection",
-  "note": "Polygones = zones cliquables sur la carte-monde, coords pixel [x, y] origine haut-gauche (carte 6936x3864). Positions estimees a l'oeil — a affiner via ?pick=1. properties porte aussi l'image de detail (drill-down) : image/width/height, ex-regions.json fusionne.",
+  "note": "Polygones = zones cliquables sur la carte-monde, coords pixel [x, y] origine haut-gauche (carte 10000x5571). Positions estimees a l'oeil — a affiner via ?pick=1. properties porte aussi l'image de detail (drill-down) : image/width/height, ex-regions.json fusionne.",
   "features": [
     {
       "type": "Feature",
       "properties": { "id": "seven_cities", "label": "Seven Cities", "image": "img/Map_Seven_Cities_detail.webp", "width": 1604, "height": 1021 },
-      "geometry": { "type": "Polygon", "coordinates": [[[1977, 347], [4006, 347], [4006, 1699], [1977, 1699], [1977, 347]]] }
+      "geometry": { "type": "Polygon", "coordinates": [[[2850, 500], [5776, 500], [5776, 2450], [2850, 2450], [2850, 500]]] }
     },
     {
       "type": "Feature",
       "properties": { "id": "genabackis", "label": "Genabackis", "image": "img/Genabackis_Grey_by_Joshua_Butler.webp", "width": 1000, "height": 1171 },
-      "geometry": { "type": "Polygon", "coordinates": [[[4508, 381], [5132, 381], [5132, 1647], [4508, 1647], [4508, 381]]] }
+      "geometry": { "type": "Polygon", "coordinates": [[[6499, 549], [7399, 549], [7399, 2375], [6499, 2375], [6499, 549]]] }
     },
     {
       "type": "Feature",
       "properties": { "id": "quon_tali", "label": "Quon Tali", "image": "img/Map_Quon_Tali.webp", "width": 1635, "height": 1067 },
-      "geometry": { "type": "Polygon", "coordinates": [[[3381, 1561], [4040, 1561], [4040, 1959], [3381, 1959], [3381, 1561]]] }
+      "geometry": { "type": "Polygon", "coordinates": [[[4875, 2251], [5825, 2251], [5825, 2824], [4875, 2824], [4875, 2251]]] }
     },
     {
       "type": "Feature",
       "properties": { "id": "lether", "label": "Empire of Lether", "image": "img/Map_Empire_of_Lether.webp", "width": 1719, "height": 1309 },
-      "geometry": { "type": "Polygon", "coordinates": [[[485, 2081], [2306, 2081], [2306, 3312], [485, 3312], [485, 2081]]] }
+      "geometry": { "type": "Polygon", "coordinates": [[[699, 3000], [3325, 3000], [3325, 4775], [699, 4775], [699, 3000]]] }
     },
     {
       "type": "Feature",
       "properties": { "id": "malaz_isle", "label": "Malaz Island", "image": "img/Map_Malaz_Isle.webp", "width": 1170, "height": 766 },
-      "geometry": { "type": "Polygon", "coordinates": [[[3901, 2012], [4092, 2012], [4092, 2150], [3901, 2150], [3901, 2012]]] }
+      "geometry": { "type": "Polygon", "coordinates": [[[5624, 2901], [5900, 2901], [5900, 3100], [5624, 3100], [5624, 2901]]] }
     }
   ]
 }

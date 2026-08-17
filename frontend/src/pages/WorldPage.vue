@@ -1,13 +1,13 @@
 <script setup>
 import { watch } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, RouterLink } from 'vue-router'
 import L from 'leaflet'
 import MainLayout from '../layouts/MainLayout.vue'
 import MapCanvas from '../components/MapCanvas.vue'
 import LayersPanel from '../components/LayersPanel.vue'
 import FiltersPanel from '../components/FiltersPanel.vue'
 import SearchBar from '../components/SearchBar.vue'
-import { WORLD, PARCHMENT, RELIEF, LAYERS } from '../constants/layers.js'
+import { WORLD, LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 import { renderers } from '../utils/leafletRenderers.js'
 import { usePicker } from '../composables/usePicker.js'
@@ -102,19 +102,18 @@ watch(() => store.filterText, (q) => {
   <MainLayout>
     <template #topbar>
       <h1>Le Monde de Malazan</h1>
+      <RouterLink class="backbtn" :to="{ name: 'globe' }">Globe</RouterLink>
       <span v-if="pickerActive" class="pickhint">
         Mode pointeur : clique pour copier les coordonnees pixel
       </span>
       <SearchBar />
     </template>
     <MapCanvas
-      :image-url="WORLD.image"
+      :tiles="WORLD.tiles"
       :width="WORLD.W"
       :height="WORLD.H"
-      :parchment-url="PARCHMENT"
-      :parchment-visible="store.parchmentVisible"
-      :relief-url="RELIEF"
-      :relief-visible="store.reliefVisible"
+      :min-zoom="-5"
+      :max-zoom="1"
       @ready="onMapReady"
     />
     <LayersPanel />

@@ -2,7 +2,7 @@
 import { LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 
-// Remplace L.control.layers : toggles des couches de donnees + calque parchemin.
+// Remplace L.control.layers : toggles des couches de donnees.
 const store = useMapStore()
 </script>
 
@@ -19,14 +19,6 @@ const store = useMapStore()
     <label>
       <input type="checkbox" v-model="store.regionsVisible">
       Zones regionales
-    </label>
-    <label>
-      <input type="checkbox" v-model="store.parchmentVisible">
-      Parchemin (terres)
-    </label>
-    <label>
-      <input type="checkbox" v-model="store.reliefVisible">
-      Relief (ombrage)
     </label>
   </div>
 </template>

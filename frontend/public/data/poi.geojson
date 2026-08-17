@@ -1,20 +1,20 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864). Positions estimees — affiner via #/?pick=1.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions estimees — affiner via #/?pick=1.",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3992, 2075] },
+      "geometry": { "type": "Point", "coordinates": [5755, 2992] },
       "properties": { "name": "Deadhouse", "type": "maison Azath", "continent": "Malaz Island", "book": "Gardens of the Moon", "placeholder": true }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [4810, 1195] },
+      "geometry": { "type": "Point", "coordinates": [6935, 1723] },
       "properties": { "name": "Finnest House", "type": "maison Azath", "continent": "Genabackis", "book": "Gardens of the Moon", "placeholder": true }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3520, 850] },
+      "geometry": { "type": "Point", "coordinates": [5075, 1225] },
       "properties": { "name": "Raraku", "type": "desert sacre", "continent": "Seven Cities", "book": "Deadhouse Gates", "placeholder": true }
     }
   ]

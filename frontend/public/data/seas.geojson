@@ -1,20 +1,20 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864), ancre du label. Positions estimees — affiner via #/?pick=1. kind: sea|ocean|strait. fontScale multiplie la taille, angle en degres.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571), ancre du label. Positions estimees — affiner via #/?pick=1. kind: sea|ocean|strait. fontScale multiplie la taille, angle en degres.",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3300, 1350] },
+      "geometry": { "type": "Point", "coordinates": [4758, 1946] },
       "properties": { "name": "Seeker's Deep", "kind": "ocean", "fontScale": 1.3, "placeholder": true }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3900, 1950] },
+      "geometry": { "type": "Point", "coordinates": [5623, 2811] },
       "properties": { "name": "Malaz Sea", "kind": "sea", "fontScale": 1, "placeholder": true }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [4350, 1150] },
+      "geometry": { "type": "Point", "coordinates": [6272, 1658] },
       "properties": { "name": "Meningalle Ocean", "kind": "ocean", "fontScale": 1.3, "placeholder": true }
     }
   ]

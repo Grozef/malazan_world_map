@@ -5,11 +5,15 @@ import 'leaflet/dist/leaflet.css'
 import { useLeafletMap } from '../composables/useLeafletMap.js'
 import { assetUrl } from '../api/dataSource.js'
 
-// Carte CRS.Simple generique sur une image (monde ou region).
-// L'instance Leaflet est transmise brute via l'evenement `ready` —
-// le parent ne doit pas la stocker dans un etat reactif.
+// Carte CRS.Simple generique sur une image (regions) ou sur une pyramide de
+// tuiles (carte-monde). L'instance Leaflet est transmise brute via l'evenement
+// `ready` — le parent ne doit pas la stocker dans un etat reactif.
 const props = defineProps({
-  imageUrl: { type: String, required: true },
+  // Fond image, exclusif avec `tiles`
+  imageUrl: { type: String, default: null },
+  // Fond tuile : { url: 'tiles/{z}/{x}/{y}.webp', minNative, maxNative }.
+  // Prioritaire sur imageUrl quand les deux sont fournis.
+  tiles: { type: Object, default: null },
   width: { type: Number, required: true },
   height: { type: Number, required: true },
   minZoom: { type: Number, default: -4 },
@@ -37,7 +41,21 @@ onMounted(() => {
   const syncZoom = () => { el.value.dataset.zoom = map.getZoom() }
   map.on('zoomend', syncZoom)
   syncZoom()
-  L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
+  if (props.tiles) {
+    // minZoom est INDISPENSABLE : GridLayer le met a 0 par defaut et _setView
+    // annule alors le niveau de tuile a tout zoom negatif (GridLayer.js:113/554).
+    // maxZoom reste indefini pour que Leaflet reechantillonne au-dela de maxNative.
+    L.tileLayer(assetUrl(props.tiles.url), {
+      tileSize: 256,
+      bounds,
+      noWrap: true,
+      minZoom: props.tiles.minNative,
+      minNativeZoom: props.tiles.minNative,
+      maxNativeZoom: props.tiles.maxNative,
+    }).addTo(map)
+  } else {
+    L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
+  }
   if (props.reliefUrl) {
     relief = L.imageOverlay(assetUrl(props.reliefUrl), bounds, {
       interactive: false, opacity: 0.35, zIndex: 1,

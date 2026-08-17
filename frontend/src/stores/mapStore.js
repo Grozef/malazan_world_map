@@ -11,8 +11,6 @@ export const useMapStore = defineStore('map', {
     layersLoading: {},
     regionsData: null,     // FeatureCollection des zones drill-down (hors LAYERS)
     regionsVisible: true,
-    parchmentVisible: true,
-    reliefVisible: true,
     filterText: '',
     activePropertyFilters: {}, // { champ: [valeurs] }
   }),

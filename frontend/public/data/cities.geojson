@@ -1,35 +1,35 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 6936x3864). Positions estimees a l'oeil depuis la carte source — affiner via index.html?pick=1. placeholder:true = a confirmer.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions estimees a l'oeil depuis la carte source — affiner via index.html?pick=1. placeholder:true = a confirmer.",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [4803, 1189] },
+      "geometry": { "type": "Point", "coordinates": [6925, 1714] },
       "properties": { "name": "Darujhistan", "continent": "Genabackis", "status": "cite-etat", "book": "Gardens of the Moon", "note": "Cite des Bleus Lumieres" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [4942, 1484] },
+      "geometry": { "type": "Point", "coordinates": [7125, 2140] },
       "properties": { "name": "Coral", "continent": "Genabackis", "status": "cite", "book": "Memories of Ice", "placeholder": true }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3641, 1040] },
+      "geometry": { "type": "Point", "coordinates": [5249, 1499] },
       "properties": { "name": "Aren", "continent": "Seven Cities", "status": "capitale provinciale", "book": "Deadhouse Gates" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3849, 1751] },
+      "geometry": { "type": "Point", "coordinates": [5549, 2525] },
       "properties": { "name": "Unta", "continent": "Quon Tali", "status": "capitale imperiale", "book": "Gardens of the Moon" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3988, 2070] },
+      "geometry": { "type": "Point", "coordinates": [5750, 2984] },
       "properties": { "name": "Malaz City", "continent": "Malaz Island", "status": "capitale historique", "book": "Gardens of the Moon" }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [815, 2393] },
+      "geometry": { "type": "Point", "coordinates": [1175, 3450] },
       "properties": { "name": "Letheras", "continent": "Lether", "status": "capitale imperiale", "book": "Midnight Tides" }
     }
   ]

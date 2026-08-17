@@ -2,17 +2,32 @@
 // Les fichiers data stockent les coordonnees en pixel [x, y] origine haut-gauche
 // (conversion au rendu via utils/coords.js).
 
+// Base : carte 2025 d'Adam Whitehead (genabackis/malazan-world-map-2025.png),
+// servie en pyramide de tuiles generee par tools/tile.mjs. Les dossiers portent
+// le zoom LEAFLET, donc negatifs ; minZoom doit etre passe a la couche, faute de
+// quoi GridLayer (defaut 0) n'affiche rien a ces zooms.
 export const WORLD = {
-  image: 'img/malazan-world-map-2019.png',
-  W: 6936,
-  H: 3864,
+  W: 10000,
+  H: 5571,
+  tiles: { url: 'tiles/{z}/{x}/{y}.webp', minNative: -6, maxNative: 0 },
 }
 
+// OBSOLETES depuis la bascule sur la base 2025 : ces deux calques sont des
+// masques cales sur la carte 2019 (6936x3864), et la 2025 peint deja terrain et
+// relief. Plus references par aucune page ; fichiers et tools/relief.mjs
+// conserves en attendant une decision de suppression.
 export const PARCHMENT = 'decor/land-parchment.webp'
-
-// Ombrage relief genere hors ligne (tools/relief.mjs, iteration A dome).
-// Ombres seules (RGBA noir), rendu en imageOverlay opacity 0.35 sous le parchemin.
 export const RELIEF = 'decor/relief-shade.webp'
+
+// Globe 3D (route #/globe) : texture equirectangulaire generee par
+// tools/globe-texture.mjs. La carte WORLD (ratio 1.795) y est centree dans une
+// toile 2:1 par replication des pixels de bord, d'ou padX a appliquer aux
+// coordonnees pixel avant projection sur la sphere.
+export const GLOBE = {
+  texture: 'decor/globe-texture.webp',
+  W: WORLD.H * 2,                       // 11142 px de large en equirectangulaire
+  padX: (WORLD.H * 2 - WORLD.W) / 2,    // 571 px ajoutes de chaque cote
+}
 
 // kind : point | label | line | polygon (voir utils/leafletRenderers.js)
 // filterable : la couche alimente les facettes de FiltersPanel
