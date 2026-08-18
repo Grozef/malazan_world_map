@@ -8,3 +8,13 @@ Thumbs.db
 SESSION.md
 CONTEXT.md
 DECISIONS.md
+
+# Claude context (reorg 2026-07-17)
+documentation_claude/SESSION.md
+documentation_claude/CONTEXT.md
+documentation_claude/DECISIONS.md
+
+# Claude context files
+docs/documentation_claude/SESSION.md
+docs/documentation_claude/CONTEXT.md
+docs/documentation_claude/DECISIONS.md
