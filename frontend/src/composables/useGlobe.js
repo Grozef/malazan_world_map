@@ -61,11 +61,15 @@ export function useGlobe() {
   let frame = 0
   let observer = null
   let detachPointer = null
+  let globeMaterial = null
+  let currentTex = null
   const disposables = []
 
-  // opts : { el, textureUrl, startAt: [x,y,z], onReady, onPoint }
+  // opts : { el, startAt: [x,y,z], onPoint }
+  // La texture n'est PAS passee ici : son choix depend de MAX_TEXTURE_SIZE, qui
+  // n'existe qu'une fois le contexte cree. L'appelant enchaine sur setTexture().
   // onPoint(uv | null, event) est appele au survol et au clic (clic = drag < 5px).
-  function create({ el, textureUrl, startAt, onReady, onPoint }) {
+  function create({ el, startAt, onPoint }) {
     renderer = new WebGLRenderer({ antialias: true, alpha: false })
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     renderer.setSize(el.clientWidth, el.clientHeight)
@@ -80,6 +84,7 @@ export function useGlobe() {
     const globe = new Mesh(geometry, material)
     scene.add(globe)
     disposables.push(geometry, material)
+    globeMaterial = material
 
     // Coque large : l'anneau visible doit couvrir assez d'ecran pour degrader.
     const atmoGeo = new SphereGeometry(R * 1.18, 64, 48)
@@ -125,22 +130,6 @@ export function useGlobe() {
     controls.autoRotate = true
     controls.autoRotateSpeed = 0.35
     controls.addEventListener('start', () => { controls.autoRotate = false })
-
-    // La texture arrive apres coup : si la page a ete quittee entre-temps,
-    // destroy() a deja vide `disposables` et la texture ne serait jamais
-    // liberee. On la jette immediatement dans ce cas.
-    new TextureLoader().load(textureUrl, (tex) => {
-      if (!renderer) {
-        tex.dispose()
-        return
-      }
-      tex.colorSpace = SRGBColorSpace
-      tex.anisotropy = renderer.capabilities.getMaxAnisotropy()
-      material.map = tex
-      material.needsUpdate = true
-      disposables.push(tex)
-      onReady?.()
-    })
 
     // --- pointage ---
     const raycaster = new Raycaster()
@@ -203,6 +192,38 @@ export function useGlobe() {
     }
   }
 
+  // Plafond de texture du contexte REEL : 4096 sur beaucoup de GPU mobiles,
+  // 16384 sur un ANGLE/D3D11 de bureau. Sert a choisir le millesime de texture.
+  function maxTextureSize() {
+    return renderer?.capabilities.maxTextureSize ?? 0
+  }
+
+  // Pose ou remplace la texture du globe. Le callback arrive apres coup : si la
+  // page a ete quittee entre-temps, destroy() a deja vide `disposables` et la
+  // texture ne serait jamais liberee — on la jette immediatement dans ce cas.
+  // A la bascule de fond, l'ancienne texture sort de `disposables` avant d'etre
+  // liberee, sinon destroy() la libererait une seconde fois.
+  function setTexture(url, onReady) {
+    new TextureLoader().load(url, (tex) => {
+      if (!renderer || !globeMaterial) {
+        tex.dispose()
+        return
+      }
+      tex.colorSpace = SRGBColorSpace
+      tex.anisotropy = renderer.capabilities.getMaxAnisotropy()
+      globeMaterial.map = tex
+      globeMaterial.needsUpdate = true
+      if (currentTex) {
+        const i = disposables.indexOf(currentTex)
+        if (i !== -1) disposables.splice(i, 1)
+        currentTex.dispose()
+      }
+      currentTex = tex
+      disposables.push(tex)
+      onReady?.()
+    })
+  }
+
   function destroy() {
     cancelAnimationFrame(frame)
     detachPointer?.()
@@ -219,7 +240,9 @@ export function useGlobe() {
     renderer?.dispose()
     renderer = null
     controls = null
+    globeMaterial = null
+    currentTex = null
   }
 
-  return { create, destroy }
+  return { create, destroy, setTexture, maxTextureSize }
 }

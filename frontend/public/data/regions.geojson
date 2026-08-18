@@ -4,27 +4,27 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "id": "seven_cities", "label": "Seven Cities", "image": "img/Map_Seven_Cities_detail.webp", "width": 1604, "height": 1021 },
+      "properties": { "id": "seven_cities", "label": "Seven Cities", "image": "img/Map_Seven_Cities_detail.webp", "width": 1604, "height": 1021, "tiles": { "url": "tiles/regions/seven_cities/{z}/{x}/{y}.webp", "minNative": -3, "maxNative": 0 } },
       "geometry": { "type": "Polygon", "coordinates": [[[2850, 500], [5776, 500], [5776, 2450], [2850, 2450], [2850, 500]]] }
     },
     {
       "type": "Feature",
-      "properties": { "id": "genabackis", "label": "Genabackis", "image": "img/Genabackis_Grey_by_Joshua_Butler.webp", "width": 1000, "height": 1171 },
+      "properties": { "id": "genabackis", "label": "Genabackis", "image": "img/Genabackis_Grey_by_Joshua_Butler.webp", "width": 1000, "height": 1171, "tiles": { "url": "tiles/regions/genabackis/{z}/{x}/{y}.webp", "minNative": -3, "maxNative": 0 } },
       "geometry": { "type": "Polygon", "coordinates": [[[6499, 549], [7399, 549], [7399, 2375], [6499, 2375], [6499, 549]]] }
     },
     {
       "type": "Feature",
-      "properties": { "id": "quon_tali", "label": "Quon Tali", "image": "img/Map_Quon_Tali.webp", "width": 1635, "height": 1067 },
+      "properties": { "id": "quon_tali", "label": "Quon Tali", "image": "img/Map_Quon_Tali.webp", "width": 1635, "height": 1067, "tiles": { "url": "tiles/regions/quon_tali/{z}/{x}/{y}.webp", "minNative": -3, "maxNative": 0 } },
       "geometry": { "type": "Polygon", "coordinates": [[[4875, 2251], [5825, 2251], [5825, 2824], [4875, 2824], [4875, 2251]]] }
     },
     {
       "type": "Feature",
-      "properties": { "id": "lether", "label": "Empire of Lether", "image": "img/Map_Empire_of_Lether.webp", "width": 1719, "height": 1309 },
+      "properties": { "id": "lether", "label": "Empire of Lether", "image": "img/Map_Empire_of_Lether.webp", "width": 1719, "height": 1309, "tiles": { "url": "tiles/regions/lether/{z}/{x}/{y}.webp", "minNative": -3, "maxNative": 0 } },
       "geometry": { "type": "Polygon", "coordinates": [[[699, 3000], [3325, 3000], [3325, 4775], [699, 4775], [699, 3000]]] }
     },
     {
       "type": "Feature",
-      "properties": { "id": "malaz_isle", "label": "Malaz Island", "image": "img/Map_Malaz_Isle.webp", "width": 1170, "height": 766 },
+      "properties": { "id": "malaz_isle", "label": "Malaz Island", "image": "img/Map_Malaz_Isle.webp", "width": 1170, "height": 766, "tiles": { "url": "tiles/regions/malaz_isle/{z}/{x}/{y}.webp", "minNative": -3, "maxNative": 0 } },
       "geometry": { "type": "Polygon", "coordinates": [[[5624, 2901], [5900, 2901], [5900, 3100], [5624, 3100], [5624, 2901]]] }
     }
   ]

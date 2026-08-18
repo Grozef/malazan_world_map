@@ -3,6 +3,7 @@ import { computed, onMounted } from 'vue'
 import { useRouter, RouterLink } from 'vue-router'
 import MainLayout from '../layouts/MainLayout.vue'
 import GlobeCanvas from '../components/GlobeCanvas.vue'
+import BasePicker from '../components/BasePicker.vue'
 import { useMapStore } from '../stores/mapStore.js'
 
 // Vue globe : entree de navigation. Les memes zones que le drill-down de la
@@ -30,6 +31,7 @@ function onPick(id) {
     <template #topbar>
       <h1>Le Monde de Malazan</h1>
       <RouterLink class="backbtn" :to="{ name: 'world' }">Carte plate</RouterLink>
+      <BasePicker />
     </template>
     <GlobeCanvas :regions="regions" @pick="onPick" />
   </MainLayout>

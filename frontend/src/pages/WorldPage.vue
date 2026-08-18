@@ -7,6 +7,7 @@ import MapCanvas from '../components/MapCanvas.vue'
 import LayersPanel from '../components/LayersPanel.vue'
 import FiltersPanel from '../components/FiltersPanel.vue'
 import SearchBar from '../components/SearchBar.vue'
+import BasePicker from '../components/BasePicker.vue'
 import { WORLD, LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 import { renderers } from '../utils/leafletRenderers.js'
@@ -103,13 +104,14 @@ watch(() => store.filterText, (q) => {
     <template #topbar>
       <h1>Le Monde de Malazan</h1>
       <RouterLink class="backbtn" :to="{ name: 'globe' }">Globe</RouterLink>
+      <BasePicker />
       <span v-if="pickerActive" class="pickhint">
         Mode pointeur : clique pour copier les coordonnees pixel
       </span>
       <SearchBar />
     </template>
     <MapCanvas
-      :tiles="WORLD.tiles"
+      :tiles="store.base.tiles"
       :width="WORLD.W"
       :height="WORLD.H"
       :min-zoom="-5"

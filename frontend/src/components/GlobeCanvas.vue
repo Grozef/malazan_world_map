@@ -1,8 +1,9 @@
 <script setup>
-import { ref, shallowRef, onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
+import { ref, shallowRef, watch, onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
 import { useGlobe } from '../composables/useGlobe.js'
 import { assetUrl } from '../api/dataSource.js'
-import { WORLD, GLOBE, CREDIT } from '../constants/layers.js'
+import { WORLD, GLOBE, CREDIT, globeTexture } from '../constants/layers.js'
+import { useMapStore } from '../stores/mapStore.js'
 import { pxToSphere, uvToPx } from '../utils/coords.js'
 
 // Globe 3D de navigation : la carte-monde plaquee sur une sphere. Le survol
@@ -18,7 +19,8 @@ const el = useTemplateRef('el')
 const ready = ref(false)
 const failed = ref(false)
 const hover = shallowRef(null) // { label, cx, cy }
-const { create, destroy } = useGlobe()
+const store = useMapStore()
+const { create, destroy, setTexture, maxTextureSize } = useGlobe()
 
 // Ray casting : nombre impair de croisements du rayon horizontal = dedans.
 function inRing(ring, x, y) {
@@ -46,17 +48,18 @@ onMounted(() => {
   // Camera cadree sur le centre de la carte au chargement (Quon Tali / Sept Cites)
   const dir = pxToSphere(WORLD.W / 2, WORLD.H / 2, GLOBE.W, WORLD.H, GLOBE.padX, 2.9)
   try {
-    create({
-      el: el.value,
-      textureUrl: assetUrl(GLOBE.texture),
-      startAt: dir,
-      onReady: () => { ready.value = true },
-      onPoint,
-    })
+    create({ el: el.value, startAt: dir, onPoint })
+    setTexture(assetUrl(globeTexture(store.baseId, maxTextureSize())), () => { ready.value = true })
   } catch (err) {
     console.warn('globe 3D indisponible :', err)
     failed.value = true
   }
+})
+
+// Bascule de fond : seule la texture change, le contexte WebGL est conserve.
+watch(() => store.baseId, (id) => {
+  if (failed.value) return
+  setTexture(assetUrl(globeTexture(id, maxTextureSize())))
 })
 
 onBeforeUnmount(destroy)

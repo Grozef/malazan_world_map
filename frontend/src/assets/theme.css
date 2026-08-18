@@ -79,9 +79,6 @@ html, body, #app {
   background: #1b1712;
 }
 
-/* Calque parchemin terre : teinte multiplicative, preserve les details sous-jacents */
-.parchment-land { mix-blend-mode: multiply; }
-
 /* --- Habillage carte : cadre decoratif + rose des vents (UI chrome, ne bouge pas) --- */
 .map-chrome {
   position: absolute;
@@ -346,6 +343,18 @@ html, body, #app {
   text-decoration: none;
 }
 .globe-credit:hover { text-decoration: underline; }
+
+/* Selecteur de fond (topbar, globe et carte plate) */
+.basepicker {
+  font-family: "Cinzel", serif;
+  font-size: .85rem;
+  color: var(--parch);
+  padding: 5px 8px;
+  border: 1px solid var(--parch-dark);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .3);
+}
+.basepicker option { color: #1a140c; background: var(--parch); }
 
 /* Bouton retour (RegionPage) */
 .backbtn {

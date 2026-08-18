@@ -1,6 +1,11 @@
-// Texture equirectangulaire pour le globe 3D (route #/globe).
-//   node tools/globe-texture.mjs            # -> decor/globe-texture.webp (4096x2048)
+// Texture equirectangulaire pour le globe 3D (route #/).
+//   node tools/globe-texture.mjs                          # -> decor/globe-2025-4096.webp
 //   node tools/globe-texture.mjs --size=8192
+//   node tools/globe-texture.mjs --src=genabackis/world-of-the-malazan-empire.png --base=2020
+// Deux tailles sont publiees par base : le client charge la 8192 quand le GPU
+// l'accepte (MAX_TEXTURE_SIZE >= 8192), la 4096 sinon — beaucoup de GPU mobiles
+// plafonnent a 4096 et refusent purement la texture au-dela.
+// --src est relatif a la racine du depot.
 // La carte 2025 fait 10000x5571 = ratio 1.795, alors qu'une projection
 // equirectangulaire plaquee sur une sphere veut 2:1. On complete donc a
 // 11142 px de large (571 px de chaque cote) par REPLICATION du pixel de bord
@@ -14,8 +19,6 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
-const SRC = path.join(ROOT, 'genabackis/malazan-world-map-2025.png')
-const OUT = path.join(ROOT, 'frontend/public/decor/globe-texture.webp')
 
 const args = Object.fromEntries(
   process.argv.slice(2).map(a => {
@@ -24,6 +27,8 @@ const args = Object.fromEntries(
   })
 )
 const size = Number(args.size) || 4096 // largeur finale (hauteur = size / 2)
+const SRC = path.join(ROOT, args.src || 'genabackis/malazan-world-map-2025.png')
+const OUT = path.join(ROOT, 'frontend/public/decor', `globe-${args.base || '2025'}-${size}.webp`)
 
 const meta = await sharp(SRC).metadata()
 const targetW = meta.height * 2
@@ -36,6 +41,7 @@ if (pad < 0) throw new Error(`source deja plus large que 2:1 (${meta.width}x${me
 // pour le globe seul — la carte plate le conserve.
 const OCEAN = { r: 196, g: 223, b: 255 } // echantillonne en (3000,200) et (200,3000)
 // Cartouche 2025 mesure a ~x 60-1430 / y 50-1030, cale dans le coin haut-gauche.
+// La 2020 porte le meme cartouche au meme endroit (mesure ~x 27-1416 / y 22-971).
 const TITLE_BOX = { left: 0, top: 0, width: 1500, height: 1080 }
 
 // TROIS passes obligatoires. Dans UN seul pipeline sharp l'ordre des operations

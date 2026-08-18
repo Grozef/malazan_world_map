@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { LAYERS, FILTER_FIELDS } from '../constants/layers.js'
+import { LAYERS, FILTER_FIELDS, BASES, DEFAULT_BASE } from '../constants/layers.js'
 import { fetchLayer, fetchRegions } from '../api/dataSource.js'
 
 // Etat des couches de donnees + filtres (transposition du pattern lab_maps).
@@ -13,9 +13,14 @@ export const useMapStore = defineStore('map', {
     regionsVisible: true,
     filterText: '',
     activePropertyFilters: {}, // { champ: [valeurs] }
+    baseId: DEFAULT_BASE,      // fond affiche, commun au globe et a la carte plate
   }),
 
   getters: {
+    base(state) {
+      return BASES.find(b => b.id === state.baseId) ?? BASES[0]
+    },
+
     // Facettes filtrables derivees des properties des couches visibles et
     // filterable, restreintes a FILTER_FIELDS. Deduplication insensible a la
     // casse (Map lowercase -> canonique).
@@ -110,6 +115,10 @@ export const useMapStore = defineStore('map', {
 
     setFilterText(text) {
       this.filterText = text
+    },
+
+    setBase(id) {
+      if (BASES.some(b => b.id === id)) this.baseId = id
     },
 
     togglePropertyFilter(key, value) {

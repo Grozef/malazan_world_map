@@ -5,8 +5,10 @@ import MainLayout from '../layouts/MainLayout.vue'
 import MapCanvas from '../components/MapCanvas.vue'
 import { fetchRegions } from '../api/dataSource.js'
 
-// Carte regionale : l'image de detail est declaree dans les properties de la
-// zone (regions.geojson fusionne : id, label, image, width, height).
+// Carte regionale : le detail est declare dans les properties de la zone
+// (regions.geojson : id, label, image, width, height, tiles). La pyramide de
+// tuiles prime ; `image` reste la source d'origine et le repli si `tiles`
+// manque sur une region pas encore tuilee.
 const route = useRoute()
 const region = ref(null)
 const error = ref('')
@@ -34,9 +36,11 @@ fetchRegions()
     </template>
     <MapCanvas
       v-if="region"
+      :tiles="region.tiles"
       :image-url="region.image"
       :width="region.width"
       :height="region.height"
+      :min-zoom="region.tiles ? region.tiles.minNative : -4"
       :max-zoom="3"
     />
   </MainLayout>

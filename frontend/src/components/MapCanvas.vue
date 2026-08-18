@@ -19,77 +19,53 @@ const props = defineProps({
   height: { type: Number, required: true },
   minZoom: { type: Number, default: -4 },
   maxZoom: { type: Number, default: 2 },
-  // Surcouche parchemin terre (mix-blend-mode:multiply via .parchment-land),
-  // alpha = masque des terres, ocean transparent. Null = pas de surcouche.
-  parchmentUrl: { type: String, default: null },
-  parchmentVisible: { type: Boolean, default: true },
-  // Ombrage relief (RGBA ombres seules) — ajoute SOUS le parchemin pour que
-  // le multiply du parchemin teinte aussi les ombres. Null = pas de relief.
-  reliefUrl: { type: String, default: null },
-  reliefVisible: { type: Boolean, default: true },
 })
 const emit = defineEmits(['ready'])
 
 const el = useTemplateRef('el')
 const { create, destroy, getMap } = useLeafletMap()
-let parchment = null
-let relief = null
+let base = null // couche de fond courante (tuiles ou image)
+
+function makeBase(map) {
+  const bounds = [[0, 0], [props.height, props.width]]
+  const attribution = `<a href="${CREDIT.url}" target="_blank" rel="noopener">${CREDIT.label}</a>`
+  if (!props.tiles) return L.imageOverlay(assetUrl(props.imageUrl), bounds, { attribution })
+  // minZoom est INDISPENSABLE : GridLayer le met a 0 par defaut et _setView
+  // annule alors le niveau de tuile a tout zoom negatif (GridLayer.js:113/554).
+  // maxZoom reste indefini pour que Leaflet reechantillonne au-dela de maxNative.
+  return L.tileLayer(assetUrl(props.tiles.url), {
+    tileSize: 256,
+    bounds,
+    noWrap: true,
+    attribution,
+    minZoom: props.tiles.minNative,
+    minNativeZoom: props.tiles.minNative,
+    maxNativeZoom: props.tiles.maxNative,
+  })
+}
 
 onMounted(() => {
   const map = create(el.value, props)
-  const bounds = [[0, 0], [props.height, props.width]]
   // Niveau de zoom expose au CSS (masquage des labels mers au zoom minimal)
   const syncZoom = () => { el.value.dataset.zoom = map.getZoom() }
   map.on('zoomend', syncZoom)
   syncZoom()
-  if (props.tiles) {
-    // minZoom est INDISPENSABLE : GridLayer le met a 0 par defaut et _setView
-    // annule alors le niveau de tuile a tout zoom negatif (GridLayer.js:113/554).
-    // maxZoom reste indefini pour que Leaflet reechantillonne au-dela de maxNative.
-    L.tileLayer(assetUrl(props.tiles.url), {
-      tileSize: 256,
-      bounds,
-      noWrap: true,
-      attribution: `<a href="${CREDIT.url}" target="_blank" rel="noopener">${CREDIT.label}</a>`,
-      minZoom: props.tiles.minNative,
-      minNativeZoom: props.tiles.minNative,
-      maxNativeZoom: props.tiles.maxNative,
-    }).addTo(map)
-  } else {
-    L.imageOverlay(assetUrl(props.imageUrl), bounds).addTo(map)
-  }
-  if (props.reliefUrl) {
-    relief = L.imageOverlay(assetUrl(props.reliefUrl), bounds, {
-      interactive: false, opacity: 0.35, zIndex: 1,
-    })
-    if (props.reliefVisible) relief.addTo(map)
-  }
-  if (props.parchmentUrl) {
-    parchment = L.imageOverlay(assetUrl(props.parchmentUrl), bounds, {
-      className: 'parchment-land', interactive: false, opacity: 0.92, zIndex: 2,
-    })
-    if (props.parchmentVisible) parchment.addTo(map)
-  }
+  base = makeBase(map).addTo(map)
   emit('ready', map)
 })
 
-watch(() => props.parchmentVisible, (on) => {
+// Changement de fond : on remplace la couche sans toucher a la carte, donc sans
+// perdre le zoom, le centre ni les couches de donnees deja posees dessus.
+watch(() => props.tiles?.url ?? props.imageUrl, () => {
   const map = getMap()
-  if (!parchment || !map) return
-  if (on) parchment.addTo(map)
-  else parchment.remove()
-})
-
-watch(() => props.reliefVisible, (on) => {
-  const map = getMap()
-  if (!relief || !map) return
-  if (on) relief.addTo(map)
-  else relief.remove()
+  if (!map || !base) return
+  base.remove()
+  base = makeBase(map).addTo(map)
+  base.bringToBack()
 })
 
 onBeforeUnmount(() => {
-  parchment = null
-  relief = null
+  base = null
   destroy()
 })
 </script>

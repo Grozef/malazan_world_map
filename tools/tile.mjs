@@ -1,6 +1,9 @@
-// Pyramide de tuiles de la carte-monde 2025 pour Leaflet CRS.Simple.
-//   node tools/tile.mjs                 # -> frontend/public/tiles/{z}/{x}/{y}.webp
+// Pyramide de tuiles pour Leaflet CRS.Simple (carte-monde et cartes annexes).
+//   node tools/tile.mjs                                    # base 2025 -> tiles/2025
+//   node tools/tile.mjs --src=genabackis/world-of-the-malazan-empire.png --out=tiles/2020
+//   node tools/tile.mjs --src=frontend/public/img/Map_Quon_Tali.webp --out=tiles/regions/quon_tali
 //   node tools/tile.mjs --quality=75
+// --src est relatif a la racine du depot, --out a frontend/public/.
 //
 // GEOMETRIE (derivee, pas devinee — leaflet/src/geo/crs/CRS.Simple.js:18
 // transformation (1, 0, -1, 0), projection LonLat) :
@@ -17,8 +20,6 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
-const SRC = path.join(ROOT, 'genabackis/malazan-world-map-2025.png')
-const OUT = path.join(ROOT, 'frontend/public/tiles')
 const TILE = 256
 
 const args = Object.fromEntries(
@@ -28,6 +29,8 @@ const args = Object.fromEntries(
   })
 )
 const quality = Number(args.quality) || 80
+const SRC = path.join(ROOT, args.src || 'genabackis/malazan-world-map-2025.png')
+const OUT = path.join(ROOT, 'frontend/public', args.out || 'tiles/2025')
 
 const meta = await sharp(SRC).metadata()
 const W = meta.width
