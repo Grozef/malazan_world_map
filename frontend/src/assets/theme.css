@@ -344,6 +344,41 @@ html, body, #app {
 }
 .globe-credit:hover { text-decoration: underline; }
 
+/* Panneau du mode dev d'authoring (#/carte?pick=1) */
+.authoring {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1001;
+  width: 290px;
+  padding: 10px 12px;
+  color: var(--parch);
+  background: rgba(10, 8, 6, .88);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  font-size: .82rem;
+}
+.authoring-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.authoring select,
+.authoring input,
+.authoring button {
+  font: inherit;
+  color: var(--parch);
+  background: rgba(0, 0, 0, .35);
+  border: 1px solid var(--parch-dark);
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+.authoring select option { color: #1a140c; background: var(--parch); }
+.authoring button { cursor: pointer; }
+.authoring button:disabled { opacity: .4; cursor: default; }
+.authoring-hint { margin: 8px 0 0; color: var(--parch-dark); line-height: 1.35; }
+.authoring-dirty { display: block; color: #e0a955; }
+.authoring-edit { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.authoring-edit label { display: flex; gap: 6px; align-items: center; }
+.authoring-edit input { flex: 1; min-width: 0; }
+.authoring-edit code { color: var(--parch-dark); }
+
 /* Selecteur de fond (topbar, globe et carte plate) */
 .basepicker {
   font-family: "Cinzel", serif;

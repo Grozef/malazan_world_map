@@ -11,12 +11,13 @@ import BasePicker from '../components/BasePicker.vue'
 import { WORLD, LAYERS } from '../constants/layers.js'
 import { useMapStore } from '../stores/mapStore.js'
 import { renderers } from '../utils/leafletRenderers.js'
-import { usePicker } from '../composables/usePicker.js'
+import AuthoringPanel from '../components/AuthoringPanel.vue'
+import { useAuthoring } from '../composables/useAuthoring.js'
 import { px } from '../utils/coords.js'
 
 const store = useMapStore()
 const router = useRouter()
-const { pickerActive, attachPicker } = usePicker(WORLD.H)
+const authoring = useAuthoring(WORLD.H)
 
 // Objets Leaflet hors reactivite Vue (closures uniquement).
 let map = null
@@ -48,7 +49,7 @@ function buildRegions(fc) {
 
 function onMapReady(m) {
   map = m
-  attachPicker(m)
+  authoring.attach(m)
   for (const layer of LAYERS) {
     groups.set(layer.id, L.layerGroup())
     if (store.layersVisible[layer.id]) {
@@ -105,9 +106,7 @@ watch(() => store.filterText, (q) => {
       <h1>Le Monde de Malazan</h1>
       <RouterLink class="backbtn" :to="{ name: 'globe' }">Globe</RouterLink>
       <BasePicker />
-      <span v-if="pickerActive" class="pickhint">
-        Mode pointeur : clique pour copier les coordonnees pixel
-      </span>
+      <span v-if="authoring.active.value" class="pickhint">Mode authoring</span>
       <SearchBar />
     </template>
     <MapCanvas
@@ -120,5 +119,6 @@ watch(() => store.filterText, (q) => {
     />
     <LayersPanel />
     <FiltersPanel />
+    <AuthoringPanel v-if="authoring.active.value" :authoring="authoring" />
   </MainLayout>
 </template>
