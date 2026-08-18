@@ -316,6 +316,37 @@ html, body, #app {
   pointer-events: none;
 }
 
+/* Attribution Leaflet : le controle est ancre au bord du conteneur, donc sous le
+   liseré du cadre et sous la rose des vents (bottom/right 16px, 118px de cote).
+   Marge droite = 16 + 118 + 10 pour la degager. */
+/* Selecteur a 2 classes : leaflet.css impose son fond blanc a cette specificite */
+.leaflet-container .leaflet-control-attribution {
+  margin: 0 144px 10px 0;
+  padding: 1px 8px;
+  font: inherit;
+  font-size: .72rem;
+  color: var(--parch-dark);
+  background: rgba(10, 8, 6, .55);
+  border-radius: 3px;
+}
+.leaflet-container .leaflet-control-attribution a { color: var(--parch-dark); }
+
+/* Credit de l'oeuvre source, coin bas-droit du globe (pendant de l'attribution
+   Leaflet de la carte plate) */
+.globe-credit {
+  position: absolute;
+  right: 144px;   /* meme degagement de la rose des vents que l'attribution Leaflet */
+  bottom: 10px;
+  z-index: 1001;
+  padding: 1px 8px;
+  font-size: .72rem;
+  color: var(--parch-dark);
+  background: rgba(10, 8, 6, .55);
+  border-radius: 3px;
+  text-decoration: none;
+}
+.globe-credit:hover { text-decoration: underline; }
+
 /* Bouton retour (RegionPage) */
 .backbtn {
   font-family: "Cinzel", serif;

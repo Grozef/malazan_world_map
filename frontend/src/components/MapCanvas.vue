@@ -4,6 +4,7 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useLeafletMap } from '../composables/useLeafletMap.js'
 import { assetUrl } from '../api/dataSource.js'
+import { CREDIT } from '../constants/layers.js'
 
 // Carte CRS.Simple generique sur une image (regions) ou sur une pyramide de
 // tuiles (carte-monde). L'instance Leaflet est transmise brute via l'evenement
@@ -49,6 +50,7 @@ onMounted(() => {
       tileSize: 256,
       bounds,
       noWrap: true,
+      attribution: `<a href="${CREDIT.url}" target="_blank" rel="noopener">${CREDIT.label}</a>`,
       minZoom: props.tiles.minNative,
       minNativeZoom: props.tiles.minNative,
       maxNativeZoom: props.tiles.maxNative,

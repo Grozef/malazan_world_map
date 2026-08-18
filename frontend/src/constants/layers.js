@@ -12,6 +12,13 @@ export const WORLD = {
   tiles: { url: 'tiles/{z}/{x}/{y}.webp', minNative: -6, maxNative: 0 },
 }
 
+// Credit de l'oeuvre source, affiche sur les deux vues qui la rendent (globe et
+// carte plate). Decision D3 du 2026-08-18.
+export const CREDIT = {
+  label: 'Carte : Adam Whitehead',
+  url: 'https://atlasoficeandfireblog.wordpress.com/category/malazan-atlas/',
+}
+
 // OBSOLETES depuis la bascule sur la base 2025 : ces deux calques sont des
 // masques cales sur la carte 2019 (6936x3864), et la 2025 peint deja terrain et
 // relief. Plus references par aucune page ; fichiers et tools/relief.mjs

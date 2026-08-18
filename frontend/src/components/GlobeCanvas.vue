@@ -2,7 +2,7 @@
 import { ref, shallowRef, onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
 import { useGlobe } from '../composables/useGlobe.js'
 import { assetUrl } from '../api/dataSource.js'
-import { WORLD, GLOBE } from '../constants/layers.js'
+import { WORLD, GLOBE, CREDIT } from '../constants/layers.js'
 import { pxToSphere, uvToPx } from '../utils/coords.js'
 
 // Globe 3D de navigation : la carte-monde plaquee sur une sphere. Le survol
@@ -73,5 +73,6 @@ onBeforeUnmount(destroy)
       class="globe-tip"
       :style="{ left: hover.cx + 14 + 'px', top: hover.cy - 10 + 'px' }"
     >{{ hover.label }}</div>
+    <a class="globe-credit" :href="CREDIT.url" target="_blank" rel="noopener">{{ CREDIT.label }}</a>
   </div>
 </template>
