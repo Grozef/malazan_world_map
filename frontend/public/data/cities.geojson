@@ -1,36 +1,200 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions estimees a l'oeil depuis la carte source — affiner via index.html?pick=1. placeholder:true = a confirmer.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions RELEVEES sur la carte source et confirmees par le symbole detecte au meme endroit (voir tools/cities.mjs). Les placeholders poses a l oeil etaient faux de 54 a 492 px. /!\\ `status` est LU par utils/citySymbols.js (table PAR_STATUT) autant qu'affiche : ses valeurs anglaises doivent rester identiques des deux cotes.",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [6925, 1714] },
-      "properties": { "name": "Darujhistan", "continent": "Genabackis", "status": "cite-etat", "book": "Gardens of the Moon", "note": "Cite des Bleus Lumieres" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6781,
+          1527
+        ]
+      },
+      "properties": {
+        "name": "Darujhistan",
+        "continent": "Genabackis",
+        "status": "city-state",
+        "book": "Gardens of the Moon",
+        "note": "City of Blue Fire",
+        "id": "darujhistan",
+        "map": {
+          "image": "img/darujhistan.webp",
+          "width": 2103,
+          "height": 1578,
+          "tiles": {
+            "url": "tiles/villes/darujhistan/{z}/{x}/{y}.webp",
+            "minNative": -4,
+            "maxNative": 0
+          }
+        }
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [7125, 2140] },
-      "properties": { "name": "Coral", "continent": "Genabackis", "status": "cite", "book": "Memories of Ice", "placeholder": true }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7064,
+          1652
+        ]
+      },
+      "properties": {
+        "name": "Coral",
+        "continent": "Genabackis",
+        "status": "city",
+        "book": "Memories of Ice",
+        "id": "black-coral-and-environs",
+        "map": {
+          "image": "img/black-coral-and-environs.webp",
+          "width": 2000,
+          "height": 1296,
+          "tiles": {
+            "url": "tiles/villes/black-coral-and-environs/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [5249, 1499] },
-      "properties": { "name": "Aren", "continent": "Seven Cities", "status": "capitale provinciale", "book": "Deadhouse Gates" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7100,
+          1545
+        ]
+      },
+      "properties": {
+        "name": "Capustan",
+        "continent": "Genabackis",
+        "status": "city",
+        "book": "Memories of Ice",
+        "id": "capustan-eastern-genabackis",
+        "map": {
+          "image": "img/capustan-eastern-genabackis.webp",
+          "width": 1684,
+          "height": 1224,
+          "tiles": {
+            "url": "tiles/annexes/capustan-eastern-genabackis/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [5549, 2525] },
-      "properties": { "name": "Unta", "continent": "Quon Tali", "status": "capitale imperiale", "book": "Gardens of the Moon" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5287,
+          1538
+        ]
+      },
+      "properties": {
+        "name": "Aren",
+        "continent": "Seven Cities",
+        "status": "provincial capital",
+        "book": "Deadhouse Gates"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [5750, 2984] },
-      "properties": { "name": "Malaz City", "continent": "Malaz Island", "status": "capitale historique", "book": "Gardens of the Moon" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5572,
+          2576
+        ]
+      },
+      "properties": {
+        "name": "Unta",
+        "continent": "Quon Tali",
+        "status": "imperial capital",
+        "book": "Gardens of the Moon"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1175, 3450] },
-      "properties": { "name": "Letheras", "continent": "Lether", "status": "capitale imperiale", "book": "Midnight Tides" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5211,
+          2665
+        ]
+      },
+      "properties": {
+        "name": "Li Heng",
+        "continent": "Quon Tali",
+        "status": "city-state",
+        "id": "li-heng",
+        "map": {
+          "image": "img/li-heng.webp",
+          "width": 2000,
+          "height": 1320,
+          "tiles": {
+            "url": "tiles/villes/li-heng/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5615,
+          2835
+        ]
+      },
+      "properties": {
+        "name": "Malaz City",
+        "continent": "Malaz Island",
+        "status": "historic capital",
+        "book": "Gardens of the Moon",
+        "id": "malaz-city",
+        "map": {
+          "image": "img/malaz-city.webp",
+          "width": 2000,
+          "height": 1464,
+          "tiles": {
+            "url": "tiles/villes/malaz-city/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1203,
+          3509
+        ]
+      },
+      "properties": {
+        "name": "Letheras",
+        "continent": "Lether",
+        "status": "imperial capital",
+        "book": "Midnight Tides",
+        "id": "central-letheras",
+        "map": {
+          "image": "img/central-letheras.webp",
+          "width": 2000,
+          "height": 1172,
+          "tiles": {
+            "url": "tiles/villes/central-letheras/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
     }
   ]
 }

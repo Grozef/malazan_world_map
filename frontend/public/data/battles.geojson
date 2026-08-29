@@ -4,18 +4,93 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [6877, 1463] },
-      "properties": { "name": "Siege de Pale", "type": "siege", "continent": "Genabackis", "book": "Gardens of the Moon", "outcome": "victoire malazaine", "order": 1, "placeholder": true }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6877,
+          1463
+        ]
+      },
+      "properties": {
+        "name": "Siege of Pale",
+        "type": "siege",
+        "continent": "Genabackis",
+        "book": "Gardens of the Moon",
+        "outcome": "Malazan victory",
+        "order": 1,
+        "placeholder": true,
+        "id": "pale",
+        "map": {
+          "image": "img/genabackis-the-malazan-campaign.webp",
+          "width": 1324,
+          "height": 2056,
+          "tiles": {
+            "url": "tiles/annexes/genabackis-the-malazan-campaign/{z}/{x}/{y}.webp",
+            "minNative": -4,
+            "maxNative": 0
+          }
+        }
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [7065, 1860] },
-      "properties": { "name": "Siege de Capustan", "type": "siege", "continent": "Genabackis", "book": "Memories of Ice", "outcome": "reprise par les Malazains", "order": 2, "placeholder": true }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7065,
+          1860
+        ]
+      },
+      "properties": {
+        "name": "Siege of Capustan",
+        "type": "siege",
+        "continent": "Genabackis",
+        "book": "Memories of Ice",
+        "outcome": "retaken by the Malazans",
+        "order": 2,
+        "placeholder": true,
+        "id": "capustan",
+        "map": {
+          "image": "img/capustan-eastern-genabackis.webp",
+          "width": 1684,
+          "height": 1224,
+          "tiles": {
+            "url": "tiles/annexes/capustan-eastern-genabackis/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [7125, 2148] },
-      "properties": { "name": "Chute de Coral", "type": "siege", "continent": "Genabackis", "book": "Memories of Ice", "outcome": "victoire malazaine", "order": 3, "placeholder": true }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7125,
+          2148
+        ]
+      },
+      "properties": {
+        "name": "Fall of Coral",
+        "type": "siege",
+        "continent": "Genabackis",
+        "book": "Memories of Ice",
+        "outcome": "Malazan victory",
+        "order": 3,
+        "placeholder": true,
+        "id": "coral",
+        "map": {
+          "image": "img/genabackis-the-pannion-war.webp",
+          "width": 1504,
+          "height": 2208,
+          "tiles": {
+            "url": "tiles/annexes/genabackis-the-pannion-war/{z}/{x}/{y}.webp",
+            "minNative": -4,
+            "maxNative": 0
+          }
+        }
+      }
     }
   ]
 }

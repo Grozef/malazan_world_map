@@ -1,21 +1,22 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions estimees — affiner via #/?pick=1.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Lieux notables qui ne sont NI une ville NI un continent, et qui ont une etendue propre sur la carte-monde. Deadhouse (Malaz City) et Finnest House (Darujhistan) ont ete retires : ce sont des batiments DANS une ville, sans place a cette echelle, et leurs coordonnees etaient des placeholders poses a l oeil. Ils relevent du plan de leur ville.",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [5755, 2992] },
-      "properties": { "name": "Deadhouse", "type": "maison Azath", "continent": "Malaz Island", "book": "Gardens of the Moon", "placeholder": true }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [6935, 1723] },
-      "properties": { "name": "Finnest House", "type": "maison Azath", "continent": "Genabackis", "book": "Gardens of the Moon", "placeholder": true }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [5075, 1225] },
-      "properties": { "name": "Raraku", "type": "desert sacre", "continent": "Seven Cities", "book": "Deadhouse Gates", "placeholder": true }
+      "geometry": { "type": "Point", "coordinates": [5377, 1100] },
+      "properties": {
+        "name": "Raraku",
+        "type": "holy desert",
+        "continent": "Seven Cities",
+        "book": "Deadhouse Gates",
+        "id": "pan-arak-oasis-raraku-s-heart",
+        "map": {
+          "image": "img/pan-arak-oasis-raraku-s-heart.webp",
+          "width": 2000,
+          "height": 1332
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,1525 @@
+{
+  "note": "Noms de villes RELEVES A LA MAIN sur la carte-monde, crop par crop, avec les marqueurs numerotes de tools/_crop-grille.mjs --points=cities-detectees.json. cities-detectees.json ne porte QUE x/y/d/rang : aucun nom. Aucun OCR sur la machine. Cle = 'x,y' du symbole detecte, valeur = nom lu. Table INCOMPLETE : voir restants.",
+  "releve_le": "2026-08-29",
+  "total_symboles": 407,
+  "lus": 136,
+  "a_relire": [
+    "5166,1066 (Enjo ou Estarb)",
+    "5293,1357 (Bylan ou Nhelth)",
+    "5333,1337 (Bylan ou Nhelth)",
+    "5229,1370",
+    "5726,1156 (bord droit)",
+    "5766,1091 (bord droit)",
+    "5595,1377 (bord bas)",
+    "6579,1182 (bord gauche, label coupe)",
+    "7212,797 et 7246,806 (deux chateaux, un seul label Evinor)",
+    "7321,788 (coin haut-droit coupe)",
+    "5127,2044",
+    "5053,2038",
+    "5074,2057",
+    "5193,2031",
+    "5124,2067",
+    "5116,2078",
+    "5172,2064",
+    "labels en jeu : Gravid, Old, Ilk, Grevod, Falair, Jook, Cabil — plusieurs symboles se partagent des labels voisins",
+    "5495,2193 (label coupe, se lit 'guan' — Iguan ?)",
+    "grappe ouest : 4988,2560 4982,2510 4914,2654 4936,2527 4914,2586 5011,2629 4963,2585 4941,2601 4942,2552 4989,2538 4989,2657",
+    "5714,2660 (bord droit, KARTO... = Kartool ?)",
+    "5321,2394 (bord haut)"
+  ],
+  "restants": [
+    {
+      "x": 9433,
+      "y": 1334,
+      "rang": "minor"
+    },
+    {
+      "x": 6294,
+      "y": 3295,
+      "rang": "minor"
+    },
+    {
+      "x": 3210,
+      "y": 3793,
+      "rang": "minor"
+    },
+    {
+      "x": 3586,
+      "y": 2360,
+      "rang": "minor"
+    },
+    {
+      "x": 1968,
+      "y": 3977,
+      "rang": "minor"
+    },
+    {
+      "x": 8897,
+      "y": 1852,
+      "rang": "minor"
+    },
+    {
+      "x": 6249,
+      "y": 3022,
+      "rang": "minor"
+    },
+    {
+      "x": 5632,
+      "y": 3393,
+      "rang": "minor"
+    },
+    {
+      "x": 5539,
+      "y": 3467,
+      "rang": "minor"
+    },
+    {
+      "x": 1203,
+      "y": 3509,
+      "rang": "minor"
+    },
+    {
+      "x": 2040,
+      "y": 3811,
+      "rang": "minor"
+    },
+    {
+      "x": 4430,
+      "y": 3404,
+      "rang": "minor"
+    },
+    {
+      "x": 5810,
+      "y": 3422,
+      "rang": "minor"
+    },
+    {
+      "x": 3244,
+      "y": 1607,
+      "rang": "minor"
+    },
+    {
+      "x": 7404,
+      "y": 2243,
+      "rang": "minor"
+    },
+    {
+      "x": 4636,
+      "y": 3518,
+      "rang": "village"
+    },
+    {
+      "x": 4912,
+      "y": 1132,
+      "rang": "minor"
+    },
+    {
+      "x": 5127,
+      "y": 2044,
+      "rang": "minor"
+    },
+    {
+      "x": 6749,
+      "y": 1391,
+      "rang": "minor"
+    },
+    {
+      "x": 5695,
+      "y": 766,
+      "rang": "minor"
+    },
+    {
+      "x": 1045,
+      "y": 3664,
+      "rang": "village"
+    },
+    {
+      "x": 7576,
+      "y": 2094,
+      "rang": "village"
+    },
+    {
+      "x": 1524,
+      "y": 3481,
+      "rang": "village"
+    },
+    {
+      "x": 7690,
+      "y": 2030,
+      "rang": "village"
+    },
+    {
+      "x": 933,
+      "y": 3428,
+      "rang": "village"
+    },
+    {
+      "x": 7554,
+      "y": 3103,
+      "rang": "village"
+    },
+    {
+      "x": 5053,
+      "y": 2038,
+      "rang": "village"
+    },
+    {
+      "x": 6663,
+      "y": 1526,
+      "rang": "village"
+    },
+    {
+      "x": 7845,
+      "y": 3032,
+      "rang": "village"
+    },
+    {
+      "x": 5553,
+      "y": 3282,
+      "rang": "village"
+    },
+    {
+      "x": 1181,
+      "y": 3395,
+      "rang": "village"
+    },
+    {
+      "x": 1197,
+      "y": 3471,
+      "rang": "village"
+    },
+    {
+      "x": 964,
+      "y": 3572,
+      "rang": "village"
+    },
+    {
+      "x": 1047,
+      "y": 3590,
+      "rang": "village"
+    },
+    {
+      "x": 1489,
+      "y": 4074,
+      "rang": "village"
+    },
+    {
+      "x": 5872,
+      "y": 3323,
+      "rang": "village"
+    },
+    {
+      "x": 5626,
+      "y": 1472,
+      "rang": "village"
+    },
+    {
+      "x": 6354,
+      "y": 3095,
+      "rang": "village"
+    },
+    {
+      "x": 6972,
+      "y": 1772,
+      "rang": "village"
+    },
+    {
+      "x": 7874,
+      "y": 3017,
+      "rang": "village"
+    },
+    {
+      "x": 1413,
+      "y": 4049,
+      "rang": "village"
+    },
+    {
+      "x": 6443,
+      "y": 3061,
+      "rang": "village"
+    },
+    {
+      "x": 3334,
+      "y": 2727,
+      "rang": "village"
+    },
+    {
+      "x": 945,
+      "y": 3529,
+      "rang": "village"
+    },
+    {
+      "x": 3155,
+      "y": 4201,
+      "rang": "village"
+    },
+    {
+      "x": 7212,
+      "y": 797,
+      "rang": "village"
+    },
+    {
+      "x": 7139,
+      "y": 2224,
+      "rang": "village"
+    },
+    {
+      "x": 6553,
+      "y": 2877,
+      "rang": "village"
+    },
+    {
+      "x": 1045,
+      "y": 3477,
+      "rang": "village"
+    },
+    {
+      "x": 1751,
+      "y": 3558,
+      "rang": "village"
+    },
+    {
+      "x": 2557,
+      "y": 3611,
+      "rang": "village"
+    },
+    {
+      "x": 4381,
+      "y": 3522,
+      "rang": "village"
+    },
+    {
+      "x": 2890,
+      "y": 3878,
+      "rang": "village"
+    },
+    {
+      "x": 7866,
+      "y": 3046,
+      "rang": "village"
+    },
+    {
+      "x": 3357,
+      "y": 2709,
+      "rang": "village"
+    },
+    {
+      "x": 3247,
+      "y": 3731,
+      "rang": "village"
+    },
+    {
+      "x": 6337,
+      "y": 2991,
+      "rang": "village"
+    },
+    {
+      "x": 7046,
+      "y": 1569,
+      "rang": "village"
+    },
+    {
+      "x": 1626,
+      "y": 3663,
+      "rang": "village"
+    },
+    {
+      "x": 5074,
+      "y": 2057,
+      "rang": "village"
+    },
+    {
+      "x": 5813,
+      "y": 3123,
+      "rang": "village"
+    },
+    {
+      "x": 7670,
+      "y": 2769,
+      "rang": "village"
+    },
+    {
+      "x": 1008,
+      "y": 3438,
+      "rang": "village"
+    },
+    {
+      "x": 5231,
+      "y": 1461,
+      "rang": "village"
+    },
+    {
+      "x": 6005,
+      "y": 3002,
+      "rang": "village"
+    },
+    {
+      "x": 4092,
+      "y": 1847,
+      "rang": "village"
+    },
+    {
+      "x": 5615,
+      "y": 3283,
+      "rang": "village"
+    },
+    {
+      "x": 6267,
+      "y": 3073,
+      "rang": "village"
+    },
+    {
+      "x": 1192,
+      "y": 3980,
+      "rang": "village"
+    },
+    {
+      "x": 7731,
+      "y": 2976,
+      "rang": "village"
+    },
+    {
+      "x": 7586,
+      "y": 2855,
+      "rang": "village"
+    },
+    {
+      "x": 7711,
+      "y": 2704,
+      "rang": "village"
+    },
+    {
+      "x": 1106,
+      "y": 3504,
+      "rang": "village"
+    },
+    {
+      "x": 1162,
+      "y": 3335,
+      "rang": "village"
+    },
+    {
+      "x": 3073,
+      "y": 4201,
+      "rang": "village"
+    },
+    {
+      "x": 3350,
+      "y": 3941,
+      "rang": "village"
+    },
+    {
+      "x": 3382,
+      "y": 4008,
+      "rang": "village"
+    },
+    {
+      "x": 3413,
+      "y": 4091,
+      "rang": "village"
+    },
+    {
+      "x": 3407,
+      "y": 4152,
+      "rang": "village"
+    },
+    {
+      "x": 7258,
+      "y": 2302,
+      "rang": "village"
+    },
+    {
+      "x": 5686,
+      "y": 3624,
+      "rang": "village"
+    },
+    {
+      "x": 1709,
+      "y": 3510,
+      "rang": "village"
+    },
+    {
+      "x": 1615,
+      "y": 3598,
+      "rang": "village"
+    },
+    {
+      "x": 6069,
+      "y": 2942,
+      "rang": "village"
+    },
+    {
+      "x": 6974,
+      "y": 1504,
+      "rang": "village"
+    },
+    {
+      "x": 6678,
+      "y": 1465,
+      "rang": "village"
+    },
+    {
+      "x": 1815,
+      "y": 3521,
+      "rang": "village"
+    },
+    {
+      "x": 7472,
+      "y": 2055,
+      "rang": "village"
+    },
+    {
+      "x": 7535,
+      "y": 2202,
+      "rang": "village"
+    },
+    {
+      "x": 5726,
+      "y": 1156,
+      "rang": "village"
+    },
+    {
+      "x": 5474,
+      "y": 3665,
+      "rang": "village"
+    },
+    {
+      "x": 3239,
+      "y": 3794,
+      "rang": "village"
+    },
+    {
+      "x": 7330,
+      "y": 2284,
+      "rang": "village"
+    },
+    {
+      "x": 6488,
+      "y": 2935,
+      "rang": "village"
+    },
+    {
+      "x": 4571,
+      "y": 932,
+      "rang": "village"
+    },
+    {
+      "x": 7082,
+      "y": 1562,
+      "rang": "village"
+    },
+    {
+      "x": 1356,
+      "y": 3915,
+      "rang": "village"
+    },
+    {
+      "x": 6349,
+      "y": 4118,
+      "rang": "village"
+    },
+    {
+      "x": 5229,
+      "y": 1370,
+      "rang": "village"
+    },
+    {
+      "x": 6453,
+      "y": 3275,
+      "rang": "village"
+    },
+    {
+      "x": 7214,
+      "y": 2310,
+      "rang": "village"
+    },
+    {
+      "x": 1025,
+      "y": 4009,
+      "rang": "village"
+    },
+    {
+      "x": 1662,
+      "y": 3784,
+      "rang": "village"
+    },
+    {
+      "x": 7642,
+      "y": 2988,
+      "rang": "village"
+    },
+    {
+      "x": 1058,
+      "y": 3353,
+      "rang": "village"
+    },
+    {
+      "x": 5943,
+      "y": 4412,
+      "rang": "village"
+    },
+    {
+      "x": 967,
+      "y": 3643,
+      "rang": "village"
+    },
+    {
+      "x": 7100,
+      "y": 1545,
+      "rang": "village"
+    },
+    {
+      "x": 5856,
+      "y": 4058,
+      "rang": "village"
+    },
+    {
+      "x": 5678,
+      "y": 3231,
+      "rang": "village"
+    },
+    {
+      "x": 7135,
+      "y": 2323,
+      "rang": "village"
+    },
+    {
+      "x": 5757,
+      "y": 3559,
+      "rang": "village"
+    },
+    {
+      "x": 5946,
+      "y": 3058,
+      "rang": "village"
+    },
+    {
+      "x": 6189,
+      "y": 3014,
+      "rang": "village"
+    },
+    {
+      "x": 4469,
+      "y": 1002,
+      "rang": "village"
+    },
+    {
+      "x": 5659,
+      "y": 875,
+      "rang": "village"
+    },
+    {
+      "x": 6460,
+      "y": 3163,
+      "rang": "village"
+    },
+    {
+      "x": 1665,
+      "y": 3595,
+      "rang": "village"
+    },
+    {
+      "x": 1614,
+      "y": 3434,
+      "rang": "village"
+    },
+    {
+      "x": 1206,
+      "y": 3436,
+      "rang": "village"
+    },
+    {
+      "x": 7246,
+      "y": 806,
+      "rang": "village"
+    },
+    {
+      "x": 5166,
+      "y": 1066,
+      "rang": "village"
+    },
+    {
+      "x": 6518,
+      "y": 3823,
+      "rang": "village"
+    },
+    {
+      "x": 5144,
+      "y": 809,
+      "rang": "village"
+    },
+    {
+      "x": 7752,
+      "y": 3437,
+      "rang": "village"
+    },
+    {
+      "x": 6377,
+      "y": 4046,
+      "rang": "village"
+    },
+    {
+      "x": 5021,
+      "y": 884,
+      "rang": "village"
+    },
+    {
+      "x": 1037,
+      "y": 3701,
+      "rang": "village"
+    },
+    {
+      "x": 7626,
+      "y": 2731,
+      "rang": "village"
+    },
+    {
+      "x": 6423,
+      "y": 3210,
+      "rang": "village"
+    },
+    {
+      "x": 3253,
+      "y": 3697,
+      "rang": "village"
+    },
+    {
+      "x": 3219,
+      "y": 3676,
+      "rang": "village"
+    },
+    {
+      "x": 1573,
+      "y": 3556,
+      "rang": "village"
+    },
+    {
+      "x": 1327,
+      "y": 3741,
+      "rang": "village"
+    },
+    {
+      "x": 6376,
+      "y": 3140,
+      "rang": "village"
+    },
+    {
+      "x": 7064,
+      "y": 1652,
+      "rang": "village"
+    },
+    {
+      "x": 1008,
+      "y": 3529,
+      "rang": "village"
+    },
+    {
+      "x": 6096,
+      "y": 2889,
+      "rang": "village"
+    },
+    {
+      "x": 1105,
+      "y": 3469,
+      "rang": "village"
+    },
+    {
+      "x": 1327,
+      "y": 4045,
+      "rang": "village"
+    },
+    {
+      "x": 6870,
+      "y": 1745,
+      "rang": "village"
+    },
+    {
+      "x": 949,
+      "y": 3997,
+      "rang": "village"
+    },
+    {
+      "x": 6528,
+      "y": 2986,
+      "rang": "village"
+    },
+    {
+      "x": 972,
+      "y": 3692,
+      "rang": "village"
+    },
+    {
+      "x": 6175,
+      "y": 3318,
+      "rang": "village"
+    },
+    {
+      "x": 6435,
+      "y": 3117,
+      "rang": "village"
+    },
+    {
+      "x": 7713,
+      "y": 3077,
+      "rang": "village"
+    },
+    {
+      "x": 7321,
+      "y": 788,
+      "rang": "village"
+    },
+    {
+      "x": 5904,
+      "y": 4047,
+      "rang": "village"
+    },
+    {
+      "x": 5092,
+      "y": 870,
+      "rang": "village"
+    },
+    {
+      "x": 6231,
+      "y": 3263,
+      "rang": "village"
+    },
+    {
+      "x": 5766,
+      "y": 1091,
+      "rang": "village"
+    },
+    {
+      "x": 6464,
+      "y": 2871,
+      "rang": "village"
+    },
+    {
+      "x": 5321,
+      "y": 2394,
+      "rang": "village"
+    },
+    {
+      "x": 1061,
+      "y": 3504,
+      "rang": "village"
+    },
+    {
+      "x": 1048,
+      "y": 3385,
+      "rang": "village"
+    },
+    {
+      "x": 7067,
+      "y": 2326,
+      "rang": "village"
+    },
+    {
+      "x": 5661,
+      "y": 3960,
+      "rang": "village"
+    },
+    {
+      "x": 5627,
+      "y": 3540,
+      "rang": "village"
+    },
+    {
+      "x": 5522,
+      "y": 4028,
+      "rang": "village"
+    },
+    {
+      "x": 5293,
+      "y": 1357,
+      "rang": "village"
+    },
+    {
+      "x": 932,
+      "y": 3459,
+      "rang": "village"
+    },
+    {
+      "x": 1349,
+      "y": 3848,
+      "rang": "village"
+    },
+    {
+      "x": 7886,
+      "y": 3314,
+      "rang": "village"
+    },
+    {
+      "x": 5813,
+      "y": 3499,
+      "rang": "village"
+    },
+    {
+      "x": 5447,
+      "y": 3705,
+      "rang": "village"
+    },
+    {
+      "x": 5445,
+      "y": 3544,
+      "rang": "village"
+    },
+    {
+      "x": 933,
+      "y": 3494,
+      "rang": "village"
+    },
+    {
+      "x": 1211,
+      "y": 3754,
+      "rang": "village"
+    },
+    {
+      "x": 6246,
+      "y": 3223,
+      "rang": "village"
+    },
+    {
+      "x": 6921,
+      "y": 1748,
+      "rang": "village"
+    },
+    {
+      "x": 1191,
+      "y": 3372,
+      "rang": "village"
+    },
+    {
+      "x": 1067,
+      "y": 3664,
+      "rang": "village"
+    },
+    {
+      "x": 1703,
+      "y": 3359,
+      "rang": "village"
+    },
+    {
+      "x": 7436,
+      "y": 2622,
+      "rang": "village"
+    },
+    {
+      "x": 919,
+      "y": 3389,
+      "rang": "village"
+    },
+    {
+      "x": 1040,
+      "y": 3917,
+      "rang": "village"
+    },
+    {
+      "x": 3111,
+      "y": 3618,
+      "rang": "village"
+    },
+    {
+      "x": 7375,
+      "y": 2268,
+      "rang": "village"
+    },
+    {
+      "x": 5172,
+      "y": 2064,
+      "rang": "village"
+    },
+    {
+      "x": 6718,
+      "y": 1510,
+      "rang": "village"
+    },
+    {
+      "x": 1366,
+      "y": 3797,
+      "rang": "village"
+    },
+    {
+      "x": 1162,
+      "y": 3788,
+      "rang": "village"
+    },
+    {
+      "x": 1372,
+      "y": 3817,
+      "rang": "village"
+    },
+    {
+      "x": 5166,
+      "y": 1487,
+      "rang": "village"
+    },
+    {
+      "x": 7455,
+      "y": 2219,
+      "rang": "village"
+    },
+    {
+      "x": 1030,
+      "y": 3406,
+      "rang": "village"
+    },
+    {
+      "x": 7653,
+      "y": 2695,
+      "rang": "village"
+    },
+    {
+      "x": 6195,
+      "y": 2956,
+      "rang": "village"
+    },
+    {
+      "x": 6029,
+      "y": 2965,
+      "rang": "village"
+    },
+    {
+      "x": 7129,
+      "y": 1264,
+      "rang": "village"
+    },
+    {
+      "x": 929,
+      "y": 3405,
+      "rang": "village"
+    },
+    {
+      "x": 1592,
+      "y": 3504,
+      "rang": "village"
+    },
+    {
+      "x": 5606,
+      "y": 3351,
+      "rang": "village"
+    },
+    {
+      "x": 5860,
+      "y": 3089,
+      "rang": "village"
+    },
+    {
+      "x": 6638,
+      "y": 1928,
+      "rang": "village"
+    },
+    {
+      "x": 3171,
+      "y": 3658,
+      "rang": "village"
+    },
+    {
+      "x": 1541,
+      "y": 4066,
+      "rang": "village"
+    },
+    {
+      "x": 6310,
+      "y": 3137,
+      "rang": "village"
+    },
+    {
+      "x": 5737,
+      "y": 3512,
+      "rang": "village"
+    },
+    {
+      "x": 1752,
+      "y": 3608,
+      "rang": "village"
+    },
+    {
+      "x": 5973,
+      "y": 3045,
+      "rang": "village"
+    },
+    {
+      "x": 7481,
+      "y": 3162,
+      "rang": "village"
+    },
+    {
+      "x": 7684,
+      "y": 2914,
+      "rang": "village"
+    },
+    {
+      "x": 7877,
+      "y": 3140,
+      "rang": "village"
+    },
+    {
+      "x": 6579,
+      "y": 1182,
+      "rang": "village"
+    },
+    {
+      "x": 5462,
+      "y": 3780,
+      "rang": "village"
+    },
+    {
+      "x": 7316,
+      "y": 2172,
+      "rang": "village"
+    },
+    {
+      "x": 7902,
+      "y": 2962,
+      "rang": "village"
+    },
+    {
+      "x": 5674,
+      "y": 3332,
+      "rang": "village"
+    },
+    {
+      "x": 1895,
+      "y": 3477,
+      "rang": "village"
+    },
+    {
+      "x": 3340,
+      "y": 3941,
+      "rang": "village"
+    },
+    {
+      "x": 5509,
+      "y": 3667,
+      "rang": "village"
+    },
+    {
+      "x": 5193,
+      "y": 2031,
+      "rang": "village"
+    },
+    {
+      "x": 6342,
+      "y": 3219,
+      "rang": "village"
+    },
+    {
+      "x": 7066,
+      "y": 1617,
+      "rang": "village"
+    },
+    {
+      "x": 6519,
+      "y": 1399,
+      "rang": "village"
+    },
+    {
+      "x": 5281,
+      "y": 1434,
+      "rang": "village"
+    },
+    {
+      "x": 6287,
+      "y": 3204,
+      "rang": "village"
+    },
+    {
+      "x": 6542,
+      "y": 3358,
+      "rang": "village"
+    },
+    {
+      "x": 7518,
+      "y": 2145,
+      "rang": "village"
+    },
+    {
+      "x": 6441,
+      "y": 3022,
+      "rang": "village"
+    },
+    {
+      "x": 7041,
+      "y": 1772,
+      "rang": "village"
+    },
+    {
+      "x": 5160,
+      "y": 851,
+      "rang": "village"
+    },
+    {
+      "x": 5883,
+      "y": 811,
+      "rang": "village"
+    },
+    {
+      "x": 7959,
+      "y": 3000,
+      "rang": "village"
+    },
+    {
+      "x": 5124,
+      "y": 2067,
+      "rang": "village"
+    },
+    {
+      "x": 7713,
+      "y": 2848,
+      "rang": "village"
+    },
+    {
+      "x": 5988,
+      "y": 3021,
+      "rang": "village"
+    },
+    {
+      "x": 7022,
+      "y": 1778,
+      "rang": "village"
+    },
+    {
+      "x": 1081,
+      "y": 3317,
+      "rang": "village"
+    },
+    {
+      "x": 1375,
+      "y": 3755,
+      "rang": "village"
+    },
+    {
+      "x": 1120,
+      "y": 3999,
+      "rang": "village"
+    },
+    {
+      "x": 5746,
+      "y": 3160,
+      "rang": "village"
+    },
+    {
+      "x": 5889,
+      "y": 4126,
+      "rang": "village"
+    },
+    {
+      "x": 1486,
+      "y": 3814,
+      "rang": "village"
+    },
+    {
+      "x": 7635,
+      "y": 2262,
+      "rang": "village"
+    },
+    {
+      "x": 6477,
+      "y": 3084,
+      "rang": "village"
+    },
+    {
+      "x": 4574,
+      "y": 3307,
+      "rang": "village"
+    },
+    {
+      "x": 2998,
+      "y": 4223,
+      "rang": "village"
+    },
+    {
+      "x": 1333,
+      "y": 3983,
+      "rang": "village"
+    },
+    {
+      "x": 5495,
+      "y": 2193,
+      "rang": "village"
+    },
+    {
+      "x": 5333,
+      "y": 1337,
+      "rang": "village"
+    },
+    {
+      "x": 3150,
+      "y": 4193,
+      "rang": "village"
+    },
+    {
+      "x": 1096,
+      "y": 3851,
+      "rang": "village"
+    },
+    {
+      "x": 7737,
+      "y": 2251,
+      "rang": "village"
+    },
+    {
+      "x": 5116,
+      "y": 2078,
+      "rang": "village"
+    },
+    {
+      "x": 2994,
+      "y": 4010,
+      "rang": "village"
+    },
+    {
+      "x": 3403,
+      "y": 4091,
+      "rang": "village"
+    },
+    {
+      "x": 3143,
+      "y": 4129,
+      "rang": "village"
+    },
+    {
+      "x": 3397,
+      "y": 4152,
+      "rang": "village"
+    },
+    {
+      "x": 5924,
+      "y": 3060,
+      "rang": "village"
+    },
+    {
+      "x": 3372,
+      "y": 4008,
+      "rang": "village"
+    },
+    {
+      "x": 6550,
+      "y": 3846,
+      "rang": "village"
+    },
+    {
+      "x": 5595,
+      "y": 1377,
+      "rang": "village"
+    },
+    {
+      "x": 7662,
+      "y": 3446,
+      "rang": "village"
+    },
+    {
+      "x": 6309,
+      "y": 2927,
+      "rang": "village"
+    },
+    {
+      "x": 4564,
+      "y": 3307,
+      "rang": "village"
+    },
+    {
+      "x": 2885,
+      "y": 3870,
+      "rang": "village"
+    },
+    {
+      "x": 3068,
+      "y": 4193,
+      "rang": "village"
+    },
+    {
+      "x": 6287,
+      "y": 3239,
+      "rang": "village"
+    },
+    {
+      "x": 5249,
+      "y": 910,
+      "rang": "village"
+    },
+    {
+      "x": 5698,
+      "y": 3430,
+      "rang": "village"
+    },
+    {
+      "x": 6514,
+      "y": 3112,
+      "rang": "village"
+    },
+    {
+      "x": 6512,
+      "y": 3017,
+      "rang": "village"
+    },
+    {
+      "x": 5465,
+      "y": 3894,
+      "rang": "village"
+    },
+    {
+      "x": 7747,
+      "y": 2251,
+      "rang": "village"
+    },
+    {
+      "x": 6783,
+      "y": 1526,
+      "rang": "major"
+    },
+    {
+      "x": 6611,
+      "y": 2211,
+      "rang": "minor"
+    },
+    {
+      "x": 5714,
+      "y": 2660,
+      "rang": "minor"
+    },
+    {
+      "x": 5287,
+      "y": 1539,
+      "rang": "minor"
+    }
+  ],
+  "noms": {
+    "5003,929": "Taxila",
+    "5018,990": "Ashok",
+    "5102,1023": "Kot Ghul",
+    "5252,986": "Noh",
+    "5202,1007": "Nevasa",
+    "5074,1057": "Hatra",
+    "5004,1092": "Lothal",
+    "5299,1066": "Longshan",
+    "5380,1026": "Kansu",
+    "5307,1096": "Lato Revae",
+    "5464,1097": "Panpot'sun",
+    "5543,1122": "T'nal",
+    "5492,1066": "Ehrlitan",
+    "5609,1087": "Ahol Tapur",
+    "5425,1142": "G'danisban",
+    "5515,1170": "Karashimesh",
+    "5670,1174": "Hissar",
+    "5637,1196": "Sialk",
+    "5555,1208": "Caron Tepasi",
+    "5440,1211": "Halaf",
+    "5419,1272": "Melm",
+    "5430,1241": "P'atha",
+    "5474,1298": "Teppes",
+    "5634,1297": "Venj",
+    "5601,1337": "Bakun",
+    "5377,1284": "Ubaryd",
+    "5179,1390": "Sanimon",
+    "5085,1389": "Geleen",
+    "5056,1348": "Denard",
+    "5008,1320": "Nahal",
+    "5012,1292": "Tsarech",
+    "5009,1268": "Sarpachiya",
+    "5216,1260": "Omari",
+    "5234,1192": "Mersin",
+    "5098,1162": "Kayhum",
+    "5044,1110": "Y'Ghatan",
+    "4954,1159": "Sotka",
+    "5041,1209": "Ugarat",
+    "6721,877": "Genabaris",
+    "6718,941": "Prospect",
+    "6670,966": "Nathilog",
+    "6650,1002": "Ayjhan",
+    "6629,1042": "Tulips",
+    "6828,915": "Bettrys",
+    "6826,965": "Greydog",
+    "6771,971": "Mott",
+    "6901,911": "Blued",
+    "6955,939": "Owndos",
+    "6919,1010": "Bodd",
+    "6898,1115": "Bear",
+    "6883,1167": "Patch",
+    "6966,1164": "Lead",
+    "6948,1128": "Cat",
+    "7054,1143": "Cruk",
+    "7146,1176": "Anklos",
+    "7292,1143": "Shand",
+    "7284,1055": "Crest",
+    "7097,808": "Ganiss",
+    "7089,900": "Genalle",
+    "7067,991": "Sogena",
+    "7016,1009": "Abor",
+    "6951,1044": "One Eye Cat",
+    "7266,958": "Apple",
+    "5198,1972": "Curaca",
+    "5173,2002": "Cutip",
+    "5229,2026": "Gung",
+    "5129,2097": "Pull",
+    "5162,2099": "Muheres",
+    "5197,2135": "Gorge",
+    "5197,2111": "Belade",
+    "5017,2062": "Rope",
+    "5011,2102": "Torn",
+    "5459,1776": "Woad",
+    "5474,1770": "Bantra",
+    "5395,1845": "Dhab",
+    "5448,1863": "Jrapp",
+    "5479,1848": "Heft",
+    "5494,1869": "Torvo",
+    "5392,1907": "Jick",
+    "5427,1951": "Tenak",
+    "5548,1909": "Bada",
+    "5564,1938": "Chenang",
+    "5570,1966": "Lurk",
+    "5360,2064": "Old Guando",
+    "5569,2079": "Flood",
+    "5560,2136": "Belid",
+    "5629,2109": "Strike",
+    "5467,2203": "Delanss",
+    "5435,2202": "Wett",
+    "5524,2192": "Belikan",
+    "5406,2218": "Fallen Towers",
+    "5344,2220": "Ictor",
+    "5359,1991": "Clump",
+    "5414,2020": "Walk",
+    "5415,2580": "Bloor",
+    "5616,2537": "Gris",
+    "5211,2665": "Li Heng",
+    "5615,2835": "Malaz City",
+    "5292,2761": "Itko Kan",
+    "5439,2514": "Thades",
+    "5256,2735": "Ijor",
+    "5227,2756": "Nexa",
+    "5149,2593": "Saran",
+    "5049,2607": "Nadir",
+    "5507,2451": "D'avigo",
+    "5322,2664": "Aska",
+    "5456,2491": "Athrans",
+    "5577,2429": "Baran",
+    "5432,2547": "Thaden",
+    "5106,2581": "Seti",
+    "5446,2703": "Vor",
+    "5199,2535": "New Seti",
+    "5382,2521": "Rath",
+    "5262,2636": "Idryb",
+    "5258,2839": "Wal Fend",
+    "5574,2847": "Jakata",
+    "5203,2816": "Horan",
+    "5312,2629": "Cawn",
+    "5572,2576": "Unta",
+    "5376,2682": "Marl",
+    "5494,2682": "Aythan",
+    "5479,2707": "Carasin",
+    "5423,2417": "Voron",
+    "5392,2770": "Dariyal",
+    "5048,2638": "Bastial",
+    "4982,2510": "Purage",
+    "4936,2527": "Valan",
+    "4989,2538": "Tellick",
+    "4942,2552": "Ebond",
+    "4988,2560": "Quon Tali",
+    "4963,2585": "Attic",
+    "4914,2586": "Korn",
+    "4941,2601": "Panys",
+    "4914,2654": "Arath",
+    "4989,2657": "Garal",
+    "5011,2629": "Aireck"
+  }
+}

@@ -1,0 +1,708 @@
+{
+  "note": "Classement des cartes annexes de frontend/public/img/. Les titres sont ceux IMPRIMES sur les cartes, releves planche par planche — pas deduits du nom de fichier. `scope` : continent (masse continentale entiere) | region (portion) | city (plan de ville) | campaign (continent + trace d'une campagne) | overview (plusieurs continents) | realm (age de Kharkanas, geographie hors carte-monde) | schema (eleve ou profil, pas une carte a l'echelle). `duplicateOf` : meme carte qu'une autre entree, mesuree par ecart moyen sur 512x512 en niveaux de gris — l'entree gardee est celle de meilleure resolution. `bbox` sera ajoute par le releve d'emprises (phase 3) ; null = pas de place sur la carte-monde. `dans` : emprise de cette carte DANS les pixels d'une carte parente, [x0,y0,x1,y1]. RELEVEE sur les deux cartes (modele affine diagonal cale sur deux amers eloignes, verifie sur un troisieme), JAMAIS projetee depuis la carte-monde — voir la note de utils/atlas.js cote front.",
+  "maps": [
+    {
+      "id": "Genabackis_Grey_by_Joshua_Butler",
+      "title": "Genabackis",
+      "group": "Genabackis",
+      "scope": "continent",
+      "era": "Malazan Empire circa 1160 Burn's Sleep",
+      "note": "Fond gris de Joshua Butler, 3200x3747. C'est la carte ou tools/sprites.mjs decoupe les symboles de relief et de foret (il lit sa propre copie, genabackis/Genabackis_Grey_by_Joshua_Butler (1).webp, non touchee). La version 1000x1171 qui occupait ce nom sous frontend/public/img/ est conservee dans genabackis/.",
+      "bbox": [
+        6480,
+        640,
+        7790,
+        2360
+      ]
+    },
+    {
+      "id": "Genabackis_V4_by_Joshua_Butler",
+      "title": "Genabackis, colour version",
+      "group": "Genabackis",
+      "scope": "continent",
+      "era": "Malazan Empire circa 1160 Burn's Sleep",
+      "note": "Meme geographie et meme cartouche que la version grisee, mais peinte : oceans bleu ardoise, terres ocre, symboles de ville rouges. Ecart moyen 94,3 sur 255 contre la grisee — c'est la couleur, pas le trace. Seule carte en couleur du lot.",
+      "bbox": [
+        6480,
+        640,
+        7790,
+        2360
+      ]
+    },
+    {
+      "id": "genabackis-the-malazan-campaign",
+      "title": "Genabackis: The Malazan Campaign",
+      "group": "Genabackis",
+      "scope": "campaign",
+      "era": "ca 1160 Burn's Sleep",
+      "bbox": [
+        6480,
+        640,
+        7790,
+        2360
+      ],
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          204,
+          420,
+          1723,
+          2778
+        ]
+      },
+      "cibleDans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          763,
+          453,
+          837,
+          527
+        ]
+      },
+      "cible": [
+        6780,
+        1270,
+        6960,
+        1390
+      ]
+    },
+    {
+      "id": "genabackis-the-pannion-war",
+      "title": "Genabackis: The Pannion War",
+      "group": "Genabackis",
+      "scope": "campaign",
+      "era": "ca 1160 Burn's Sleep",
+      "bbox": [
+        6480,
+        640,
+        7790,
+        2360
+      ],
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          160,
+          420,
+          1766,
+          2778
+        ]
+      },
+      "cibleDans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          926,
+          2703,
+          1000,
+          2777
+        ]
+      },
+      "cible": [
+        6820,
+        1520,
+        6960,
+        1620
+      ]
+    },
+    {
+      "id": "northwest-genabackis",
+      "title": "Northwest Genabackis",
+      "group": "Genabackis",
+      "scope": "region",
+      "era": "circa 1160, post Malazan conquest",
+      "bbox": [
+        6698,
+        793,
+        6959,
+        997
+      ],
+      "note": "Emprise recalee le 2026-08-28 : affine DIAGONAL aux moindres carres sur 8 amers relus a zoom 1,4 (Genabaris, Prospect, Bettrys, Greydog, Mott, Blued, Owndos, Culvern ; positions monde confirmees a 1 px sur crop a zoom 6). kx 0,15248 ky 0,13070. /! RESIDUS RMS 17,2 px en x et 12,1 px en y, ecart L/H residuel 17 % (26 % avant) : les deux dessins ne s accordent pas. Culvern tire de +31 px et Owndos de -24 px EN SENS INVERSE, aucune rotation ne les reconcilie non plus. La carte-monde est une compilation, la carte de detail vient d une autre source — meme constat que sur falar et jacuruku. Emprise recalee le 2026-08-28 sur 8 amers relus a zoom 1,4 (Genabaris, Prospect, Bettrys, Greydog, Mott, Blued, Owndos, Culvern ; positions monde confirmees a 1 px sur crop a zoom 6). k = 0,13070 sur les deux axes. Ecart L/H 26 % -> 0,0 %. Residus en x 22 px RMS, pire Owndos a 39 px : les deux dessins ne s accordent pas en x, Culvern tire de +15 et Owndos de -39. /! MODELE ISOTROPE ASSUME, ET C EST MESURE, PAS SUPPOSE : les quatre cartes recalees proprement le 2026-08-28 (kolanse 1,008, assail 1,008, south-genabackis 0,992, jacuruku 1,045) sortent toutes isotropes, et forcer kx = ky ici fait tomber l ecart L/H a moins de 0,3 % alors que le kx libre le laissait a 17-36 %. L axe y est bien determine (RMS 1,9 a 12 px), l axe x ne l est pas : les villes se placent differemment sur les deux dessins. On prend donc ky pour les deux axes.",
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          560,
+          540,
+          1200,
+          1040
+        ]
+      }
+    },
+    {
+      "id": "northwest-genabackis-late-empire",
+      "title": "Northwest Genabackis, Late Empire",
+      "group": "Genabackis",
+      "scope": "region",
+      "era": "Late Empire",
+      "note": "Meme coin de continent que northwest-genabackis mais une AUTRE carte : ecart moyen 41,8 sur 255. Cadrage plus serre autour de Lake Blued. Emprise recalee le 2026-08-28 sur 4 amers (Bettrys, Culvern, Blued, Owndos) — les seuls que la carte-monde nomme aussi ; Genabaris, Malyntaeas et Greydog n y sont que des FLECHES de renvoi hors-carte, pas des positions. k = 0,07424 sur les deux axes (axe y ajuste a 1,9 px RMS). Ecart L/H 26 % -> 0,2 %. Residus en x 19 px RMS, pire Owndos a 33 px. /! MODELE ISOTROPE ASSUME, ET C EST MESURE, PAS SUPPOSE : les quatre cartes recalees proprement le 2026-08-28 (kolanse 1,008, assail 1,008, south-genabackis 0,992, jacuruku 1,045) sortent toutes isotropes, et forcer kx = ky ici fait tomber l ecart L/H a moins de 0,3 % alors que le kx libre le laissait a 17-36 %. L axe y est bien determine (RMS 1,9 a 12 px), l axe x ne l est pas : les villes se placent differemment sur les deux dessins. On prend donc ky pour les deux axes.",
+      "bbox": [
+        6786,
+        808,
+        6970,
+        956
+      ]
+    },
+    {
+      "id": "south-genabackis-and-environs",
+      "title": "South Genabackis and environs",
+      "group": "Genabackis",
+      "scope": "region",
+      "note": "Carte ou tools/sea.mjs releve les chevrons de vague, les monstres marins et le trois-mats. Emprise recalee le 2026-08-28 : affine DIAGONAL aux moindres carres sur 9 amers apparies (Callows, Cant, Ilem, March, Hurly, Torn, Cyral, Elingarth, Exile), kx 0,76410 ky 0,77042, anisotropie 0,992. Residus RMS 3,0 px en x et 1,4 px en y sur 10000, pire amer Cant a 4,9 px. L ancienne emprise [6540,1890,7780,2420] coupait les Night Ship Islands a l est et la Rivan Sea au sud.",
+      "bbox": [
+        6545,
+        1683,
+        8074,
+        2644
+      ],
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          337,
+          2132,
+          3063,
+          3747
+        ]
+      }
+    },
+    {
+      "id": "capustan-eastern-genabackis",
+      "title": "Capustan, Eastern Genabackis",
+      "group": "Genabackis",
+      "scope": "city",
+      "point": [
+        7102,
+        1542
+      ],
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          1255,
+          1819,
+          1329,
+          1893
+        ]
+      }
+    },
+    {
+      "id": "darujhistan",
+      "title": "Darujhistan",
+      "group": "Genabackis",
+      "scope": "city",
+      "point": [
+        6781,
+        1527
+      ],
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          716,
+          1823,
+          790,
+          1897
+        ]
+      }
+    },
+    {
+      "id": "black-coral-and-environs",
+      "title": "Black Coral & Environs",
+      "group": "Genabackis",
+      "scope": "region",
+      "bbox": [
+        6950,
+        1590,
+        7160,
+        1800
+      ],
+      "note": "ECART L/H DE 35 % ASSUME ET CLOS PAR L UTILISATEUR LE 2026-08-28 (<< les maps sont bien placees >>) : NE PAS ROUVRIR. Cette carte est un plan a l ECHELLE DE LA VILLE et la carte-monde n y nomme aucune ville commune hors Coral lui-meme (7064,1652) — un seul ancrage, aucune echelle mesurable, donc la methode des amers apparies ne s applique pas. Coral Bay ne fait que ~70x50 px sur la carte-monde la ou la carte fille lui consacre 2000 px de large : les deux estimations d echelle tirees du rivage et de la baie donnent 0,025 et 0,035, soit 30 % d ecart, ce qui interdit un releve honnete. tools/atlas-check.mjs continuera donc a la signaler a 35 % — c est le diagnostic qui parle, pas un defaut de placement.",
+      "dans": {
+        "Genabackis_Grey_by_Joshua_Butler": [
+          1235,
+          2051,
+          1309,
+          2125
+        ]
+      }
+    },
+    {
+      "id": "seven-cities-the-bonehunters",
+      "title": "Seven Cities, The Malazan Empire",
+      "group": "Seven Cities",
+      "scope": "continent",
+      "era": "ca 1160 Burn's Sleep",
+      "note": "Le nom de fichier rattache cette version au livre The Bonehunters. Le titre imprime, lui, ne cite aucun livre.",
+      "bbox": [
+        4230,
+        560,
+        5790,
+        1660
+      ]
+    },
+    {
+      "id": "Map_Seven_Cities_detail",
+      "title": "Seven Cities, The Malazan Empire",
+      "group": "Seven Cities",
+      "scope": "continent",
+      "duplicateOf": "seven-cities-the-bonehunters",
+      "note": "Ecart moyen 4,2 sur 255 — meme carte, 1604x1021 contre 2000x1274. /!\\ C'est cette version-ci que regions.geojson sert aujourd'hui pour la region seven_cities, et elle a sa pyramide de tuiles."
+    },
+    {
+      "id": "seven-cities-deadhouse-gates",
+      "title": "Seven Cities, The Malazan Empire",
+      "group": "Seven Cities",
+      "scope": "continent",
+      "era": "ca 1160 Burn's Sleep",
+      "note": "Version DISTINCTE des deux precedentes (ecart moyen 37,6) : cadrage plus large vers l'est, echelle en lieues portee. Le nom de fichier la rattache a Deadhouse Gates.",
+      "bbox": [
+        4230,
+        560,
+        5790,
+        1660
+      ]
+    },
+    {
+      "id": "chain-of-dogs-first-half",
+      "title": "Chain of Dogs, Coltaine's March, The First Half",
+      "group": "Seven Cities",
+      "scope": "campaign",
+      "bbox": [
+        5338,
+        1099,
+        5701,
+        1346
+      ],
+      "dans": {
+        "seven-cities-the-bonehunters": [
+          1309,
+          603,
+          1709,
+          847
+        ]
+      }
+    },
+    {
+      "id": "chain-of-dogs-second-half",
+      "title": "Chain of Dogs, Coltaine's March, The Second Half",
+      "group": "Seven Cities",
+      "scope": "campaign",
+      "bbox": [
+        4892,
+        1207,
+        5361,
+        1551
+      ],
+      "dans": {
+        "seven-cities-the-bonehunters": [
+          808,
+          694,
+          1375,
+          1130
+        ]
+      }
+    },
+    {
+      "id": "pan-arak-oasis-raraku-s-heart",
+      "title": "Pan'arak Oasis, Raraku's Heart",
+      "group": "Seven Cities",
+      "scope": "region",
+      "bbox": [
+        5300,
+        1020,
+        5470,
+        1130
+      ],
+      "dans": {
+        "seven-cities-the-bonehunters": [
+          1346,
+          591,
+          1392,
+          637
+        ]
+      }
+    },
+    {
+      "id": "central-malazan-empire-quon-tali",
+      "title": "Central Malazan Empire, Quon Tali",
+      "group": "Quon Tali",
+      "scope": "continent",
+      "bbox": [
+        4800,
+        2150,
+        5820,
+        2900
+      ],
+      "cible": [
+        4900,
+        2640,
+        5180,
+        2820
+      ]
+    },
+    {
+      "id": "Map_Quon_Tali",
+      "title": "Central Malazan Empire, Quon Tali",
+      "group": "Quon Tali",
+      "scope": "continent",
+      "duplicateOf": "central-malazan-empire-quon-tali",
+      "note": "Ecart moyen 0,6 sur 255 — memes dimensions 1635x1067, seul l'encodage differe (394 ko contre 305 ko). /!\\ Version servie aujourd'hui par regions.geojson pour quon_tali, avec sa pyramide."
+    },
+    {
+      "id": "central-malazan-empire",
+      "title": "Central Malazan Empire (showing major cities only)",
+      "group": "Quon Tali",
+      "scope": "overview",
+      "note": "Compilee par l'historien imperial Wessel. Couvre PLUSIEURS continents : sous-continent de Seven Cities, Falar, Quon Tali, Malaz Island. Ce n'est pas une carte de Quon Tali seul.",
+      "bbox": [
+        4850,
+        1450,
+        5820,
+        2900
+      ]
+    },
+    {
+      "id": "li-heng",
+      "title": "City of Li Heng, Post-Quon Tali Hegemony",
+      "group": "Quon Tali",
+      "scope": "city",
+      "note": "Deja tuilee (tiles/villes/li-heng) mais referencee nulle part aujourd'hui.",
+      "point": [
+        5210,
+        2690
+      ],
+      "dans": {
+        "central-malazan-empire-quon-tali": [
+          803,
+          592,
+          841,
+          630
+        ]
+      }
+    },
+    {
+      "id": "malaz-isle",
+      "title": "Malaz Isle circa 1150",
+      "group": "Quon Tali",
+      "scope": "region",
+      "bbox": [
+        5530,
+        2795,
+        5640,
+        2880
+      ],
+      "dans": {
+        "central-malazan-empire-quon-tali": [
+          1363,
+          837,
+          1439,
+          909
+        ]
+      }
+    },
+    {
+      "id": "Map_Malaz_Isle",
+      "title": "Malaz Isle circa 1150",
+      "group": "Quon Tali",
+      "scope": "region",
+      "duplicateOf": "malaz-isle",
+      "note": "Ecart moyen 2,0 sur 255 — meme carte, 1170x766 contre 2000x1310. /!\\ Version servie aujourd'hui par regions.geojson pour malaz_isle, avec sa pyramide."
+    },
+    {
+      "id": "malaz-city",
+      "title": "Malaz City",
+      "group": "Quon Tali",
+      "scope": "city",
+      "note": "Titre NON LU sur la planche : le plan porte une legende numerotee (Deadhouse, Ramparts Way, Mouse Quarter) mais aucun cartouche de titre dans le cadre releve. Le nom vient du contenu et du fichier.",
+      "point": [
+        5613,
+        2825
+      ],
+      "dans": {
+        "central-malazan-empire-quon-tali": [
+          1397,
+          841,
+          1435,
+          879
+        ],
+        "malaz-isle": [
+          1604,
+          447,
+          1650,
+          493
+        ]
+      }
+    },
+    {
+      "id": "the-empire-of-lether",
+      "title": "The Empire of Lether and its neighbours...",
+      "group": "Lether",
+      "scope": "continent",
+      "bbox": [
+        820,
+        2930,
+        2400,
+        4320
+      ]
+    },
+    {
+      "id": "Map_Empire_of_Lether",
+      "title": "The Empire of Lether and its neighbours...",
+      "group": "Lether",
+      "scope": "continent",
+      "duplicateOf": "the-empire-of-lether",
+      "note": "Ecart moyen 0,3 sur 255 — memes dimensions 1719x1309, seul l'encodage differe (324 ko contre 290 ko). /!\\ Version servie aujourd'hui par regions.geojson pour lether, avec sa pyramide."
+    },
+    {
+      "id": "central-letheras",
+      "title": "Central Letheras",
+      "group": "Lether",
+      "scope": "city",
+      "point": [
+        1216,
+        3492
+      ],
+      "dans": {
+        "the-empire-of-lether": [
+          465,
+          402,
+          505,
+          442
+        ]
+      }
+    },
+    {
+      "id": "tiste-edur-lands-and-north-lether-frontier",
+      "title": "Tiste Edur Lands and North Lether Frontier",
+      "group": "Lether",
+      "scope": "region",
+      "bbox": [
+        880,
+        3020,
+        1520,
+        3520
+      ],
+      "dans": {
+        "the-empire-of-lether": [
+          68,
+          103,
+          762,
+          470
+        ]
+      }
+    },
+    {
+      "id": "the-lands-of-fist",
+      "title": "The Lands of Fist",
+      "group": "Fist",
+      "scope": "continent",
+      "bbox": [
+        5520,
+        2700,
+        6900,
+        3700
+      ],
+      "note": "Bord sud releve sur le contenu de la carte elle-meme : elle s arrete sur l Iceback Range, la toundra et l Ice Island Sea (y monde 3640-3690), elle ne montre PAS Stratem. Le premier releve descendait a 3820, donc jusqu a l Aurgatt Range, qui est deja Stratem. Bord ouest porte a 5520 pour inclure Malaz, que la carte marque « failed - not visited »."
+    },
+    {
+      "id": "main-installations-of-the-stormwall",
+      "title": "Main Installations of the Stormwall",
+      "group": "Fist",
+      "scope": "schema",
+      "note": "ELEVATION du mur vue de face (tours nommees, marshlands en contrebas), pas une carte vue du dessus. Aucune emprise rectangulaire n'a de sens : catalogue seulement.",
+      "bbox": [
+        5450,
+        3100,
+        5790,
+        3380
+      ]
+    },
+    {
+      "id": "assail-and-environs",
+      "title": "Assail & environs",
+      "group": "Assail",
+      "scope": "continent",
+      "era": "As compiled from diverse sources by Reuth, son of Tulan",
+      "bbox": [
+        7113,
+        2235,
+        8011,
+        3665
+      ],
+      "note": "Emprise recalee le 2026-08-28 par affine DIAGONAL aux moindres carres sur 16 amers apparies (villes relevees sur crops quadrilles a zoom 1,6 a 2,2 des deux cartes) : kx 0,66233 ky 0,65726, anisotropie 1,008 donc carte ISOTROPE. Residus RMS 7,4 px en x et 6,1 px en y sur 10000, pire amer Towerpoint a 14,6 px. /! UN PREMIER JET LU SUR L IMAGE REDUITE A 0,62 DONNAIT UN RMS DE 18 px et un residu de 67 px sur Holly : les amers sont a relire zoomes, pas a l oeil sur la vignette."
+    },
+    {
+      "id": "the-blood-range",
+      "title": "The Blood Range",
+      "group": "Assail",
+      "scope": "schema",
+      "note": "PROFIL de chaine de montagnes, la carte porte elle-meme « many leagues (not to scale) ». Rattachee a Assail parce que le Blood Range y figure nommement sur assail-and-environs. Catalogue seulement.",
+      "bbox": [
+        7480,
+        2600,
+        7620,
+        2780
+      ]
+    },
+    {
+      "id": "falar-and-environs",
+      "title": "Falar & Environs",
+      "group": "Falar",
+      "scope": "continent",
+      "era": "As compiled from diverse sources by Imperial Historian Feroot",
+      "bbox": [
+        4857,
+        1705,
+        5732,
+        2453
+      ],
+      "note": "Emprise recalee le 2026-08-28 par affine DIAGONAL aux moindres carres sur 12 amers de l archipel (Torn, Dhab, Woad, Jick, Tenak, Clump, Walk, Flood, Strike, Belid, Belikan, Ictor Towers) : kx 0,36458 ky 0,39158. /! RESIDUS RMS 23 px en x et 19 px en y, soit 2,6 % de l emprise — DIX FOIS PIRE que sur kolanse (6/4) ou south-genabackis (3,0/1,4), et l ecart L/H reste a 7 %. LA CAUSE EST MESUREE, ce n est pas un defaut de releve : les deux dessins ne se correspondent PAS par une affine. Bada, Chenang et Lurk descendent vers le SUD-OUEST sur la carte fille et vers le SUD-EST sur la carte-monde — aucun couple (kx,ky) ne peut satisfaire les deux. Falar est un archipel << compiled from diverse sources >>, les iles n y sont pas placees pareil. /! LA BANDE SUD DE LA CARTE FILLE EST SCHEMATIQUE : Quon Tali, Unta et Malaz Island y sont comprimes dans 70 px de hauteur alors qu ils couvrent 400 px de la carte-monde — Unta projete tombe a 420 px de sa vraie position. Ne PAS les utiliser comme amers, c est un renvoi comme la fleche du Glass Desert sur kolanse."
+    },
+    {
+      "id": "kolanse",
+      "title": "Kolanse",
+      "group": "Kolanse",
+      "scope": "continent",
+      "bbox": [
+        2836,
+        3376,
+        3507,
+        4339
+      ],
+      "note": "Emprise recalee le 2026-08-28 par affine DIAGONAL aux moindres carres sur 11 amers apparies (villes lues sur crops quadrillees des deux cartes) : kx 0,43563 ky 0,43210, anisotropie 1,008 donc carte ISOTROPE. Residus RMS 6,0 px en x et 4,0 px en y sur 10000, pire amer Kanros a 18 px. L ancienne emprise [2530,3500,3480,4400] avalait le Glass Desert, absent de la carte fille (son toponyme y porte une fleche de renvoi hors-carte)."
+    },
+    {
+      "id": "the-isle-of-jacuruku",
+      "title": "The Isle of Jacuruku",
+      "group": "Jacuruku",
+      "scope": "continent",
+      "note": "Deuxieme carte ou tools/sea.mjs releve des monstres marins. Emprise recalee le 2026-08-28 par CONTOUR D ILE, pas par amers : les deux dessins ne s accordent pas en interne. Cote monde, bbox de la terre MESUREE par biomeMask sur les 6 biomes de terre = [4274,3258,4854,4002], 581x745. Cote carte fille, bbox de la plus grande composante d encre (seuil 170, dilatation 2 px) = [112,361,748,1211], 637x851. kx 0,9121 ky 0,8754. Ecart L/H residuel 4,0 % (30 % avant). /! LES VILLES NE SUIVENT PAS LE CONTOUR : leur ecartement en x donne kx 0,810 quand le contour donne 0,912, soit 14 % d ecart entre les deux dessins — la carte-monde porte d ailleurs << JACURUKU (TRUE SIZE UNCERTAIN) >>. Le contour est le bon ancrage parce que c est lui qui dit ce que la carte fille couvre.",
+      "bbox": [
+        4172,
+        2942,
+        5007,
+        4131
+      ]
+    },
+    {
+      "id": "kurald-galain",
+      "title": "Kurald Galain",
+      "group": "Age of Kharkanas",
+      "scope": "realm",
+      "note": "Geographie de l'age de Kharkanas : elle ne correspond a aucune portion de la carte-monde de 1163. Pas d'emprise."
+    },
+    {
+      "id": "kharkanas",
+      "title": "Kharkanas (central)",
+      "group": "Age of Kharkanas",
+      "scope": "city",
+      "parent": "kurald-galain",
+      "note": "Deja tuilee (tiles/villes/kharkanas) mais referencee nulle part aujourd'hui. Kharkanas figure nommement sur kurald-galain."
+    },
+    {
+      "id": "thel-akai-jaghut-tiste-realms",
+      "title": "Thel Akai, Jaghut, Tiste Realms",
+      "group": "Age of Kharkanas",
+      "scope": "realm",
+      "note": "Meme age, meme absence de correspondance avec la carte-monde. Pas d'emprise."
+    },
+    {
+      "id": "Map_Chain_of_Dogs_1",
+      "title": "Chain of Dogs, Coltaine's March, The First Half",
+      "group": "Seven Cities",
+      "scope": "campaign",
+      "duplicateOf": "chain-of-dogs-first-half",
+      "note": "Ecart moyen 2,7 sur 255 — meme carte, 1150x871 contre 2000x1514. Presente seulement dans le depot source, jamais servie."
+    },
+    {
+      "id": "Map_Edur_Lands",
+      "title": "Tiste Edur Lands and North Lether Frontier",
+      "group": "Lether",
+      "scope": "region",
+      "duplicateOf": "tiste-edur-lands-and-north-lether-frontier",
+      "note": "Ecart moyen 2,5 sur 255 — meme carte, 960x720 contre 1920x1440. Depot source uniquement."
+    },
+    {
+      "id": "Map_Genabackis_from_GotM",
+      "title": "Genabackis: The Malazan Campaign",
+      "group": "Genabackis",
+      "scope": "campaign",
+      "duplicateOf": "genabackis-the-malazan-campaign",
+      "note": "Ecart moyen 2,2 sur 255 — meme carte, 662x1028 contre 1324x2056. Depot source uniquement."
+    },
+    {
+      "id": "Map_Northwest_Genabackis",
+      "title": "Northwest Genabackis",
+      "group": "Genabackis",
+      "scope": "region",
+      "duplicateOf": "northwest-genabackis",
+      "note": "Ecart moyen 2,2 sur 255 — meme carte, 1000x782 contre 2000x1564. Depot source uniquement."
+    },
+    {
+      "id": "NW_Genabackis_GNW",
+      "title": "Northwest Genabackis, Late Empire",
+      "group": "Genabackis",
+      "scope": "region",
+      "duplicateOf": "northwest-genabackis-late-empire",
+      "note": "Ecart moyen 2,4 sur 255 — meme carte, 1000x807 contre 2479x2000. Depot source uniquement."
+    },
+    {
+      "id": "South_Genabackis",
+      "title": "South Genabackis and environs",
+      "group": "Genabackis",
+      "scope": "region",
+      "duplicateOf": "south-genabackis-and-environs",
+      "note": "Ecart moyen 5,6 sur 255 — meme carte, 1000x624 contre 2000x1248. Depot source uniquement."
+    },
+    {
+      "id": "malazan-seven",
+      "title": "Seven Cities",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-quon",
+      "title": "Quon Tali",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-genabackis",
+      "title": "Genabackis, after the Fall of Coral",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-lether",
+      "title": "Letherii Empire & Kingdom of Kolanse",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-fist",
+      "title": "Lands of Fist & Stratem",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-assail",
+      "title": "Assail & Bael",
+      "group": "Atlas illustre",
+      "scope": "continent",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-jacuruku",
+      "title": "The Isle of Jacuruku",
+      "group": "Atlas illustre",
+      "scope": "region",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-parish",
+      "title": "Region West of Seven Cities",
+      "group": "Atlas illustre",
+      "scope": "region",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    },
+    {
+      "id": "malazan-genostel",
+      "title": "Genostel Archipelago & Umryg",
+      "group": "Atlas illustre",
+      "scope": "region",
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+    }
+  ]
+}

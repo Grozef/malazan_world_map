@@ -1,0 +1,81 @@
+{
+  "note": "Symboles de lieu releves dans la LEGENDE de la carte de Genabackis de Joshua Butler par tools/sprites.mjs. Servi au navigateur : les villes restent une couche interactive, elles ne sont pas peintes dans le fond. x/y/w/h = position dans le png ; src = origine dans la carte source.",
+  "atlas": {
+    "width": 281,
+    "height": 62
+  },
+  "sprites": {
+    "major": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 53,
+        "h": 51,
+        "src": [
+          2480,
+          1106
+        ]
+      }
+    ],
+    "minor": [
+      {
+        "x": 57,
+        "y": 2,
+        "w": 48,
+        "h": 52,
+        "src": [
+          2701,
+          1105
+        ]
+      }
+    ],
+    "fort": [
+      {
+        "x": 107,
+        "y": 2,
+        "w": 36,
+        "h": 58,
+        "src": [
+          2923,
+          1099
+        ]
+      }
+    ],
+    "village": [
+      {
+        "x": 145,
+        "y": 2,
+        "w": 43,
+        "h": 47,
+        "src": [
+          2485,
+          1230
+        ]
+      }
+    ],
+    "camp": [
+      {
+        "x": 190,
+        "y": 2,
+        "w": 48,
+        "h": 48,
+        "src": [
+          2702,
+          1229
+        ]
+      }
+    ],
+    "ruins": [
+      {
+        "x": 240,
+        "y": 2,
+        "w": 39,
+        "h": 40,
+        "src": [
+          2922,
+          1233
+        ]
+      }
+    ]
+  }
+}

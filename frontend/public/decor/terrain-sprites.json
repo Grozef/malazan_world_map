@@ -1,0 +1,103 @@
+{
+  "note": "Symboles de relief et de foret decoupes dans la carte de Genabackis de Joshua Butler par tools/sprites.mjs. Consomme par tools/paint-terrain.mjs, qui les CUIT dans la carte-monde : cet atlas ne part pas au navigateur. x/y/w/h = position dans le png ; src = origine dans la carte source.",
+  "atlas": {
+    "width": 349,
+    "height": 54
+  },
+  "sprites": {
+    "mountain": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 52,
+        "h": 38,
+        "src": [
+          548,
+          2682
+        ]
+      },
+      {
+        "x": 56,
+        "y": 2,
+        "w": 44,
+        "h": 40,
+        "src": [
+          578,
+          2695
+        ]
+      },
+      {
+        "x": 102,
+        "y": 2,
+        "w": 49,
+        "h": 42,
+        "src": [
+          543,
+          2718
+        ]
+      },
+      {
+        "x": 153,
+        "y": 2,
+        "w": 39,
+        "h": 44,
+        "src": [
+          545,
+          2768
+        ]
+      },
+      {
+        "x": 194,
+        "y": 2,
+        "w": 54,
+        "h": 50,
+        "src": [
+          493,
+          2680
+        ]
+      },
+      {
+        "x": 250,
+        "y": 2,
+        "w": 38,
+        "h": 50,
+        "src": [
+          1004,
+          1654
+        ]
+      }
+    ],
+    "forest": [
+      {
+        "x": 290,
+        "y": 2,
+        "w": 16,
+        "h": 26,
+        "src": [
+          608,
+          2670
+        ]
+      },
+      {
+        "x": 308,
+        "y": 2,
+        "w": 17,
+        "h": 26,
+        "src": [
+          625,
+          2704
+        ]
+      },
+      {
+        "x": 327,
+        "y": 2,
+        "w": 20,
+        "h": 26,
+        "src": [
+          657,
+          1182
+        ]
+      }
+    ]
+  }
+}

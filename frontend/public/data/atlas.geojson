@@ -1,0 +1,1453 @@
+{
+  "type": "FeatureCollection",
+  "note": "Cartes annexes de l'atlas. GENERE par tools/atlas-index.mjs depuis tools/atlas-meta.json — ne pas editer a la main. Geometrie en pixel [x, y] origine haut-gauche de la carte-monde 10000x5571 : Polygon = rectangle d'emprise (approximation alignee sur les axes, ces cartes sont de mains et d'echelles differentes), Point = plan de ville ancre sur la ville, null = carte sans place sur cette carte-monde (age de Kharkanas).",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6480,
+              640
+            ],
+            [
+              7790,
+              640
+            ],
+            [
+              7790,
+              2360
+            ],
+            [
+              6480,
+              2360
+            ],
+            [
+              6480,
+              640
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "Genabackis_Grey_by_Joshua_Butler",
+        "title": "Genabackis",
+        "group": "Genabackis",
+        "scope": "continent",
+        "image": "img/Genabackis_Grey_by_Joshua_Butler.webp",
+        "width": 3200,
+        "height": 3747,
+        "era": "Malazan Empire circa 1160 Burn's Sleep"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6480,
+              640
+            ],
+            [
+              7790,
+              640
+            ],
+            [
+              7790,
+              2360
+            ],
+            [
+              6480,
+              2360
+            ],
+            [
+              6480,
+              640
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "Genabackis_V4_by_Joshua_Butler",
+        "title": "Genabackis, colour version",
+        "group": "Genabackis",
+        "scope": "continent",
+        "image": "img/Genabackis_V4_by_Joshua_Butler.webp",
+        "width": 1000,
+        "height": 1173,
+        "era": "Malazan Empire circa 1160 Burn's Sleep"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6480,
+              640
+            ],
+            [
+              7790,
+              640
+            ],
+            [
+              7790,
+              2360
+            ],
+            [
+              6480,
+              2360
+            ],
+            [
+              6480,
+              640
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "genabackis-the-malazan-campaign",
+        "title": "Genabackis: The Malazan Campaign",
+        "group": "Genabackis",
+        "scope": "campaign",
+        "image": "img/genabackis-the-malazan-campaign.webp",
+        "width": 1324,
+        "height": 2056,
+        "era": "ca 1160 Burn's Sleep",
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            204,
+            420,
+            1723,
+            2778
+          ]
+        },
+        "cible": [
+          6780,
+          1270,
+          6960,
+          1390
+        ],
+        "cibleDans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            763,
+            453,
+            837,
+            527
+          ]
+        },
+        "tiles": {
+          "url": "tiles/annexes/genabackis-the-malazan-campaign/{z}/{x}/{y}.webp",
+          "minNative": -4,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6480,
+              640
+            ],
+            [
+              7790,
+              640
+            ],
+            [
+              7790,
+              2360
+            ],
+            [
+              6480,
+              2360
+            ],
+            [
+              6480,
+              640
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "genabackis-the-pannion-war",
+        "title": "Genabackis: The Pannion War",
+        "group": "Genabackis",
+        "scope": "campaign",
+        "image": "img/genabackis-the-pannion-war.webp",
+        "width": 1504,
+        "height": 2208,
+        "era": "ca 1160 Burn's Sleep",
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            160,
+            420,
+            1766,
+            2778
+          ]
+        },
+        "cible": [
+          6820,
+          1520,
+          6960,
+          1620
+        ],
+        "cibleDans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            926,
+            2703,
+            1000,
+            2777
+          ]
+        },
+        "tiles": {
+          "url": "tiles/annexes/genabackis-the-pannion-war/{z}/{x}/{y}.webp",
+          "minNative": -4,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6698,
+              793
+            ],
+            [
+              6959,
+              793
+            ],
+            [
+              6959,
+              997
+            ],
+            [
+              6698,
+              997
+            ],
+            [
+              6698,
+              793
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "northwest-genabackis",
+        "title": "Northwest Genabackis",
+        "group": "Genabackis",
+        "scope": "region",
+        "image": "img/northwest-genabackis.webp",
+        "width": 2000,
+        "height": 1564,
+        "era": "circa 1160, post Malazan conquest",
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            560,
+            540,
+            1200,
+            1040
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6786,
+              808
+            ],
+            [
+              6970,
+              808
+            ],
+            [
+              6970,
+              956
+            ],
+            [
+              6786,
+              956
+            ],
+            [
+              6786,
+              808
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "northwest-genabackis-late-empire",
+        "title": "Northwest Genabackis, Late Empire",
+        "group": "Genabackis",
+        "scope": "region",
+        "image": "img/northwest-genabackis-late-empire.webp",
+        "width": 2479,
+        "height": 2000,
+        "era": "Late Empire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6545,
+              1683
+            ],
+            [
+              8074,
+              1683
+            ],
+            [
+              8074,
+              2644
+            ],
+            [
+              6545,
+              2644
+            ],
+            [
+              6545,
+              1683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "south-genabackis-and-environs",
+        "title": "South Genabackis and environs",
+        "group": "Genabackis",
+        "scope": "region",
+        "image": "img/south-genabackis-and-environs.webp",
+        "width": 2000,
+        "height": 1248,
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            337,
+            2132,
+            3063,
+            3747
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7102,
+          1542
+        ]
+      },
+      "properties": {
+        "id": "capustan-eastern-genabackis",
+        "title": "Capustan, Eastern Genabackis",
+        "group": "Genabackis",
+        "scope": "city",
+        "image": "img/capustan-eastern-genabackis.webp",
+        "width": 1684,
+        "height": 1224,
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            1255,
+            1819,
+            1329,
+            1893
+          ]
+        },
+        "tiles": {
+          "url": "tiles/annexes/capustan-eastern-genabackis/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6781,
+          1527
+        ]
+      },
+      "properties": {
+        "id": "darujhistan",
+        "title": "Darujhistan",
+        "group": "Genabackis",
+        "scope": "city",
+        "image": "img/darujhistan.webp",
+        "width": 2103,
+        "height": 1578,
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            716,
+            1823,
+            790,
+            1897
+          ]
+        },
+        "tiles": {
+          "url": "tiles/villes/darujhistan/{z}/{x}/{y}.webp",
+          "minNative": -4,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6950,
+              1590
+            ],
+            [
+              7160,
+              1590
+            ],
+            [
+              7160,
+              1800
+            ],
+            [
+              6950,
+              1800
+            ],
+            [
+              6950,
+              1590
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "black-coral-and-environs",
+        "title": "Black Coral & Environs",
+        "group": "Genabackis",
+        "scope": "region",
+        "image": "img/black-coral-and-environs.webp",
+        "width": 2000,
+        "height": 1296,
+        "dans": {
+          "Genabackis_Grey_by_Joshua_Butler": [
+            1235,
+            2051,
+            1309,
+            2125
+          ]
+        },
+        "tiles": {
+          "url": "tiles/villes/black-coral-and-environs/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4230,
+              560
+            ],
+            [
+              5790,
+              560
+            ],
+            [
+              5790,
+              1660
+            ],
+            [
+              4230,
+              1660
+            ],
+            [
+              4230,
+              560
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "seven-cities-the-bonehunters",
+        "title": "Seven Cities, The Malazan Empire",
+        "group": "Seven Cities",
+        "scope": "continent",
+        "image": "img/seven-cities-the-bonehunters.webp",
+        "width": 2000,
+        "height": 1274,
+        "era": "ca 1160 Burn's Sleep"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4230,
+              560
+            ],
+            [
+              5790,
+              560
+            ],
+            [
+              5790,
+              1660
+            ],
+            [
+              4230,
+              1660
+            ],
+            [
+              4230,
+              560
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "seven-cities-deadhouse-gates",
+        "title": "Seven Cities, The Malazan Empire",
+        "group": "Seven Cities",
+        "scope": "continent",
+        "image": "img/seven-cities-deadhouse-gates.webp",
+        "width": 2000,
+        "height": 1550,
+        "era": "ca 1160 Burn's Sleep"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5338,
+              1099
+            ],
+            [
+              5701,
+              1099
+            ],
+            [
+              5701,
+              1346
+            ],
+            [
+              5338,
+              1346
+            ],
+            [
+              5338,
+              1099
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "chain-of-dogs-first-half",
+        "title": "Chain of Dogs, Coltaine's March, The First Half",
+        "group": "Seven Cities",
+        "scope": "campaign",
+        "image": "img/chain-of-dogs-first-half.webp",
+        "width": 2000,
+        "height": 1514,
+        "dans": {
+          "seven-cities-the-bonehunters": [
+            1309,
+            603,
+            1709,
+            847
+          ]
+        },
+        "tiles": {
+          "url": "tiles/annexes/chain-of-dogs-first-half/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4892,
+              1207
+            ],
+            [
+              5361,
+              1207
+            ],
+            [
+              5361,
+              1551
+            ],
+            [
+              4892,
+              1551
+            ],
+            [
+              4892,
+              1207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "chain-of-dogs-second-half",
+        "title": "Chain of Dogs, Coltaine's March, The Second Half",
+        "group": "Seven Cities",
+        "scope": "campaign",
+        "image": "img/chain-of-dogs-second-half.webp",
+        "width": 2000,
+        "height": 1550,
+        "dans": {
+          "seven-cities-the-bonehunters": [
+            808,
+            694,
+            1375,
+            1130
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5300,
+              1020
+            ],
+            [
+              5470,
+              1020
+            ],
+            [
+              5470,
+              1130
+            ],
+            [
+              5300,
+              1130
+            ],
+            [
+              5300,
+              1020
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "pan-arak-oasis-raraku-s-heart",
+        "title": "Pan'arak Oasis, Raraku's Heart",
+        "group": "Seven Cities",
+        "scope": "region",
+        "image": "img/pan-arak-oasis-raraku-s-heart.webp",
+        "width": 2000,
+        "height": 1332,
+        "dans": {
+          "seven-cities-the-bonehunters": [
+            1346,
+            591,
+            1392,
+            637
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4800,
+              2150
+            ],
+            [
+              5820,
+              2150
+            ],
+            [
+              5820,
+              2900
+            ],
+            [
+              4800,
+              2900
+            ],
+            [
+              4800,
+              2150
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "central-malazan-empire-quon-tali",
+        "title": "Central Malazan Empire, Quon Tali",
+        "group": "Quon Tali",
+        "scope": "continent",
+        "image": "img/central-malazan-empire-quon-tali.webp",
+        "width": 1635,
+        "height": 1067,
+        "cible": [
+          4900,
+          2640,
+          5180,
+          2820
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4850,
+              1450
+            ],
+            [
+              5820,
+              1450
+            ],
+            [
+              5820,
+              2900
+            ],
+            [
+              4850,
+              2900
+            ],
+            [
+              4850,
+              1450
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "central-malazan-empire",
+        "title": "Central Malazan Empire (showing major cities only)",
+        "group": "Quon Tali",
+        "scope": "overview",
+        "image": "img/central-malazan-empire.webp",
+        "width": 1200,
+        "height": 1988
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5210,
+          2690
+        ]
+      },
+      "properties": {
+        "id": "li-heng",
+        "title": "City of Li Heng, Post-Quon Tali Hegemony",
+        "group": "Quon Tali",
+        "scope": "city",
+        "image": "img/li-heng.webp",
+        "width": 2000,
+        "height": 1320,
+        "dans": {
+          "central-malazan-empire-quon-tali": [
+            803,
+            592,
+            841,
+            630
+          ]
+        },
+        "tiles": {
+          "url": "tiles/villes/li-heng/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5530,
+              2795
+            ],
+            [
+              5640,
+              2795
+            ],
+            [
+              5640,
+              2880
+            ],
+            [
+              5530,
+              2880
+            ],
+            [
+              5530,
+              2795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "malaz-isle",
+        "title": "Malaz Isle circa 1150",
+        "group": "Quon Tali",
+        "scope": "region",
+        "image": "img/malaz-isle.webp",
+        "width": 2000,
+        "height": 1310,
+        "dans": {
+          "central-malazan-empire-quon-tali": [
+            1363,
+            837,
+            1439,
+            909
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5613,
+          2825
+        ]
+      },
+      "properties": {
+        "id": "malaz-city",
+        "title": "Malaz City",
+        "group": "Quon Tali",
+        "scope": "city",
+        "image": "img/malaz-city.webp",
+        "width": 2000,
+        "height": 1464,
+        "dans": {
+          "central-malazan-empire-quon-tali": [
+            1397,
+            841,
+            1435,
+            879
+          ],
+          "malaz-isle": [
+            1604,
+            447,
+            1650,
+            493
+          ]
+        },
+        "tiles": {
+          "url": "tiles/villes/malaz-city/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              820,
+              2930
+            ],
+            [
+              2400,
+              2930
+            ],
+            [
+              2400,
+              4320
+            ],
+            [
+              820,
+              4320
+            ],
+            [
+              820,
+              2930
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "the-empire-of-lether",
+        "title": "The Empire of Lether and its neighbours...",
+        "group": "Lether",
+        "scope": "continent",
+        "image": "img/the-empire-of-lether.webp",
+        "width": 1719,
+        "height": 1309
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1216,
+          3492
+        ]
+      },
+      "properties": {
+        "id": "central-letheras",
+        "title": "Central Letheras",
+        "group": "Lether",
+        "scope": "city",
+        "image": "img/central-letheras.webp",
+        "width": 2000,
+        "height": 1172,
+        "dans": {
+          "the-empire-of-lether": [
+            465,
+            402,
+            505,
+            442
+          ]
+        },
+        "tiles": {
+          "url": "tiles/villes/central-letheras/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              880,
+              3020
+            ],
+            [
+              1520,
+              3020
+            ],
+            [
+              1520,
+              3520
+            ],
+            [
+              880,
+              3520
+            ],
+            [
+              880,
+              3020
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tiste-edur-lands-and-north-lether-frontier",
+        "title": "Tiste Edur Lands and North Lether Frontier",
+        "group": "Lether",
+        "scope": "region",
+        "image": "img/tiste-edur-lands-and-north-lether-frontier.webp",
+        "width": 1920,
+        "height": 1440,
+        "dans": {
+          "the-empire-of-lether": [
+            68,
+            103,
+            762,
+            470
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5520,
+              2700
+            ],
+            [
+              6900,
+              2700
+            ],
+            [
+              6900,
+              3700
+            ],
+            [
+              5520,
+              3700
+            ],
+            [
+              5520,
+              2700
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "the-lands-of-fist",
+        "title": "The Lands of Fist",
+        "group": "Fist",
+        "scope": "continent",
+        "image": "img/the-lands-of-fist.webp",
+        "width": 2646,
+        "height": 1890
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5450,
+              3100
+            ],
+            [
+              5790,
+              3100
+            ],
+            [
+              5790,
+              3380
+            ],
+            [
+              5450,
+              3380
+            ],
+            [
+              5450,
+              3100
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "main-installations-of-the-stormwall",
+        "title": "Main Installations of the Stormwall",
+        "group": "Fist",
+        "scope": "schema",
+        "image": "img/main-installations-of-the-stormwall.webp",
+        "width": 1800,
+        "height": 1141
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7113,
+              2235
+            ],
+            [
+              8011,
+              2235
+            ],
+            [
+              8011,
+              3665
+            ],
+            [
+              7113,
+              3665
+            ],
+            [
+              7113,
+              2235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "assail-and-environs",
+        "title": "Assail & environs",
+        "group": "Assail",
+        "scope": "continent",
+        "image": "img/assail-and-environs.webp",
+        "width": 1356,
+        "height": 2176,
+        "era": "As compiled from diverse sources by Reuth, son of Tulan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7480,
+              2600
+            ],
+            [
+              7620,
+              2600
+            ],
+            [
+              7620,
+              2780
+            ],
+            [
+              7480,
+              2780
+            ],
+            [
+              7480,
+              2600
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "the-blood-range",
+        "title": "The Blood Range",
+        "group": "Assail",
+        "scope": "schema",
+        "image": "img/the-blood-range.webp",
+        "width": 698,
+        "height": 1084
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4857,
+              1705
+            ],
+            [
+              5732,
+              1705
+            ],
+            [
+              5732,
+              2453
+            ],
+            [
+              4857,
+              2453
+            ],
+            [
+              4857,
+              1705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "falar-and-environs",
+        "title": "Falar & Environs",
+        "group": "Falar",
+        "scope": "continent",
+        "image": "img/falar-and-environs.webp",
+        "width": 2400,
+        "height": 1910,
+        "era": "As compiled from diverse sources by Imperial Historian Feroot"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2836,
+              3376
+            ],
+            [
+              3507,
+              3376
+            ],
+            [
+              3507,
+              4339
+            ],
+            [
+              2836,
+              4339
+            ],
+            [
+              2836,
+              3376
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "kolanse",
+        "title": "Kolanse",
+        "group": "Kolanse",
+        "scope": "continent",
+        "image": "img/kolanse.webp",
+        "width": 1540,
+        "height": 2228
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4172,
+              2942
+            ],
+            [
+              5007,
+              2942
+            ],
+            [
+              5007,
+              4131
+            ],
+            [
+              4172,
+              4131
+            ],
+            [
+              4172,
+              2942
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "the-isle-of-jacuruku",
+        "title": "The Isle of Jacuruku",
+        "group": "Jacuruku",
+        "scope": "continent",
+        "image": "img/the-isle-of-jacuruku.webp",
+        "width": 916,
+        "height": 1358
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "kurald-galain",
+        "title": "Kurald Galain",
+        "group": "Age of Kharkanas",
+        "scope": "realm",
+        "image": "img/kurald-galain.webp",
+        "width": 1936,
+        "height": 1168
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "kharkanas",
+        "title": "Kharkanas (central)",
+        "group": "Age of Kharkanas",
+        "scope": "city",
+        "image": "img/kharkanas.webp",
+        "width": 2000,
+        "height": 1429,
+        "parent": "kurald-galain",
+        "tiles": {
+          "url": "tiles/villes/kharkanas/{z}/{x}/{y}.webp",
+          "minNative": -3,
+          "maxNative": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "thel-akai-jaghut-tiste-realms",
+        "title": "Thel Akai, Jaghut, Tiste Realms",
+        "group": "Age of Kharkanas",
+        "scope": "realm",
+        "image": "img/thel-akai-jaghut-tiste-realms.webp",
+        "width": 1174,
+        "height": 1812
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-seven",
+        "title": "Seven Cities",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-seven.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-quon",
+        "title": "Quon Tali",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-quon.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-genabackis",
+        "title": "Genabackis, after the Fall of Coral",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-genabackis.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-lether",
+        "title": "Letherii Empire & Kingdom of Kolanse",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-lether.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-fist",
+        "title": "Lands of Fist & Stratem",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-fist.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-assail",
+        "title": "Assail & Bael",
+        "group": "Atlas illustre",
+        "scope": "continent",
+        "image": "img/malazan-assail.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-jacuruku",
+        "title": "The Isle of Jacuruku",
+        "group": "Atlas illustre",
+        "scope": "region",
+        "image": "img/malazan-jacuruku.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-parish",
+        "title": "Region West of Seven Cities",
+        "group": "Atlas illustre",
+        "scope": "region",
+        "image": "img/malazan-parish.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "malazan-genostel",
+        "title": "Genostel Archipelago & Umryg",
+        "group": "Atlas illustre",
+        "scope": "region",
+        "image": "img/malazan-genostel.webp",
+        "width": 3000,
+        "height": 2080
+      }
+    }
+  ]
+}

@@ -6,9 +6,48 @@
       "type": "Feature",
       "geometry": {
         "type": "LineString",
-        "coordinates": [[5421, 1096], [5248, 1153], [5133, 1269], [5190, 1384], [5255, 1492]]
+        "coordinates": [
+          [
+            5421,
+            1096
+          ],
+          [
+            5248,
+            1153
+          ],
+          [
+            5133,
+            1269
+          ],
+          [
+            5190,
+            1384
+          ],
+          [
+            5255,
+            1492
+          ]
+        ]
       },
-      "properties": { "name": "Chain of Dogs", "route_type": "campaign", "continent": "Seven Cities", "book": "Deadhouse Gates", "note": "Marche de Coltaine, de Hissar a Aren", "placeholder": true }
+      "properties": {
+        "name": "Chain of Dogs",
+        "route_type": "campaign",
+        "continent": "Seven Cities",
+        "book": "Deadhouse Gates",
+        "note": "Coltaine's march, from Hissar to Aren",
+        "placeholder": true,
+        "id": "chain-of-dogs",
+        "map": {
+          "image": "img/chain-of-dogs-first-half.webp",
+          "width": 2000,
+          "height": 1514,
+          "tiles": {
+            "url": "tiles/annexes/chain-of-dogs-first-half/{z}/{x}/{y}.webp",
+            "minNative": -3,
+            "maxNative": 0
+          }
+        }
+      }
     }
   ]
 }
