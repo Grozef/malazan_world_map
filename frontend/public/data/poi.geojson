@@ -25,7 +25,6 @@
         "name": "Stormwall",
         "continent": "Fist",
         "id": "main-installations-of-the-stormwall",
-        "note": "Ancre au centre de l emprise de la carte annexe (340x280 px). Ville la plus proche : Shelter, a 43 px.",
         "map": {
           "image": "img/main-installations-of-the-stormwall.webp",
           "width": 1800,
@@ -40,7 +39,6 @@
         "name": "The Blood Range",
         "continent": "Assail",
         "id": "the-blood-range",
-        "note": "Ancre au centre de l emprise de la carte annexe (140x180 px). Ville la plus proche : Reach, a 86 px.",
         "map": {
           "image": "img/the-blood-range.webp",
           "width": 698,
