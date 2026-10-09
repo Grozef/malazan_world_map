@@ -215,11 +215,11 @@
     },
     {
       "id": "seven-cities-the-bonehunters",
-      "title": "Seven Cities, The Malazan Empire",
+      "title": "Seven Cities, The Malazan Empire (The Bonehunters)",
       "group": "Seven Cities",
       "scope": "continent",
       "era": "ca 1160 Burn's Sleep",
-      "note": "Le nom de fichier rattache cette version au livre The Bonehunters. Le titre imprime, lui, ne cite aucun livre.",
+      "note": "Le nom de fichier rattache cette version au livre The Bonehunters. Le titre imprime, lui, ne cite aucun livre : le suffixe entre parentheses est AJOUTE pour la distinguer de seven-cities-deadhouse-gates, qui porte le meme titre imprime dans le meme groupe.",
       "bbox": [
         4230,
         560,
@@ -237,11 +237,11 @@
     },
     {
       "id": "seven-cities-deadhouse-gates",
-      "title": "Seven Cities, The Malazan Empire",
+      "title": "Seven Cities, The Malazan Empire (Deadhouse Gates)",
       "group": "Seven Cities",
       "scope": "continent",
       "era": "ca 1160 Burn's Sleep",
-      "note": "Version DISTINCTE des deux precedentes (ecart moyen 37,6) : cadrage plus large vers l'est, echelle en lieues portee. Le nom de fichier la rattache a Deadhouse Gates.",
+      "note": "Version DISTINCTE des deux precedentes (ecart moyen 37,6) : cadrage plus large vers l'est, echelle en lieues portee. Le nom de fichier la rattache a Deadhouse Gates. Le titre imprime ne cite aucun livre : le suffixe entre parentheses est AJOUTE pour la distinguer de seven-cities-the-bonehunters.",
       "bbox": [
         4230,
         560,

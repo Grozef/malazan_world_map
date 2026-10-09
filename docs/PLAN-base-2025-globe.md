@@ -131,6 +131,42 @@ d'un pipeline sharp est FIGE (resize AVANT extend, composite APRES les deux),
 peu importe l'ordre d'ecriture. Le script actuel enchaine deja TROIS passes
 bufferisees (composite -> extend -> resize) : CONSERVER cette structure.
 Artefact : crop du coin haut-gauche de la texture regeneree (cartouche absent,
+
+### Calottes polaires (2026-09-07)
+
+La carte couvrait les 180 deg de colatitude de la texture : ses pixels de bord
+etaient donc etires jusqu'au pole, ou la circonference tend vers zero. Le script
+cale desormais la carte entre `--calotte` et `180 - --calotte` degres (defaut 5)
+et remplit les deux bandes restantes d'un aplat.
+
+L'aplat n'est PAS une constante : c'est la MOYENNE de la ligne de carte qui touche
+la bande. Un bleu ocean en dur serait faux au sud, ou le bord de carte est une
+banquise blanche — mesure : nord rgb(196,223,255), sud rgb(255,255,255).
+
+PIEGE PAYE UNE 3e FOIS ici : deux `.extend()` chaines dans le MEME pipeline ne
+s'empilent pas, sharp n'en applique qu'un. La texture est alors sortie en
+4096x1991 au lieu de 4096x2048, donc hors ratio 2:1 — invisible sans mesurer la
+hauteur. Correctif conforme a la regle ci-dessus : DEUX passes bufferisees, sud
+puis nord.
+
+PIEGE N.2, CELUI QUI COMPTE : `resize(w, h)` de sharp utilise `fit: 'cover'` par
+defaut — il preserve le ratio et ROGNE pour remplir la boite. La carte etait donc
+AMPUTEE de ses 5 degres de bord au lieu d'etre comprimee dedans. Il faut
+`{ fit: 'fill' }` explicitement. Ce defaut est indetectable sur une source dont
+les bords sont uniformes : la texture 2020 sortait byte-identique a la version
+sans calotte, et la mesure d'uniformite des bandes passait au vert sur un fichier
+non regenere.
+
+Artefacts de controle, les deux sont necessaires :
+1. uniformite : CHAQUE pixel des deux bandes sur les 4 textures (2025/2020 x
+   4096/8192) -> ecart max 0 a la couleur d'aplat, 233 472 et 933 888 px par
+   bande, ratio 2.000 ;
+2. COMPRESSION et non rognage : la premiere ligne de contenu doit se DEPLACER de
+   `y` a `bande + y * bandeH / H`. Mesure 2020 : 149 -> 200 (attendu 198) en
+   4096, 303 -> 400 (attendu 400) en 8192. Sans ce second controle, le rognage
+   passe.
+Plus un rendu azimutal par pole via `_calotte.mjs`.
+
 pas de residu « ALLEN ») + crop vers y=1024 montrant l'equateur present.
 
 ## Chantier D — le globe devient l'accueil

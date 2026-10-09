@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Lieux notables qui ne sont NI une ville NI un continent, et qui ont une etendue propre sur la carte-monde. Deadhouse (Malaz City) et Finnest House (Darujhistan) ont ete retires : ce sont des batiments DANS une ville, sans place a cette echelle, et leurs coordonnees etaient des placeholders poses a l oeil. Ils relevent du plan de leur ville.",
+  "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Lieux notables qui ne sont NI une ville NI un continent, et qui ont une etendue propre sur la carte-monde. Deadhouse (Malaz City) et Finnest House (Darujhistan) ont ete retires : ce sont des batiments DANS une ville, sans place a cette echelle, et leurs coordonnees etaient des placeholders poses a l oeil. Ils relevent du plan de leur ville. Les entrees ajoutees le 2026-09-07 sont ancrees sur le centre de l emprise de leur carte annexe dans atlas.geojson (id identique), et `continent` reprend le `group` de cette entree. `type` est laisse absent : il n a pas ete valide. `map` reproduit la convention de Raraku ; AUCUN code du frontend ne lit ce champ aujourd hui.",
   "features": [
     {
       "type": "Feature",
@@ -15,6 +15,36 @@
           "image": "img/pan-arak-oasis-raraku-s-heart.webp",
           "width": 2000,
           "height": 1332
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5620, 3240] },
+      "properties": {
+        "name": "Stormwall",
+        "continent": "Fist",
+        "id": "main-installations-of-the-stormwall",
+        "note": "Ancre au centre de l emprise de la carte annexe (340x280 px). Ville la plus proche : Shelter, a 43 px.",
+        "map": {
+          "image": "img/main-installations-of-the-stormwall.webp",
+          "width": 1800,
+          "height": 1141
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7550, 2690] },
+      "properties": {
+        "name": "The Blood Range",
+        "continent": "Assail",
+        "id": "the-blood-range",
+        "note": "Ancre au centre de l emprise de la carte annexe (140x180 px). Ville la plus proche : Reach, a 86 px.",
+        "map": {
+          "image": "img/the-blood-range.webp",
+          "width": 698,
+          "height": 1084
         }
       }
     }

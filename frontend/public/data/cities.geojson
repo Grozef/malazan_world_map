@@ -1,6 +1,15 @@
 {
   "type": "FeatureCollection",
   "note": "coordinates = pixel [x, y] origine haut-gauche (carte 10000x5571). Positions RELEVEES sur la carte source et confirmees par le symbole detecte au meme endroit (voir tools/cities.mjs). Les placeholders poses a l oeil etaient faux de 54 a 492 px. /!\\ `status` est LU par utils/citySymbols.js (table PAR_STATUT) autant qu'affiche : ses valeurs anglaises doivent rester identiques des deux cotes.",
+  "genere": {
+    "par": "tools/cities-geojson.mjs",
+    "note": "8 fiches redigees a la main, conservees telles quelles et placees en tete. Les suivantes sont generees depuis cities-detectees.json + tools/villes-noms.json : elles ne portent que name + rang. `rang` est le symbole PEINT sur la carte, pas le statut politique.",
+    "fiches": 8,
+    "generees": 383,
+    "symboles_nommes": 397,
+    "absorbes_par_une_fiche": 8,
+    "fusions_de_grappe": 6
+  },
   "features": [
     {
       "type": "Feature",
@@ -194,6 +203,5368 @@
             "maxNative": 0
           }
         }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6528,
+          2986
+        ]
+      },
+      "properties": {
+        "name": "Aamil",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7016,
+          1009
+        ]
+      },
+      "properties": {
+        "name": "Abor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5609,
+          1087
+        ]
+      },
+      "properties": {
+        "name": "Ahol Tapur",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5011,
+          2629
+        ]
+      },
+      "properties": {
+        "name": "Aireck",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6477,
+          3084
+        ]
+      },
+      "properties": {
+        "name": "Aliss",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7535,
+          2202
+        ]
+      },
+      "properties": {
+        "name": "Amat El",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1524,
+          3481
+        ]
+      },
+      "properties": {
+        "name": "Andara",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4430,
+          3404
+        ]
+      },
+      "properties": {
+        "name": "Anditi Pura",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7146,
+          1176
+        ]
+      },
+      "properties": {
+        "name": "Anklos",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5447,
+          3705
+        ]
+      },
+      "properties": {
+        "name": "Antr",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7266,
+          958
+        ]
+      },
+      "properties": {
+        "name": "Apple",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4914,
+          2654
+        ]
+      },
+      "properties": {
+        "name": "Arath",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5018,
+          990
+        ]
+      },
+      "properties": {
+        "name": "Ashok",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5322,
+          2664
+        ]
+      },
+      "properties": {
+        "name": "Aska",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5419,
+          1272
+        ]
+      },
+      "properties": {
+        "name": "Asmar",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5456,
+          2491
+        ]
+      },
+      "properties": {
+        "name": "Athrans",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4963,
+          2585
+        ]
+      },
+      "properties": {
+        "name": "Attic",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          932,
+          3459
+        ]
+      },
+      "properties": {
+        "name": "Awl",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6650,
+          1002
+        ]
+      },
+      "properties": {
+        "name": "Ayjhan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5494,
+          2682
+        ]
+      },
+      "properties": {
+        "name": "Aythan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3171,
+          3658
+        ]
+      },
+      "properties": {
+        "name": "Back",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5548,
+          1909
+        ]
+      },
+      "properties": {
+        "name": "Bada",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5601,
+          1337
+        ]
+      },
+      "properties": {
+        "name": "Bakun",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5813,
+          3123
+        ]
+      },
+      "properties": {
+        "name": "Bali",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6267,
+          3073
+        ]
+      },
+      "properties": {
+        "name": "Banith",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5474,
+          1770
+        ]
+      },
+      "properties": {
+        "name": "Bantra",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5577,
+          2429
+        ]
+      },
+      "properties": {
+        "name": "Baran",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5048,
+          2638
+        ]
+      },
+      "properties": {
+        "name": "Bastial",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6870,
+          1745
+        ]
+      },
+      "properties": {
+        "name": "Bastion",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6898,
+          1115
+        ]
+      },
+      "properties": {
+        "name": "Bear",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5197,
+          2111
+        ]
+      },
+      "properties": {
+        "name": "Belade",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5160,
+          851
+        ]
+      },
+      "properties": {
+        "name": "Belbasi",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5560,
+          2136
+        ]
+      },
+      "properties": {
+        "name": "Belid",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5524,
+          2192
+        ]
+      },
+      "properties": {
+        "name": "Belikan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1366,
+          3797
+        ]
+      },
+      "properties": {
+        "name": "Beller",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6828,
+          915
+        ]
+      },
+      "properties": {
+        "name": "Bettrys",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6376,
+          3140
+        ]
+      },
+      "properties": {
+        "name": "Black City",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5686,
+          3624
+        ]
+      },
+      "properties": {
+        "name": "Blight",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5415,
+          2580
+        ]
+      },
+      "properties": {
+        "name": "Bloor",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6901,
+          911
+        ]
+      },
+      "properties": {
+        "name": "Blued",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1592,
+          3504
+        ]
+      },
+      "properties": {
+        "name": "Bluerose",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6919,
+          1010
+        ]
+      },
+      "properties": {
+        "name": "Bodd",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1968,
+          3977
+        ]
+      },
+      "properties": {
+        "name": "Bolkando",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7731,
+          2976
+        ]
+      },
+      "properties": {
+        "name": "Bones",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7576,
+          2094
+        ]
+      },
+      "properties": {
+        "name": "Bounty",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1197,
+          3471
+        ]
+      },
+      "properties": {
+        "name": "Bran's Keep",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          964,
+          3572
+        ]
+      },
+      "properties": {
+        "name": "Bridle",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1061,
+          3504
+        ]
+      },
+      "properties": {
+        "name": "Brous",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1096,
+          3851
+        ]
+      },
+      "properties": {
+        "name": "Brys",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7874,
+          3017
+        ]
+      },
+      "properties": {
+        "name": "Burnt",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5293,
+          1357
+        ]
+      },
+      "properties": {
+        "name": "Bylan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5172,
+          2064
+        ]
+      },
+      "properties": {
+        "name": "Cabil",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6638,
+          1928
+        ]
+      },
+      "properties": {
+        "name": "Callows",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5144,
+          809
+        ]
+      },
+      "properties": {
+        "name": "Canhasan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6611,
+          2211
+        ]
+      },
+      "properties": {
+        "name": "Cant",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5465,
+          3894
+        ]
+      },
+      "properties": {
+        "name": "Canton's Landing",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5479,
+          2707
+        ]
+      },
+      "properties": {
+        "name": "Carasin",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1106,
+          3504
+        ]
+      },
+      "properties": {
+        "name": "Cargo",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5555,
+          1208
+        ]
+      },
+      "properties": {
+        "name": "Caron Tepasi",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6246,
+          3223
+        ]
+      },
+      "properties": {
+        "name": "Cast",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6948,
+          1128
+        ]
+      },
+      "properties": {
+        "name": "Cat",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1030,
+          3406
+        ]
+      },
+      "properties": {
+        "name": "Catch",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5312,
+          2629
+        ]
+      },
+      "properties": {
+        "name": "Cawn",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5564,
+          1938
+        ]
+      },
+      "properties": {
+        "name": "Chenang",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7670,
+          2769
+        ]
+      },
+      "properties": {
+        "name": "City of Many Saints",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5359,
+          1991
+        ]
+      },
+      "properties": {
+        "name": "Clump",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7284,
+          1055
+        ]
+      },
+      "properties": {
+        "name": "Crest",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7054,
+          1143
+        ]
+      },
+      "properties": {
+        "name": "Cruk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5198,
+          1972
+        ]
+      },
+      "properties": {
+        "name": "Curaca",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5173,
+          2002
+        ]
+      },
+      "properties": {
+        "name": "Cutip",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7316,
+          2172
+        ]
+      },
+      "properties": {
+        "name": "Cyral",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5507,
+          2451
+        ]
+      },
+      "properties": {
+        "name": "D'avigo",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5737,
+          3512
+        ]
+      },
+      "properties": {
+        "name": "Dami",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5445,
+          3544
+        ]
+      },
+      "properties": {
+        "name": "Damos",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3219,
+          3676
+        ]
+      },
+      "properties": {
+        "name": "Danan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5946,
+          3058
+        ]
+      },
+      "properties": {
+        "name": "Danig",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5392,
+          2770
+        ]
+      },
+      "properties": {
+        "name": "Dariyal",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1489,
+          4074
+        ]
+      },
+      "properties": {
+        "name": "Deal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7866,
+          3046
+        ]
+      },
+      "properties": {
+        "name": "Deep Root",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5467,
+          2203
+        ]
+      },
+      "properties": {
+        "name": "Delanss",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5056,
+          1348
+        ]
+      },
+      "properties": {
+        "name": "Denard",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1162,
+          3788
+        ]
+      },
+      "properties": {
+        "name": "Deselen",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5395,
+          1845
+        ]
+      },
+      "properties": {
+        "name": "Dhab",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6678,
+          1465
+        ]
+      },
+      "properties": {
+        "name": "Dhavran",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5626,
+          1472
+        ]
+      },
+      "properties": {
+        "name": "Dhebel",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6287,
+          3204
+        ]
+      },
+      "properties": {
+        "name": "Dim",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5085,
+          1389
+        ]
+      },
+      "properties": {
+        "name": "Dobre",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4564,
+          3307
+        ]
+      },
+      "properties": {
+        "name": "Dolmens of Tien",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6309,
+          2927
+        ]
+      },
+      "properties": {
+        "name": "Dorik",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6460,
+          3163
+        ]
+      },
+      "properties": {
+        "name": "Dort",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5726,
+          1156
+        ]
+      },
+      "properties": {
+        "name": "Dosin Pali",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5674,
+          3332
+        ]
+      },
+      "properties": {
+        "name": "Dour",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5632,
+          3393
+        ]
+      },
+      "properties": {
+        "name": "Dourkal",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6342,
+          3219
+        ]
+      },
+      "properties": {
+        "name": "Drak",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1895,
+          3477
+        ]
+      },
+      "properties": {
+        "name": "Drene",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1008,
+          3438
+        ]
+      },
+      "properties": {
+        "name": "Dresh",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6542,
+          3358
+        ]
+      },
+      "properties": {
+        "name": "East Watch",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6310,
+          3137
+        ]
+      },
+      "properties": {
+        "name": "Ebon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4942,
+          2552
+        ]
+      },
+      "properties": {
+        "name": "Ebond",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5492,
+          1066
+        ]
+      },
+      "properties": {
+        "name": "Ehrlitan",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7404,
+          2243
+        ]
+      },
+      "properties": {
+        "name": "Elingarth",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5678,
+          3231
+        ]
+      },
+      "properties": {
+        "name": "Elri",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1192,
+          3980
+        ]
+      },
+      "properties": {
+        "name": "Ender",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5166,
+          1066
+        ]
+      },
+      "properties": {
+        "name": "Enjo Estarb",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7455,
+          2219
+        ]
+      },
+      "properties": {
+        "name": "Erin",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7246,
+          806
+        ]
+      },
+      "properties": {
+        "name": "Evinor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7518,
+          2145
+        ]
+      },
+      "properties": {
+        "name": "Exile",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7554,
+          3103
+        ]
+      },
+      "properties": {
+        "name": "Exile Keep",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5127,
+          2044
+        ]
+      },
+      "properties": {
+        "name": "Falair",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7436,
+          2622
+        ]
+      },
+      "properties": {
+        "name": "Fallen",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5406,
+          2218
+        ]
+      },
+      "properties": {
+        "name": "Fallen Towers",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6553,
+          2877
+        ]
+      },
+      "properties": {
+        "name": "Falt",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1486,
+          3814
+        ]
+      },
+      "properties": {
+        "name": "Feint",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5988,
+          3021
+        ]
+      },
+      "properties": {
+        "name": "Filk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          949,
+          3997
+        ]
+      },
+      "properties": {
+        "name": "Fire",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7711,
+          2704
+        ]
+      },
+      "properties": {
+        "name": "First Landing",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1105,
+          3469
+        ]
+      },
+      "properties": {
+        "name": "First Reach",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5569,
+          2079
+        ]
+      },
+      "properties": {
+        "name": "Flood",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6377,
+          4046
+        ]
+      },
+      "properties": {
+        "name": "Fortress Exile",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7737,
+          2251
+        ]
+      },
+      "properties": {
+        "name": "Four Towers Ruins",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6488,
+          2935
+        ]
+      },
+      "properties": {
+        "name": "Ft. Drii",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1191,
+          3372
+        ]
+      },
+      "properties": {
+        "name": "Ft. Shake",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5425,
+          1142
+        ]
+      },
+      "properties": {
+        "name": "G'danisban",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5883,
+          811
+        ]
+      },
+      "properties": {
+        "name": "Galladi",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7097,
+          808
+        ]
+      },
+      "properties": {
+        "name": "Ganiss",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4989,
+          2657
+        ]
+      },
+      "properties": {
+        "name": "Garal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1067,
+          3664
+        ]
+      },
+      "properties": {
+        "name": "Gedry",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5179,
+          1390
+        ]
+      },
+      "properties": {
+        "name": "Geleen",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6721,
+          877
+        ]
+      },
+      "properties": {
+        "name": "Genabaris",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7089,
+          900
+        ]
+      },
+      "properties": {
+        "name": "Genalle",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5698,
+          3430
+        ]
+      },
+      "properties": {
+        "name": "Ghost City",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3334,
+          2727
+        ]
+      },
+      "properties": {
+        "name": "Glory",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5474,
+          3665
+        ]
+      },
+      "properties": {
+        "name": "Golk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5197,
+          2135
+        ]
+      },
+      "properties": {
+        "name": "Gorge",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1327,
+          4045
+        ]
+      },
+      "properties": {
+        "name": "Goss",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6512,
+          3017
+        ]
+      },
+      "properties": {
+        "name": "Gost",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5053,
+          2038
+        ]
+      },
+      "properties": {
+        "name": "Gravid",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6718,
+          1510
+        ]
+      },
+      "properties": {
+        "name": "Gredfallen",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1327,
+          3741
+        ]
+      },
+      "properties": {
+        "name": "Gress",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6096,
+          2889
+        ]
+      },
+      "properties": {
+        "name": "Grest",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5116,
+          2078
+        ]
+      },
+      "properties": {
+        "name": "Grevod",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6826,
+          965
+        ]
+      },
+      "properties": {
+        "name": "Greydog",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5616,
+          2537
+        ]
+      },
+      "properties": {
+        "name": "Gris",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5229,
+          2026
+        ]
+      },
+      "properties": {
+        "name": "Gung",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6441,
+          3022
+        ]
+      },
+      "properties": {
+        "name": "Haft",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5440,
+          1211
+        ]
+      },
+      "properties": {
+        "name": "Halaf",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1047,
+          3590
+        ]
+      },
+      "properties": {
+        "name": "Harness",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5074,
+          1057
+        ]
+      },
+      "properties": {
+        "name": "Hatra",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5889,
+          4126
+        ]
+      },
+      "properties": {
+        "name": "Haven",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7022,
+          1778
+        ]
+      },
+      "properties": {
+        "name": "Heath",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5479,
+          1848
+        ]
+      },
+      "properties": {
+        "name": "Heft",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3253,
+          3697
+        ]
+      },
+      "properties": {
+        "name": "Hetok",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1162,
+          3335
+        ]
+      },
+      "properties": {
+        "name": "High Fort",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5670,
+          1174
+        ]
+      },
+      "properties": {
+        "name": "Hissar",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7713,
+          2848
+        ]
+      },
+      "properties": {
+        "name": "Holly",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6195,
+          2956
+        ]
+      },
+      "properties": {
+        "name": "Homdo",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7212,
+          797
+        ]
+      },
+      "properties": {
+        "name": "Hoop",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5203,
+          2816
+        ]
+      },
+      "properties": {
+        "name": "Horan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7321,
+          788
+        ]
+      },
+      "properties": {
+        "name": "Horan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7214,
+          2310
+        ]
+      },
+      "properties": {
+        "name": "Hurly",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2557,
+          3611
+        ]
+      },
+      "properties": {
+        "name": "Icarias",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5344,
+          2220
+        ]
+      },
+      "properties": {
+        "name": "Ictor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5262,
+          2636
+        ]
+      },
+      "properties": {
+        "name": "Idryb",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5495,
+          2193
+        ]
+      },
+      "properties": {
+        "name": "Iguan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5256,
+          2735
+        ]
+      },
+      "properties": {
+        "name": "Ijor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7067,
+          2326
+        ]
+      },
+      "properties": {
+        "name": "Ilem",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5124,
+          2067
+        ]
+      },
+      "properties": {
+        "name": "Ilk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5943,
+          4412
+        ]
+      },
+      "properties": {
+        "name": "Iron Citadel",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4381,
+          3522
+        ]
+      },
+      "properties": {
+        "name": "Isana Pura",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5292,
+          2761
+        ]
+      },
+      "properties": {
+        "name": "Itko Kan",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4636,
+          3518
+        ]
+      },
+      "properties": {
+        "name": "Jakal Viharn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5574,
+          2847
+        ]
+      },
+      "properties": {
+        "name": "Jakata",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5595,
+          1377
+        ]
+      },
+      "properties": {
+        "name": "Jamdat",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1614,
+          3434
+        ]
+      },
+      "properties": {
+        "name": "Jasp",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5810,
+          3422
+        ]
+      },
+      "properties": {
+        "name": "Jassr",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5392,
+          1907
+        ]
+      },
+      "properties": {
+        "name": "Jick",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5193,
+          2031
+        ]
+      },
+      "properties": {
+        "name": "Jook",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5539,
+          3467
+        ]
+      },
+      "properties": {
+        "name": "Jour",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5448,
+          1863
+        ]
+      },
+      "properties": {
+        "name": "Jrapp",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5092,
+          870
+        ]
+      },
+      "properties": {
+        "name": "Kaliban",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3143,
+          4129
+        ]
+      },
+      "properties": {
+        "name": "Kanros",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5380,
+          1026
+        ]
+      },
+      "properties": {
+        "name": "Kansu",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5695,
+          766
+        ]
+      },
+      "properties": {
+        "name": "Karakarang",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5515,
+          1170
+        ]
+      },
+      "properties": {
+        "name": "Karashimesh",
+        "rang": "major"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1356,
+          3915
+        ]
+      },
+      "properties": {
+        "name": "Karn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5249,
+          910
+        ]
+      },
+      "properties": {
+        "name": "Karokitch",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5714,
+          2660
+        ]
+      },
+      "properties": {
+        "name": "Kartool",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1040,
+          3917
+        ]
+      },
+      "properties": {
+        "name": "Karyx",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1048,
+          3385
+        ]
+      },
+      "properties": {
+        "name": "Katter",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5098,
+          1162
+        ]
+      },
+      "properties": {
+        "name": "Kayhum",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7472,
+          2055
+        ]
+      },
+      "properties": {
+        "name": "Kepler's Spite",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6972,
+          1772
+        ]
+      },
+      "properties": {
+        "name": "Ket Tor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6453,
+          3275
+        ]
+      },
+      "properties": {
+        "name": "Kevil",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3210,
+          3793
+        ]
+      },
+      "properties": {
+        "name": "Kolanse",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5746,
+          3160
+        ]
+      },
+      "properties": {
+        "name": "Kor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1815,
+          3521
+        ]
+      },
+      "properties": {
+        "name": "Korasch",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3340,
+          3941
+        ]
+      },
+      "properties": {
+        "name": "Korbanse",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4914,
+          2586
+        ]
+      },
+      "properties": {
+        "name": "Korn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1025,
+          4009
+        ]
+      },
+      "properties": {
+        "name": "Korshenn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5102,
+          1023
+        ]
+      },
+      "properties": {
+        "name": "Kot Ghul",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1541,
+          4066
+        ]
+      },
+      "properties": {
+        "name": "Krass",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6435,
+          3117
+        ]
+      },
+      "properties": {
+        "name": "Kren",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2998,
+          4223
+        ]
+      },
+      "properties": {
+        "name": "Krosis",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1662,
+          3784
+        ]
+      },
+      "properties": {
+        "name": "Kryn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6663,
+          1526
+        ]
+      },
+      "properties": {
+        "name": "Kurl",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7752,
+          3437
+        ]
+      },
+      "properties": {
+        "name": "Kurzan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7481,
+          3162
+        ]
+      },
+      "properties": {
+        "name": "Lake Fort",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6189,
+          3014
+        ]
+      },
+      "properties": {
+        "name": "Lallit",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6029,
+          2965
+        ]
+      },
+      "properties": {
+        "name": "Lamentable Moll",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1045,
+          3477
+        ]
+      },
+      "properties": {
+        "name": "Lan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5307,
+          1096
+        ]
+      },
+      "properties": {
+        "name": "Lato Revae",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6966,
+          1164
+        ]
+      },
+      "properties": {
+        "name": "Lead",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1709,
+          3510
+        ]
+      },
+      "properties": {
+        "name": "Lekester",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1037,
+          3701
+        ]
+      },
+      "properties": {
+        "name": "Lenth",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7082,
+          1562
+        ]
+      },
+      "properties": {
+        "name": "Lest",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7877,
+          3140
+        ]
+      },
+      "properties": {
+        "name": "Listell",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5299,
+          1066
+        ]
+      },
+      "properties": {
+        "name": "Longshan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6464,
+          2871
+        ]
+      },
+      "properties": {
+        "name": "Lorest",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5757,
+          3559
+        ]
+      },
+      "properties": {
+        "name": "Lorti",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5004,
+          1092
+        ]
+      },
+      "properties": {
+        "name": "Lothal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5570,
+          1966
+        ]
+      },
+      "properties": {
+        "name": "Lurk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          919,
+          3389
+        ]
+      },
+      "properties": {
+        "name": "Maiden Forts",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6514,
+          3112
+        ]
+      },
+      "properties": {
+        "name": "Mald",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7653,
+          2695
+        ]
+      },
+      "properties": {
+        "name": "Mantle",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7135,
+          2323
+        ]
+      },
+      "properties": {
+        "name": "March",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5376,
+          2682
+        ]
+      },
+      "properties": {
+        "name": "Marl",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7066,
+          1617
+        ]
+      },
+      "properties": {
+        "name": "Maurik",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5430,
+          1241
+        ]
+      },
+      "properties": {
+        "name": "Melm",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6519,
+          1399
+        ]
+      },
+      "properties": {
+        "name": "Mengal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5234,
+          1192
+        ]
+      },
+      "properties": {
+        "name": "Mersin",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1008,
+          3529
+        ]
+      },
+      "properties": {
+        "name": "Miner Sluice",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7586,
+          2855
+        ]
+      },
+      "properties": {
+        "name": "Mist",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5924,
+          3060
+        ]
+      },
+      "properties": {
+        "name": "Molz",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4571,
+          932
+        ]
+      },
+      "properties": {
+        "name": "Monkan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6771,
+          971
+        ]
+      },
+      "properties": {
+        "name": "Mott",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5162,
+          2099
+        ]
+      },
+      "properties": {
+        "name": "Muheres",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7662,
+          3446
+        ]
+      },
+      "properties": {
+        "name": "Nabraji",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5049,
+          2607
+        ]
+      },
+      "properties": {
+        "name": "Nadir",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5008,
+          1320
+        ]
+      },
+      "properties": {
+        "name": "Nahal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6670,
+          966
+        ]
+      },
+      "properties": {
+        "name": "Nathilog",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3244,
+          1607
+        ]
+      },
+      "properties": {
+        "name": "Nemil City",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5202,
+          1007
+        ]
+      },
+      "properties": {
+        "name": "Nevasa",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7635,
+          2262
+        ]
+      },
+      "properties": {
+        "name": "New Landing",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5199,
+          2535
+        ]
+      },
+      "properties": {
+        "name": "New Seti",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5227,
+          2756
+        ]
+      },
+      "properties": {
+        "name": "Nexa",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5333,
+          1337
+        ]
+      },
+      "properties": {
+        "name": "Nhelth",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5252,
+          986
+        ]
+      },
+      "properties": {
+        "name": "Noh",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7642,
+          2988
+        ]
+      },
+      "properties": {
+        "name": "North",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5661,
+          3960
+        ]
+      },
+      "properties": {
+        "name": "North Bastion",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3111,
+          3618
+        ]
+      },
+      "properties": {
+        "name": "North Citadel",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7139,
+          2224
+        ]
+      },
+      "properties": {
+        "name": "North March",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8897,
+          1852
+        ]
+      },
+      "properties": {
+        "name": "Nyethen",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6579,
+          1182
+        ]
+      },
+      "properties": {
+        "name": "Oach",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1375,
+          3755
+        ]
+      },
+      "properties": {
+        "name": "Obertull",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2994,
+          4010
+        ]
+      },
+      "properties": {
+        "name": "Okan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          967,
+          3643
+        ]
+      },
+      "properties": {
+        "name": "Old Gedure",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5360,
+          2064
+        ]
+      },
+      "properties": {
+        "name": "Old Guando",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5074,
+          2057
+        ]
+      },
+      "properties": {
+        "name": "Old Ilk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7713,
+          3077
+        ]
+      },
+      "properties": {
+        "name": "Old Ruse",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1752,
+          3608
+        ]
+      },
+      "properties": {
+        "name": "Olived",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5216,
+          1260
+        ]
+      },
+      "properties": {
+        "name": "Omari",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6951,
+          1044
+        ]
+      },
+      "properties": {
+        "name": "One Eye Cat",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5522,
+          4028
+        ]
+      },
+      "properties": {
+        "name": "Orr's City",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1626,
+          3663
+        ]
+      },
+      "properties": {
+        "name": "Ouster",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1703,
+          3359
+        ]
+      },
+      "properties": {
+        "name": "Outbound",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7041,
+          1772
+        ]
+      },
+      "properties": {
+        "name": "Outlook",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6955,
+          939
+        ]
+      },
+      "properties": {
+        "name": "Owndos",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6749,
+          1391
+        ]
+      },
+      "properties": {
+        "name": "Pale",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6249,
+          3022
+        ]
+      },
+      "properties": {
+        "name": "Paliss",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5464,
+          1097
+        ]
+      },
+      "properties": {
+        "name": "Panpot'sun",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4941,
+          2601
+        ]
+      },
+      "properties": {
+        "name": "Panys",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6883,
+          1167
+        ]
+      },
+      "properties": {
+        "name": "Patch",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1573,
+          3556
+        ]
+      },
+      "properties": {
+        "name": "Pearls",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1413,
+          4049
+        ]
+      },
+      "properties": {
+        "name": "Peck",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3357,
+          2709
+        ]
+      },
+      "properties": {
+        "name": "Piety",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7902,
+          2962
+        ]
+      },
+      "properties": {
+        "name": "Pillar",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5462,
+          3780
+        ]
+      },
+      "properties": {
+        "name": "Pine Fort",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5509,
+          3667
+        ]
+      },
+      "properties": {
+        "name": "Pon-Rou",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5860,
+          3089
+        ]
+      },
+      "properties": {
+        "name": "Poon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1333,
+          3983
+        ]
+      },
+      "properties": {
+        "name": "Port",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6718,
+          941
+        ]
+      },
+      "properties": {
+        "name": "Prospect",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5129,
+          2097
+        ]
+      },
+      "properties": {
+        "name": "Pull",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4982,
+          2510
+        ]
+      },
+      "properties": {
+        "name": "Purage",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5856,
+          4058
+        ]
+      },
+      "properties": {
+        "name": "Quillon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4988,
+          2560
+        ]
+      },
+      "properties": {
+        "name": "Quon Tali",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5021,
+          884
+        ]
+      },
+      "properties": {
+        "name": "Rang",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5382,
+          2521
+        ]
+      },
+      "properties": {
+        "name": "Rath",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7626,
+          2731
+        ]
+      },
+      "properties": {
+        "name": "Reach",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3586,
+          2360
+        ]
+      },
+      "properties": {
+        "name": "Red Spires",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7690,
+          2030
+        ]
+      },
+      "properties": {
+        "name": "Refuge",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4092,
+          1847
+        ]
+      },
+      "properties": {
+        "name": "Reliant City",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          945,
+          3529
+        ]
+      },
+      "properties": {
+        "name": "Rennis",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5627,
+          3540
+        ]
+      },
+      "properties": {
+        "name": "Ring",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6005,
+          3002
+        ]
+      },
+      "properties": {
+        "name": "Rip",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6423,
+          3210
+        ]
+      },
+      "properties": {
+        "name": "Rivdo",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5017,
+          2062
+        ]
+      },
+      "properties": {
+        "name": "Rope",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1045,
+          3664
+        ]
+      },
+      "properties": {
+        "name": "Roster",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7684,
+          2914
+        ]
+      },
+      "properties": {
+        "name": "Rough Landing",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7845,
+          3032
+        ]
+      },
+      "properties": {
+        "name": "Run",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5659,
+          875
+        ]
+      },
+      "properties": {
+        "name": "Rutu Jelba",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          972,
+          3692
+        ]
+      },
+      "properties": {
+        "name": "Sadon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6974,
+          1504
+        ]
+      },
+      "properties": {
+        "name": "Saltoan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5229,
+          1370
+        ]
+      },
+      "properties": {
+        "name": "Sanimon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1751,
+          3558
+        ]
+      },
+      "properties": {
+        "name": "Santchur",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2040,
+          3811
+        ]
+      },
+      "properties": {
+        "name": "Saphinand",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5149,
+          2593
+        ]
+      },
+      "properties": {
+        "name": "Saran",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6921,
+          1748
+        ]
+      },
+      "properties": {
+        "name": "Sarn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5009,
+          1268
+        ]
+      },
+      "properties": {
+        "name": "Sarpachiya",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5166,
+          1487
+        ]
+      },
+      "properties": {
+        "name": "Sarsa",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4469,
+          1002
+        ]
+      },
+      "properties": {
+        "name": "Sepik",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5106,
+          2581
+        ]
+      },
+      "properties": {
+        "name": "Seti",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7046,
+          1569
+        ]
+      },
+      "properties": {
+        "name": "Settar",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6287,
+          3239
+        ]
+      },
+      "properties": {
+        "name": "Shade",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6175,
+          3318
+        ]
+      },
+      "properties": {
+        "name": "Shale",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7292,
+          1143
+        ]
+      },
+      "properties": {
+        "name": "Shand",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5615,
+          3283
+        ]
+      },
+      "properties": {
+        "name": "Shelter",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6231,
+          3263
+        ]
+      },
+      "properties": {
+        "name": "Shroud",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5637,
+          1196
+        ]
+      },
+      "properties": {
+        "name": "Sialk",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5766,
+          1091
+        ]
+      },
+      "properties": {
+        "name": "Skullcup",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5872,
+          3323
+        ]
+      },
+      "properties": {
+        "name": "Sky Tower",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7067,
+          991
+        ]
+      },
+      "properties": {
+        "name": "Sogena",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4954,
+          1159
+        ]
+      },
+      "properties": {
+        "name": "Sotka",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7330,
+          2284
+        ]
+      },
+      "properties": {
+        "name": "Spendrugle",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3239,
+          3794
+        ]
+      },
+      "properties": {
+        "name": "Spire",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1615,
+          3598
+        ]
+      },
+      "properties": {
+        "name": "Stall",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5973,
+          3045
+        ]
+      },
+      "properties": {
+        "name": "Stall",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6069,
+          2942
+        ]
+      },
+      "properties": {
+        "name": "Steel",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2885,
+          3870
+        ]
+      },
+      "properties": {
+        "name": "Stet",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5553,
+          3282
+        ]
+      },
+      "properties": {
+        "name": "Storm",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5629,
+          2109
+        ]
+      },
+      "properties": {
+        "name": "Strike",
+        "rang": "major"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6294,
+          3295
+        ]
+      },
+      "properties": {
+        "name": "Sty",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5543,
+          1122
+        ]
+      },
+      "properties": {
+        "name": "T'nal",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1349,
+          3848
+        ]
+      },
+      "properties": {
+        "name": "Tallis",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7129,
+          1264
+        ]
+      },
+      "properties": {
+        "name": "Taph",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5281,
+          1434
+        ]
+      },
+      "properties": {
+        "name": "Tarxian",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5231,
+          1461
+        ]
+      },
+      "properties": {
+        "name": "Tathimon",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5003,
+          929
+        ]
+      },
+      "properties": {
+        "name": "Taxila",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4989,
+          2538
+        ]
+      },
+      "properties": {
+        "name": "Tellick",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5427,
+          1951
+        ]
+      },
+      "properties": {
+        "name": "Tenak",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5474,
+          1298
+        ]
+      },
+      "properties": {
+        "name": "Teppes",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5432,
+          2547
+        ]
+      },
+      "properties": {
+        "name": "Thaden",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5439,
+          2514
+        ]
+      },
+      "properties": {
+        "name": "Thades",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5321,
+          2394
+        ]
+      },
+      "properties": {
+        "name": "The Citadel",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1181,
+          3395
+        ]
+      },
+      "properties": {
+        "name": "The Manse",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6349,
+          4118
+        ]
+      },
+      "properties": {
+        "name": "Thick",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5904,
+          4047
+        ]
+      },
+      "properties": {
+        "name": "Thickton",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6337,
+          2991
+        ]
+      },
+      "properties": {
+        "name": "Thol",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6443,
+          3061
+        ]
+      },
+      "properties": {
+        "name": "Three Sisters",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1081,
+          3317
+        ]
+      },
+      "properties": {
+        "name": "Tiste",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6518,
+          3823
+        ]
+      },
+      "properties": {
+        "name": "Toll's City",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6550,
+          3846
+        ]
+      },
+      "properties": {
+        "name": "Toll's Landing",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5011,
+          2102
+        ]
+      },
+      "properties": {
+        "name": "Torn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7258,
+          2302
+        ]
+      },
+      "properties": {
+        "name": "Torn",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5494,
+          1869
+        ]
+      },
+      "properties": {
+        "name": "Torvo",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7886,
+          3314
+        ]
+      },
+      "properties": {
+        "name": "Towerpoint",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1211,
+          3754
+        ]
+      },
+      "properties": {
+        "name": "Trails",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1058,
+          3353
+        ]
+      },
+      "properties": {
+        "name": "Trate",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3247,
+          3731
+        ]
+      },
+      "properties": {
+        "name": "Trelar",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1372,
+          3817
+        ]
+      },
+      "properties": {
+        "name": "Truce",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7375,
+          2268
+        ]
+      },
+      "properties": {
+        "name": "Trygalle",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5012,
+          1292
+        ]
+      },
+      "properties": {
+        "name": "Tsarech",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          933,
+          3494
+        ]
+      },
+      "properties": {
+        "name": "Tulamesh",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6629,
+          1042
+        ]
+      },
+      "properties": {
+        "name": "Tulips",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1120,
+          3999
+        ]
+      },
+      "properties": {
+        "name": "Twill",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5377,
+          1284
+        ]
+      },
+      "properties": {
+        "name": "Ubaryd",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5041,
+          1209
+        ]
+      },
+      "properties": {
+        "name": "Ugarat",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9433,
+          1334
+        ]
+      },
+      "properties": {
+        "name": "Umryg",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4936,
+          2527
+        ]
+      },
+      "properties": {
+        "name": "Valan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5634,
+          1297
+        ]
+      },
+      "properties": {
+        "name": "Venj",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5446,
+          2703
+        ]
+      },
+      "properties": {
+        "name": "Vor",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5423,
+          2417
+        ]
+      },
+      "properties": {
+        "name": "Voron",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5258,
+          2839
+        ]
+      },
+      "properties": {
+        "name": "Wal Fend",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5414,
+          2020
+        ]
+      },
+      "properties": {
+        "name": "Walk",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1665,
+          3595
+        ]
+      },
+      "properties": {
+        "name": "Wend",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5435,
+          2202
+        ]
+      },
+      "properties": {
+        "name": "Wett",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1206,
+          3436
+        ]
+      },
+      "properties": {
+        "name": "White Point",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7959,
+          3000
+        ]
+      },
+      "properties": {
+        "name": "Widden",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5459,
+          1776
+        ]
+      },
+      "properties": {
+        "name": "Woad",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5606,
+          3351
+        ]
+      },
+      "properties": {
+        "name": "Wolt",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5044,
+          1110
+        ]
+      },
+      "properties": {
+        "name": "Y'Ghatan",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4912,
+          1132
+        ]
+      },
+      "properties": {
+        "name": "Yath Alba",
+        "rang": "minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5813,
+          3499
+        ]
+      },
+      "properties": {
+        "name": "Zelt",
+        "rang": "village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6354,
+          3095
+        ]
+      },
+      "properties": {
+        "name": "Zestr",
+        "rang": "village"
       }
     }
   ]
