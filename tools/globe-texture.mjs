@@ -22,14 +22,18 @@ if (pad < 0) throw new Error(`source deja plus large que 2:1 (${meta.width}x${me
 const OCEAN = { r: 196, g: 223, b: 255 }
 const TITLE_BOX = { left: 0, top: 0, width: 1500, height: 1080 }
 
-const cleaned = await sharp(SRC)
-  .composite([{
-    input: { create: { width: TITLE_BOX.width, height: TITLE_BOX.height, channels: 4, background: OCEAN } },
-    left: TITLE_BOX.left,
-    top: TITLE_BOX.top,
-  }])
-  .png()
-  .toBuffer()
+// --sans-cartouche : source dont le cartouche est déjà remplacé par la mer (fonds topo de
+// designs/topo), qu'un aplat OCEAN recouvrirait d'une couleur étrangère au style.
+const cleaned = args['sans-cartouche']
+  ? await sharp(SRC).png().toBuffer()
+  : await sharp(SRC)
+    .composite([{
+      input: { create: { width: TITLE_BOX.width, height: TITLE_BOX.height, channels: 4, background: OCEAN } },
+      left: TITLE_BOX.left,
+      top: TITLE_BOX.top,
+    }])
+    .png()
+    .toBuffer()
 
 const padded = await sharp(cleaned)
   .extend({ left: pad, right: targetW - meta.width - pad, extendWith: 'copy' })
