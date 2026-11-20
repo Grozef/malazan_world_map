@@ -1438,7 +1438,33 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8780,
+              370
+            ],
+            [
+              9970,
+              370
+            ],
+            [
+              9970,
+              1580
+            ],
+            [
+              8780,
+              1580
+            ],
+            [
+              8780,
+              370
+            ]
+          ]
+        ]
+      },
       "properties": {
         "id": "malazan-genostel",
         "title": "Genostel Archipelago & Umryg",

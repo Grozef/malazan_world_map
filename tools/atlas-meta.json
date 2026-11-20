@@ -702,7 +702,13 @@
       "title": "Genostel Archipelago & Umryg",
       "group": "Atlas illustre",
       "scope": "region",
-      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+      "bbox": [
+        8780,
+        370,
+        9970,
+        1580
+      ],
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. Emprise posee le 2026-11-20 (regle utilisateur : planche presente dans l atlas = zone cliquable) sur l archipel GENOSTEL + UMRYG de la carte-monde (haut droite, Rust Ocean / Umros Nyethen Sea), cadree sur les rivages releves sur un crop zoom 0,47 avec ~40 px de mer de marge, controlee par capture du rectangle trace. Pas de recalage par amers : planche d une autre main, rivages non superposables, seule Umryg est nommee sur les deux."
     }
   ]
 }
