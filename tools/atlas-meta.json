@@ -667,14 +667,32 @@
       "title": "Letherii Empire & Kingdom of Kolanse",
       "group": "Atlas illustre",
       "scope": "continent",
-      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+      "bbox": [
+        685,
+        2255,
+        3729,
+        4515
+      ],
+      "cible": [
+        2420,
+        3250,
+        2820,
+        4150
+      ],
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. Emprise posee le 2026-11-20 (regle utilisateur : planche presente dans l atlas = zone cliquable), cadree sur l ETENDUE DES TERRES (cote ouest de Lether a 5 % de la largeur du cadre, cote est de Kolanse a 91 %, iles du sud a 80-93 % de la hauteur), pas sur les villes : l ajustement isotrope sur 9 villes (Letheras, Kolanse, Icarias, Okan, Outbound, Drene, Kryn, Bolkando, Korbanse) sortait k 1,74 et des residus RMS 114/140 px, Kolanse placee 440 px plus au nord que sur la carte-monde. Les deux dessins ne s accordent pas. CIBLE [2420,3250,2820,4150] dans le trou des Wastelands entre les emprises Butler de Lether (x 2400) et de Kolanse (x 2836) : sans elle la region Empire of Lether et les cartes de Butler, plus petites, gagnaient tous les clics a terre (verifie au clic le 2026-11-20)."
     },
     {
       "id": "malazan-fist",
       "title": "Lands of Fist & Stratem",
       "group": "Atlas illustre",
       "scope": "continent",
-      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+      "bbox": [
+        5355,
+        2658,
+        6854,
+        4732
+      ],
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. Emprise posee le 2026-11-20 (regle utilisateur : planche presente dans l atlas = zone cliquable) : ajustement isotrope aux moindres carres sur 8 villes (Malaz City, Aamil, Paliss, Kevil, Pine Fort, Canton s Landing, North Bastion, Iron Citadel), k 1,036, residus RMS 88 px en x et 72 px en y, cadre de la planche projete. Couvre Malaz Island, Fist (Korelri) et Stratem jusqu aux iles du sud."
     },
     {
       "id": "malazan-assail",
@@ -695,7 +713,19 @@
       "title": "Region West of Seven Cities",
       "group": "Atlas illustre",
       "scope": "region",
-      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. NON SITUEE sur la carte-monde : pas d emprise, pas de cible — accessible par le catalogue et la pleine page seulement."
+      "bbox": [
+        2709,
+        1026,
+        4221,
+        3117
+      ],
+      "cible": [
+        2800,
+        1250,
+        4000,
+        2850
+      ],
+      "note": "Planche encadree de la serie deposee le 2026-08-27, main differente des cartes de Butler. Titre LU sur le cartouche. Emprise posee le 2026-11-20 (regle utilisateur : planche presente dans l atlas = zone cliquable) sur Perish, Nemil, Ekhran, Grol Etur, Cabal, Shal-Morzinn et Drammatan, a l ouest de Seven Cities : ajustement isotrope sur 4 amers (Nemil City, Red Spires, pointe nord de Perish, pointe sud de Shal-Morzinn), k 1,044, residus RMS 76/75 px. Ces terres sont DANS le polygone de la region Seven Cities de la carte-monde. CIBLE [2800,1250,4000,2850] sur ces terres (Perish a Drammatan, Jhag Odhan laisse a Seven Cities) : sans elle le polygone de la region Seven Cities, plus petit que l emprise, gagnait tous les clics a terre (verifie au clic le 2026-11-20 : Ekhran et Perish ouvraient Seven Cities)."
     },
     {
       "id": "malazan-genostel",

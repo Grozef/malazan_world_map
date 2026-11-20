@@ -1373,7 +1373,33 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              685,
+              2255
+            ],
+            [
+              3729,
+              2255
+            ],
+            [
+              3729,
+              4515
+            ],
+            [
+              685,
+              4515
+            ],
+            [
+              685,
+              2255
+            ]
+          ]
+        ]
+      },
       "properties": {
         "id": "malazan-lether",
         "title": "Letherii Empire & Kingdom of Kolanse",
@@ -1381,12 +1407,44 @@
         "scope": "continent",
         "image": "img/malazan-lether.webp",
         "width": 3000,
-        "height": 2080
+        "height": 2080,
+        "cible": [
+          2420,
+          3250,
+          2820,
+          4150
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5355,
+              2658
+            ],
+            [
+              6854,
+              2658
+            ],
+            [
+              6854,
+              4732
+            ],
+            [
+              5355,
+              4732
+            ],
+            [
+              5355,
+              2658
+            ]
+          ]
+        ]
+      },
       "properties": {
         "id": "malazan-fist",
         "title": "Lands of Fist & Stratem",
@@ -1425,7 +1483,33 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2709,
+              1026
+            ],
+            [
+              4221,
+              1026
+            ],
+            [
+              4221,
+              3117
+            ],
+            [
+              2709,
+              3117
+            ],
+            [
+              2709,
+              1026
+            ]
+          ]
+        ]
+      },
       "properties": {
         "id": "malazan-parish",
         "title": "Region West of Seven Cities",
@@ -1433,7 +1517,13 @@
         "scope": "region",
         "image": "img/malazan-parish.webp",
         "width": 3000,
-        "height": 2080
+        "height": 2080,
+        "cible": [
+          2800,
+          1250,
+          4000,
+          2850
+        ]
       }
     },
     {
